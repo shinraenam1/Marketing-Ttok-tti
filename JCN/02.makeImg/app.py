@@ -84,6 +84,39 @@ def build_prompt_only_marketing_prompt(user_prompt: str) -> str:
 """.strip()
 
 
+def generate_image_b64(prompt: str, size: str, quality: str = "low") -> dict:
+    """Reusable core function for image generation (Flask route / Foundry function 공용)."""
+    resp = client.images.generate(
+        model=DEPLOYMENT,
+        prompt=prompt,
+        n=1,
+        size=size,
+        quality=quality,
+    )
+    return {
+        "image": resp.data[0].b64_json,
+        "size": size,
+        "prompt": prompt,
+    }
+
+
+def generate_image_from_fields(product: str, benefit: str, concept: str, platform: str) -> dict:
+    """Field-based generation for legacy UI and external tool calls."""
+    size = PLATFORM_SIZES.get(platform, "816x816")
+    prompt = build_prompt(product, benefit, concept, platform)
+    return generate_image_b64(prompt=prompt, size=size, quality="low")
+
+
+def generate_image_from_marketing_prompt(user_prompt: str) -> dict:
+    """Prompt-only generation for Foundry function calls and prompt-demo UI."""
+    final_prompt = build_prompt_only_marketing_prompt(user_prompt)
+    return generate_image_b64(
+        prompt=final_prompt,
+        size=PROMPT_ONLY_DEFAULT_SIZE,
+        quality="low",
+    )
+
+
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -105,22 +138,15 @@ def generate():
     if not product or not benefit:
         return jsonify({"error": "상품종류와 혜택은 필수 입력입니다."}), 400
 
-    size   = PLATFORM_SIZES.get(platform, "816x816")
-    prompt = build_prompt(product, benefit, concept, platform)
-
     try:
-        resp = client.images.generate(
-            model=DEPLOYMENT,
-            prompt=prompt,
-            n=1,
-            size=size,
-            quality="low",
+        return jsonify(
+            generate_image_from_fields(
+                product=product,
+                benefit=benefit,
+                concept=concept,
+                platform=platform,
+            )
         )
-        return jsonify({
-            "image": resp.data[0].b64_json,
-            "size": size,
-            "prompt": prompt,
-        })
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
@@ -133,23 +159,8 @@ def generate_from_prompt():
     if not user_prompt:
         return jsonify({"error": "프롬프트를 입력해주세요."}), 400
 
-    final_prompt = build_prompt_only_marketing_prompt(user_prompt)
-
     try:
-        resp = client.images.generate(
-            model=DEPLOYMENT,
-            prompt=final_prompt,
-            n=1,
-            size=PROMPT_ONLY_DEFAULT_SIZE,
-            quality="low",
-        )
-        return jsonify(
-            {
-                "image": resp.data[0].b64_json,
-                "size": PROMPT_ONLY_DEFAULT_SIZE,
-                "prompt": final_prompt,
-            }
-        )
+        return jsonify(generate_image_from_marketing_prompt(user_prompt=user_prompt))
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
