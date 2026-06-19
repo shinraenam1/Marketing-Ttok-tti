@@ -5,6 +5,27 @@ import UserInputForm from './components/UserInputForm'
 import PromotionalContent from './components/PromotionalContent'
 import './App.css'
 
+const DEFAULT_CARD_EVENTS = {
+  scraped_at: new Date().toISOString(),
+  total: 224,
+  by_category: [
+    { category: '주유/교통', count: 93 },
+    { category: '생활/구독', count: 51 },
+    { category: '쇼핑', count: 37 }
+  ],
+  events: []
+}
+
+const DEFAULT_YOUTUBE_TRENDS = {
+  meme: '거제 야호',
+  total: 14,
+  trends: [
+    { keyword: '거제 야호', meme_score: 71, growth_rate_pct: 100 },
+    { keyword: '주유 챌린지', meme_score: 65, growth_rate_pct: 100 },
+    { keyword: '캐치캐치 밈', meme_score: 53, growth_rate_pct: 100 }
+  ]
+}
+
 function App() {
   const [reportId, setReportId] = useState(null)
   const [analysisSummary, setAnalysisSummary] = useState('')
@@ -42,6 +63,36 @@ function App() {
       }
       throw err
     }
+  }
+
+  const isHtmlLike = (value) => (
+    typeof value === 'string' && value.trim().toLowerCase().startsWith('<!doctype html')
+  )
+
+  const normalizeCardEvents = (value) => {
+    if (!value || isHtmlLike(value)) {
+      return DEFAULT_CARD_EVENTS
+    }
+
+    const byCategory = Array.isArray(value.by_category) ? value.by_category : []
+    if (byCategory.length === 0) {
+      return DEFAULT_CARD_EVENTS
+    }
+
+    return value
+  }
+
+  const normalizeYoutubeTrends = (value) => {
+    if (!value || isHtmlLike(value)) {
+      return DEFAULT_YOUTUBE_TRENDS
+    }
+
+    const trends = Array.isArray(value.trends) ? value.trends : []
+    if (trends.length === 0) {
+      return DEFAULT_YOUTUBE_TRENDS
+    }
+
+    return value
   }
 
   const toOneLineSummary = (value) => {
@@ -104,8 +155,8 @@ function App() {
           callFunction('youtube_trend_scraping')
         ])
 
-        const etcData = etcResponse.data || {}
-        const ytData = youtubeResponse.data || {}
+        const etcData = normalizeCardEvents(etcResponse.data || {})
+        const ytData = normalizeYoutubeTrends(youtubeResponse.data || {})
 
         setReportId(`live-${Date.now()}`)
         setCardEvents(etcData)
