@@ -1,0 +1,66 @@
+{
+  "note": "meme-like template extraction from stage1 detail sample",
+  "total_templates": 5,
+  "top_templates": [
+    {
+      "template": "”는 자신의 출생 연도와 직업, 상황 등을 말한 뒤 음악에 맞춰 춤을 추는 형식의 밈이에요. 예를 들어 “나 ○○년생 ○○○인데~",
+      "count": 1,
+      "examples": [
+        {
+          "source": "gogumafarm",
+          "title": "나 고구마팜인데 요즘 뜨는 밈 가져왔다 [2026년 6월 최신 밈 모음] | 고구마팜",
+          "url": "https://gogumafarm.kr/%eb%82%98-%ea%b3%a0%ea%b5%ac%eb%a7%88%ed%8c%9c%ec%9d%b8%eb%8d%b0-%ec%9a%94%ec%a6%98-%eb%9c%a8%eb%8a%94-%eb%b0%88-%ea%b0%80%ec%a0%b8%ec%99%94%eb%8b%a4-2026%eb%85%84-6%ec%9b%94-%ec%b5%9c%ec%8b%a0/",
+          "raw_match": "”는 자신의 출생 연도와 직업, 상황 등을 말한 뒤 음악에 맞춰 춤을 추는 형식의 밈이에요. 예를 들어 “나 72년생 앤드류형인데~"
+        }
+      ]
+    },
+    {
+      "template": "”라고 자기소개를 한 뒤 “우리 학원은 운동회도 해~",
+      "count": 1,
+      "examples": [
+        {
+          "source": "gogumafarm",
+          "title": "나 고구마팜인데 요즘 뜨는 밈 가져왔다 [2026년 6월 최신 밈 모음] | 고구마팜",
+          "url": "https://gogumafarm.kr/%eb%82%98-%ea%b3%a0%ea%b5%ac%eb%a7%88%ed%8c%9c%ec%9d%b8%eb%8d%b0-%ec%9a%94%ec%a6%98-%eb%9c%a8%eb%8a%94-%eb%b0%88-%ea%b0%80%ec%a0%b8%ec%99%94%eb%8b%a4-2026%eb%85%84-6%ec%9b%94-%ec%b5%9c%ec%8b%a0/",
+          "raw_match": "”라고 자기소개를 한 뒤 “우리 학원은 운동회도 해~"
+        }
+      ]
+    },
+    {
+      "template": "우리 학원은 운동회도 해~",
+      "count": 1,
+      "examples": [
+        {
+          "source": "gogumafarm",
+          "title": "나 고구마팜인데 요즘 뜨는 밈 가져왔다 [2026년 6월 최신 밈 모음] | 고구마팜",
+          "url": "https://gogumafarm.kr/%eb%82%98-%ea%b3%a0%ea%b5%ac%eb%a7%88%ed%8c%9c%ec%9d%b8%eb%8d%b0-%ec%9a%94%ec%a6%98-%eb%9c%a8%eb%8a%94-%eb%b0%88-%ea%b0%80%ec%a0%b8%ec%99%94%eb%8b%a4-2026%eb%85%84-6%ec%9b%94-%ec%b5%9c%ec%8b%a0/",
+          "raw_match": "우리 학원은 운동회도 해~"
+        }
+      ]
+    },
+    {
+      "template": "“나 ○○년생 ○○○인데~",
+      "count": 1,
+      "examples": [
+        {
+          "source": "gogumafarm",
+          "title": "나 고구마팜인데 요즘 뜨는 밈 가져왔다 [2026년 6월 최신 밈 모음] | 고구마팜",
+          "url": "https://gogumafarm.kr/%eb%82%98-%ea%b3%a0%ea%b5%ac%eb%a7%88%ed%8c%9c%ec%9d%b8%eb%8d%b0-%ec%9a%94%ec%a6%98-%eb%9c%a8%eb%8a%94-%eb%b0%88-%ea%b0%80%ec%a0%b8%ec%99%94%eb%8b%a4-2026%eb%85%84-6%ec%9b%94-%ec%b5%9c%ec%8b%a0/",
+          "raw_match": "“나 ○○년생 ○○○인데~"
+        }
+      ]
+    },
+    {
+      "template": "나 ○○년생 ○○○인데~",
+      "count": 1,
+      "examples": [
+        {
+          "source": "gogumafarm",
+          "title": "나 고구마팜인데 요즘 뜨는 밈 가져왔다 [2026년 6월 최신 밈 모음] | 고구마팜",
+          "url": "https://gogumafarm.kr/%eb%82%98-%ea%b3%a0%ea%b5%ac%eb%a7%88%ed%8c%9c%ec%9d%b8%eb%8d%b0-%ec%9a%94%ec%a6%98-%eb%9c%a8%eb%8a%94-%eb%b0%88-%ea%b0%80%ec%a0%b8%ec%99%94%eb%8b%a4-2026%eb%85%84-6%ec%9b%94-%ec%b5%9c%ec%8b%a0/",
+          "raw_match": "나 ○○년생 ○○○인데~"
+        }
+      ]
+    }
+  ]
+}

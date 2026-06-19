@@ -1,0 +1,337 @@
+{
+  "generated_at": "2026-06-19T08:13:59.569020+00:00",
+  "window_days": 90,
+  "pipeline_stages": {
+    "stage1_crawl": {
+      "source_counts": {
+        "wepick": 12,
+        "gogumafarm": 12,
+        "careet": 9
+      },
+      "sample_urls": {
+        "wepick": [
+          "https://letter.wepick.kr/post/25435",
+          "https://letter.wepick.kr/post/25434",
+          "https://letter.wepick.kr/post/25433"
+        ],
+        "gogumafarm": [
+          "https://gogumafarm.kr/%ed%9e%88%ed%8d%bc%c2%b7%ed%83%9c%eb%8b%9d%ec%8a%a4%ed%8b%b0%ec%bb%a4%c2%b7%eb%a9%94%ec%a7%80%eb%a3%a8%ec%8b%9c-%ea%b5%bf%ec%a6%88-%ea%b8%b0%ed%9a%8d-%ec%a4%91%ec%9d%b4%eb%9d%bc%eb%a9%b4-%eb%b4%90/",
+          "https://gogumafarm.kr/%eb%82%98-%ea%b3%a0%ea%b5%ac%eb%a7%88%ed%8c%9c%ec%9d%b8%eb%8d%b0-%ec%9a%94%ec%a6%98-%eb%9c%a8%eb%8a%94-%eb%b0%88-%ea%b0%80%ec%a0%b8%ec%99%94%eb%8b%a4-2026%eb%85%84-6%ec%9b%94-%ec%b5%9c%ec%8b%a0/",
+          "https://gogumafarm.kr/%eb%8b%a4%ed%81%ac-%ec%83%a4%ec%9b%8c%c2%b7%ec%9b%8c%eb%a6%ac%ec%8a%a4%ed%86%a4%c2%b7%eb%b6%88%ec%95%88-%ea%b0%80%eb%b0%a9-z%ec%84%b8%eb%8c%80-%eb%a9%98%ed%83%88-%ec%bc%80%ec%96%b4-%ed%8a%b8/"
+        ],
+        "careet": [
+          "https://www.careet.net/1925",
+          "https://www.careet.net/1910",
+          "https://www.careet.net/1920"
+        ]
+      }
+    },
+    "stage2_cleaning_and_emphasis": {
+      "total_documents": 33,
+      "documents_with_emphasis": 6,
+      "sample_cleaned": [
+        {
+          "source": "wepick",
+          "title": "AI 환각, 언제쯤 끝날까요?",
+          "clean_title": "ai 환각 언제쯤 끝날까요",
+          "clean_emphasis_text": "세종대왕 맥북 던짐 ai 환각 할루시네이션 잘못된 하나 신뢰도 하락 이슈 kpmg 보고서를 회수 ai 활용 사례 사실과 다르게 적혀있었음 잘못된 ai 산출물 신뢰도 하락 잘못된 의사결정 ai를 어디에 있을까 정확한 "
+        },
+        {
+          "source": "wepick",
+          "title": "구글은 거짓말 안 합니다, 다 안 알려줄 뿐: 검색 알고리즘 읽는 법",
+          "clean_title": "구글은 거짓말 합니다 알려줄 검색 알고리즘 읽는",
+          "clean_emphasis_text": ""
+        },
+        {
+          "source": "wepick",
+          "title": "AEO 전략, AI가 당신의 글을 답변으로 선택하려면",
+          "clean_title": "aeo 전략 ai가 당신의 글을 답변으로 선택하려면",
+          "clean_emphasis_text": ""
+        },
+        {
+          "source": "wepick",
+          "title": "페이스북 AI 모드 도입, 인스타그램 캡션 하나가 이제 AI 답변을 만든다",
+          "clean_title": "페이스북 ai 모드 도입 인스타그램 캡션 하나가 이제 ai 답변을 만든다",
+          "clean_emphasis_text": "검증 없이 인용합니다"
+        },
+        {
+          "source": "wepick",
+          "title": "2026 화장품 GWP, 핸드크림・립밤 대신 ‘스카프’ 고르는 이유",
+          "clean_title": "화장품 gwp 핸드크림 립밤 대신 스카프 고르는 이유",
+          "clean_emphasis_text": "백화점 입점 매장 신제품 런칭 캠페인 vip 우수 고객 단가 부담이 적습니다 보태니컬 패턴 클래식 패턴 미니멀 패턴"
+        }
+      ]
+    },
+    "stage3_candidate_scoring": {
+      "candidate_count": 20,
+      "top_candidates": [
+        {
+          "keyword": "고구마팜",
+          "meme_score": 68.69,
+          "stage": "stable",
+          "growth_rate_pct": 100.0,
+          "source_coverage": [
+            "gogumafarm"
+          ],
+          "last_seen_at": "2026-06-21T00:00:00+00:00"
+        },
+        {
+          "keyword": "말랑이 경제",
+          "meme_score": 64.46,
+          "stage": "stable",
+          "growth_rate_pct": 32.0,
+          "source_coverage": [
+            "careet"
+          ],
+          "last_seen_at": "2026-06-30T00:00:00+00:00"
+        },
+        {
+          "keyword": "점령한 릴스",
+          "meme_score": 55.22,
+          "stage": "emerging",
+          "growth_rate_pct": 32.0,
+          "source_coverage": [
+            "gogumafarm"
+          ],
+          "last_seen_at": "2026-06-04T00:00:00+00:00"
+        },
+        {
+          "keyword": "마케팅",
+          "meme_score": 54.2,
+          "stage": "emerging",
+          "growth_rate_pct": 100.0,
+          "source_coverage": [
+            "careet",
+            "wepick"
+          ],
+          "last_seen_at": "2026-06-18T00:00:00+00:00"
+        },
+        {
+          "keyword": "세계가 말랑이 경제",
+          "meme_score": 45.42,
+          "stage": "emerging",
+          "growth_rate_pct": 20.0,
+          "source_coverage": [
+            "careet"
+          ],
+          "last_seen_at": "2026-06-30T00:00:00+00:00"
+        },
+        {
+          "keyword": "z세대가 빠진",
+          "meme_score": 44.16,
+          "stage": "emerging",
+          "growth_rate_pct": 40.0,
+          "source_coverage": [
+            "gogumafarm"
+          ],
+          "last_seen_at": "2026-06-21T00:00:00+00:00"
+        },
+        {
+          "keyword": "z세대가",
+          "meme_score": 38.89,
+          "stage": "emerging",
+          "growth_rate_pct": 60.0,
+          "source_coverage": [
+            "gogumafarm"
+          ],
+          "last_seen_at": "2026-06-21T00:00:00+00:00"
+        },
+        {
+          "keyword": "방문객과 vip의 굿즈는",
+          "meme_score": 37.14,
+          "stage": "emerging",
+          "growth_rate_pct": 20.0,
+          "source_coverage": [
+            "wepick"
+          ],
+          "last_seen_at": "2026-06-17T00:00:00+00:00"
+        },
+        {
+          "keyword": "vip의 굿즈는",
+          "meme_score": 37.14,
+          "stage": "emerging",
+          "growth_rate_pct": 20.0,
+          "source_coverage": [
+            "wepick"
+          ],
+          "last_seen_at": "2026-06-17T00:00:00+00:00"
+        },
+        {
+          "keyword": "반복되는 소비 코드",
+          "meme_score": 37.14,
+          "stage": "emerging",
+          "growth_rate_pct": 20.0,
+          "source_coverage": [
+            "wepick"
+          ],
+          "last_seen_at": "2026-06-17T00:00:00+00:00"
+        }
+      ]
+    },
+    "stage4_topic_clustering": {
+      "cluster_count": 14,
+      "top_clusters": [
+        {
+          "topic": "말랑이 경제",
+          "topic_score": 72.96,
+          "growth_rate_pct": 0.0,
+          "source_coverage": [
+            "careet",
+            "gogumafarm",
+            "wepick"
+          ],
+          "summary": "핵심표현: 예쁜, 쓰레기, 미닝아웃, meaning, out, 기능보다 트렌드를 읽는 빠른 그런데 말랑이 유행 금세 식을 트렌드는 아닐 것으로 보여요 현재 말랑이는 한국뿐만 아니라 아시아와 북미를 포함한 세계에서 메가 트렌드로 부상하고 있거든요 중국과 일본 해외 번화가에는 스퀴시 폴리우레탄 등을 활용해 제작한 장난감으로 말랑말랑하고 부드러운 촉감을 지님 눌렀을 형태가 변했다가 천천히 복원되는"
+        },
+        {
+          "topic": "릴스",
+          "topic_score": 60.72,
+          "growth_rate_pct": 0.0,
+          "source_coverage": [
+            "careet",
+            "gogumafarm",
+            "wepick"
+          ],
+          "summary": "핵심표현: 검증, 없이, 인용합니다 인스타그램이 드디어 정보를 찾는 됐습니다 6월 15일 메타가 페이스북에 ai 모드를 공식 도입했습니다 이용자가 자연어로 질문하면 페이스북 인스타그램 스레드 그룹 릴스의 공개 게시물을 읽어 하나의 답으로 합성해 보여줍니다 6월 15일 메타가 페이스북에 ai 모드를 공식 도입했습니다 이용자가 자연어로 질문하면 페이스북 인스타그램 스레드 그룹 릴스의 공개 게시물"
+        },
+        {
+          "topic": "2026년",
+          "topic_score": 53.91,
+          "growth_rate_pct": 0.0,
+          "source_coverage": [
+            "wepick"
+          ],
+          "summary": "핵심표현: 백화점, 입점, 매장, 신제품, 런칭, 캠페인 우리는 도메인 권위 domain authority 쓰지 않습니다 구글이 년째 반복해 말이고 놀랍게도 사실입니다 그런데 2024년 5월 유출된 내부 문서에는 siteauthorit 지표가 또렷이 적혀 있었습니다 우리는 도메인 권위 domain authority 쓰지 않습니다 구글이 년째 반복해 말이고 놀랍게도 사실입니다 그런데 2024년"
+        },
+        {
+          "topic": "콜라보",
+          "topic_score": 52.97,
+          "growth_rate_pct": 0.0,
+          "source_coverage": [
+            "careet",
+            "gogumafarm",
+            "wepick"
+          ],
+          "summary": "핵심표현: 3일, 운영, 유명, 셰프, 디저트, 추억의 트렌드를 읽는 빠른 저희는 단순히 ip를 상품에 입히는 데서 끝나는 아니라 ip가 어떤 브랜드와 만나고 어떤 형태로 탄생해야 팬덤에게 새롭고 신선하게 다가갈 있을지를 중요하게 보고 그래서 희소성 높은 한정 발매 상품을 제안하는 리미티드 오더 limited order 서비스와 현재 브랜드와 크리에이터 29cm 3자가 협업한 상품을 선보이는"
+        },
+        {
+          "topic": "z세대가 빠진",
+          "topic_score": 48.66,
+          "growth_rate_pct": 0.0,
+          "source_coverage": [
+            "gogumafarm"
+          ],
+          "summary": "가짜 배달 앱부터 온라인 담타까지 z세대가 빠진 사이트 21가지 고구마팜 이젠 ai와 함께라면 아이디어 하나로 사이트가 뚝딱 완성되는 시대 이른바 바이브 코딩의 시대죠 배달은 시키고 싶은데 돈이 아까운 담타는 갖고 싶은데 담배는 싫은 구독은 끊고 싶은데 해지 페이지를 찾겠는 세세한 니즈들을 충족시킬 아이디어를 누군가 이미 사이트로 탄생시켰어요 창의력이 개발력이 되는 일상의 불편함과 도파민 사"
+        },
+        {
+          "topic": "굿즈",
+          "topic_score": 47.87,
+          "growth_rate_pct": 0.0,
+          "source_coverage": [
+            "careet",
+            "gogumafarm",
+            "wepick"
+          ],
+          "summary": "핵심표현: 백화점, 입점, 매장, 신제품, 런칭, 캠페인 트렌드를 읽는 빠른 그런데 말랑이 유행 금세 식을 트렌드는 아닐 것으로 보여요 현재 말랑이는 한국뿐만 아니라 아시아와 북미를 포함한 세계에서 메가 트렌드로 부상하고 있거든요 중국과 일본 해외 번화가에는 스퀴시 폴리우레탄 등을 활용해 제작한 장난감으로 말랑말랑하고 부드러운 촉감을 지님 눌렀을 형태가 변했다가 천천히 복원되는 것이 특징 말"
+        },
+        {
+          "topic": "반복되는 소비",
+          "topic_score": 46.64,
+          "growth_rate_pct": 0.0,
+          "source_coverage": [
+            "careet",
+            "wepick"
+          ],
+          "summary": "핵심표현: 검증, 없이, 인용합니다, 예쁜, 쓰레기, 미닝아웃 트렌드를 읽는 빠른 저희는 단순히 ip를 상품에 입히는 데서 끝나는 아니라 ip가 어떤 브랜드와 만나고 어떤 형태로 탄생해야 팬덤에게 새롭고 신선하게 다가갈 있을지를 중요하게 보고 그래서 희소성 높은 한정 발매 상품을 제안하는 리미티드 오더 limited order 서비스와 현재 브랜드와 크리에이터 29cm 3자가 협업한 상품을 "
+        },
+        {
+          "topic": "소비",
+          "topic_score": 46.64,
+          "growth_rate_pct": 0.0,
+          "source_coverage": [
+            "careet",
+            "wepick"
+          ],
+          "summary": "핵심표현: 세종대왕, 맥북, 던짐, ai, 환각, 할루시네이션 트렌드를 읽는 빠른 저희는 단순히 ip를 상품에 입히는 데서 끝나는 아니라 ip가 어떤 브랜드와 만나고 어떤 형태로 탄생해야 팬덤에게 새롭고 신선하게 다가갈 있을지를 중요하게 보고 그래서 희소성 높은 한정 발매 상품을 제안하는 리미티드 오더 limited order 서비스와 현재 브랜드와 크리에이터 29cm 3자가 협업한 상품을 "
+        }
+      ]
+    },
+    "stage5_final_output": {
+      "ad_candidate_keywords": [
+        {
+          "keyword": "릴스",
+          "topic_score": 60.72,
+          "growth_rate_pct": 0.0,
+          "source_coverage": [
+            "careet",
+            "gogumafarm",
+            "wepick"
+          ],
+          "confidence": 63.54,
+          "selection_reason": "cue_term"
+        },
+        {
+          "keyword": "굿즈",
+          "topic_score": 47.87,
+          "growth_rate_pct": 0.0,
+          "source_coverage": [
+            "careet",
+            "gogumafarm",
+            "wepick"
+          ],
+          "confidence": 53.9,
+          "selection_reason": "cue_term"
+        },
+        {
+          "keyword": "소비",
+          "topic_score": 46.64,
+          "growth_rate_pct": 0.0,
+          "source_coverage": [
+            "careet",
+            "wepick"
+          ],
+          "confidence": 47.98,
+          "selection_reason": "cue_term"
+        },
+        {
+          "keyword": "대란 굿즈",
+          "topic_score": 45.87,
+          "growth_rate_pct": 0.0,
+          "source_coverage": [
+            "careet",
+            "wepick"
+          ],
+          "confidence": 47.4,
+          "selection_reason": "cue_term"
+        },
+        {
+          "keyword": "메지루시 굿즈",
+          "topic_score": 45.87,
+          "growth_rate_pct": 0.0,
+          "source_coverage": [
+            "careet",
+            "wepick"
+          ],
+          "confidence": 47.4,
+          "selection_reason": "cue_term"
+        }
+      ],
+      "trend_keyword_quality": {
+        "total_topics": 14,
+        "accepted_topics": 5,
+        "rejected_topics": 9,
+        "rejected_reason_counts": {
+          "particle_phrase": 1,
+          "generic": 1,
+          "single_non_cue": 3,
+          "phrase_noise": 4
+        }
+      },
+      "source_health": {
+        "wepick": "ok",
+        "gogumafarm": "ok",
+        "careet": "ok",
+        "youtube": "disabled"
+      }
+    }
+  }
+}

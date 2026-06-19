@@ -1,0 +1,9 @@
+{
+  "schema_version": "v1",
+  "input_keyword": "goyuka card discount",
+  "lookback_days": 90,
+  "country": "KR",
+  "language": "ko",
+  "max_results": 10,
+  "include_youtube": true
+}

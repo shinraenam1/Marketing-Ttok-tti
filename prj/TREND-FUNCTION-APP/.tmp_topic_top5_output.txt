@@ -1,0 +1,278 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-06-19T07:36:59.083410+00:00",
+  "window_days": 90,
+  "source_health": {
+    "wepick": "empty",
+    "gogumafarm": "ok",
+    "careet": "ok",
+    "youtube": "disabled"
+  },
+  "topic_clusters_top5": [
+    {
+      "topic": "있어요",
+      "topic_score": 85.52,
+      "base_score": 76.02,
+      "surge_boost": 9.5,
+      "delta_score": 0.0,
+      "growth_rate_pct": 0.0,
+      "evidence_count": 11,
+      "recent_14d_count": 5,
+      "source_coverage": [
+        "careet",
+        "gogumafarm"
+      ],
+      "last_seen_at": "2026-06-30T00:00:00+00:00",
+      "summary": "트렌드를 읽는 가장 빠른 방법 그런데 이 말랑이 유행, 금세 식을 트렌드는 아닐 것으로 보여요. 현재 말랑이는 한국뿐만 아니라, 아시아와 북미를 포함한 전 세계에서 메가 트렌드로 부상하고 있거든요. 중국과 일본 등 해외 번화가에는 스퀴시 폴리우레탄 폼 등을 활용해 제작한 장난감으로, 말랑말랑하고 부드러운 촉감을 지님.",
+      "sample_contents": [
+        {
+          "source": "careet",
+          "title": "요즘 동묘 가면 30대들이 말랑이 만지면서 행복해 하고 있어요! 더 이상 애들 유행이 아니다! 전 세계가 만드는 ‘말랑이 경제’",
+          "url": "https://www.careet.net/1925",
+          "published_at": "2026-06-30T00:00:00+00:00",
+          "excerpt": "트렌드를 읽는 가장 빠른 방법"
+        },
+        {
+          "source": "careet",
+          "title": "리스펙 인터뷰 브랜드와 팬덤 사이의 ‘감각 차이’ 번역하는 게 저희의 역할이라 생각해요 29CM 기획팀에게 콜라보 시장의 생존법을 묻다",
+          "url": "https://www.careet.net/1913",
+          "published_at": "2026-06-29T00:00:00+00:00",
+          "excerpt": "트렌드를 읽는 가장 빠른 방법"
+        },
+        {
+          "source": "gogumafarm",
+          "title": "가짜 배달 앱부터 온라인 담타까지, 요즘 Z세대가 빠진 웹 사이트 21가지",
+          "url": "https://gogumafarm.kr/%ea%b0%80%ec%a7%9c-%eb%b0%b0%eb%8b%ac-%ec%95%b1%eb%b6%80%ed%84%b0-%ec%98%a8%eb%9d%bc%ec%9d%b8-%eb%8b%b4%ed%83%80%ea%b9%8c%ec%a7%80-%ec%9a%94%ec%a6%98-z%ec%84%b8%eb%8c%80%ea%b0%80-%eb%b9%a0%ec%a7%84/",
+          "published_at": "2026-06-21T00:00:00+00:00",
+          "excerpt": "가짜 배달 앱부터 온라인 담타까지, 요즘 Z세대가 빠진 웹 사이트 21가지 | 고구마팜"
+        },
+        {
+          "source": "gogumafarm",
+          "title": "일본부터 영국까지, 문화 차이를 콘텐츠로 만드는 글로벌 크리에이터 15인 총정리",
+          "url": "https://gogumafarm.kr/%ec%9d%bc%eb%b3%b8%eb%b6%80%ed%84%b0-%ec%98%81%ea%b5%ad%ea%b9%8c%ec%a7%80-%eb%ac%b8%ed%99%94-%ec%b0%a8%ec%9d%b4%eb%a5%bc-%ec%bd%98%ed%85%90%ec%b8%a0%eb%a1%9c-%eb%a7%8c%eb%93%9c%eb%8a%94-%ea%b8%80/",
+          "published_at": "2026-06-15T00:00:00+00:00",
+          "excerpt": "일본부터 영국까지, 문화 차이를 콘텐츠로 만드는 글로벌 크리에이터 15인 총정리 | 고구마팜"
+        },
+        {
+          "source": "gogumafarm",
+          "title": "알고리즘을 장악한 시니어 숏폼 크리에이터 15인 총정리",
+          "url": "https://gogumafarm.kr/%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98%ec%9d%84-%ec%9e%a5%ec%95%85%ed%95%9c-%ec%8b%9c%eb%8b%88%ec%96%b4-%ec%88%8f%ed%8f%bc-%ed%81%ac%eb%a6%ac%ec%97%90%ec%9d%b4%ed%84%b0-15%ec%9d%b8-%ec%b4%9d%ec%a0%95/",
+          "published_at": "2026-06-15T00:00:00+00:00",
+          "excerpt": "알고리즘을 장악한 시니어 숏폼 크리에이터 15인 총정리 | 고구마팜"
+        }
+      ]
+    },
+    {
+      "topic": "브랜드",
+      "topic_score": 84.54,
+      "base_score": 75.04,
+      "surge_boost": 9.5,
+      "delta_score": 0.0,
+      "growth_rate_pct": 0.0,
+      "evidence_count": 14,
+      "recent_14d_count": 5,
+      "source_coverage": [
+        "careet",
+        "gogumafarm"
+      ],
+      "last_seen_at": "2026-06-30T00:00:00+00:00",
+      "summary": "트렌드를 읽는 가장 빠른 방법 그런데 이 말랑이 유행, 금세 식을 트렌드는 아닐 것으로 보여요. 현재 말랑이는 한국뿐만 아니라, 아시아와 북미를 포함한 전 세계에서 메가 트렌드로 부상하고 있거든요. 중국과 일본 등 해외 번화가에는 스퀴시 폴리우레탄 폼 등을 활용해 제작한 장난감으로, 말랑말랑하고 부드러운 촉감을 지님.",
+      "sample_contents": [
+        {
+          "source": "careet",
+          "title": "요즘 동묘 가면 30대들이 말랑이 만지면서 행복해 하고 있어요! 더 이상 애들 유행이 아니다! 전 세계가 만드는 ‘말랑이 경제’",
+          "url": "https://www.careet.net/1925",
+          "published_at": "2026-06-30T00:00:00+00:00",
+          "excerpt": "트렌드를 읽는 가장 빠른 방법"
+        },
+        {
+          "source": "careet",
+          "title": "리스펙 인터뷰 브랜드와 팬덤 사이의 ‘감각 차이’ 번역하는 게 저희의 역할이라 생각해요 29CM 기획팀에게 콜라보 시장의 생존법을 묻다",
+          "url": "https://www.careet.net/1913",
+          "published_at": "2026-06-29T00:00:00+00:00",
+          "excerpt": "트렌드를 읽는 가장 빠른 방법"
+        },
+        {
+          "source": "careet",
+          "title": "일 잘한 브랜드 담당자님 요즘 눈여겨보고 있는 브랜드 알려주세요! 업계 관계자 내부 정보 입수! 곧 뜰 예정인 국내외 브랜드 17",
+          "url": "https://www.careet.net/1920",
+          "published_at": "2026-06-17T00:00:00+00:00",
+          "excerpt": "트렌드를 읽는 가장 빠른 방법"
+        },
+        {
+          "source": "gogumafarm",
+          "title": "일본부터 영국까지, 문화 차이를 콘텐츠로 만드는 글로벌 크리에이터 15인 총정리",
+          "url": "https://gogumafarm.kr/%ec%9d%bc%eb%b3%b8%eb%b6%80%ed%84%b0-%ec%98%81%ea%b5%ad%ea%b9%8c%ec%a7%80-%eb%ac%b8%ed%99%94-%ec%b0%a8%ec%9d%b4%eb%a5%bc-%ec%bd%98%ed%85%90%ec%b8%a0%eb%a1%9c-%eb%a7%8c%eb%93%9c%eb%8a%94-%ea%b8%80/",
+          "published_at": "2026-06-15T00:00:00+00:00",
+          "excerpt": "일본부터 영국까지, 문화 차이를 콘텐츠로 만드는 글로벌 크리에이터 15인 총정리 | 고구마팜"
+        },
+        {
+          "source": "gogumafarm",
+          "title": "알고리즘을 장악한 시니어 숏폼 크리에이터 15인 총정리",
+          "url": "https://gogumafarm.kr/%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98%ec%9d%84-%ec%9e%a5%ec%95%85%ed%95%9c-%ec%8b%9c%eb%8b%88%ec%96%b4-%ec%88%8f%ed%8f%bc-%ed%81%ac%eb%a6%ac%ec%97%90%ec%9d%b4%ed%84%b0-15%ec%9d%b8-%ec%b4%9d%ec%a0%95/",
+          "published_at": "2026-06-15T00:00:00+00:00",
+          "excerpt": "알고리즘을 장악한 시니어 숏폼 크리에이터 15인 총정리 | 고구마팜"
+        }
+      ]
+    },
+    {
+      "topic": "있는",
+      "topic_score": 83.07,
+      "base_score": 73.57,
+      "surge_boost": 9.5,
+      "delta_score": 0.0,
+      "growth_rate_pct": 0.0,
+      "evidence_count": 13,
+      "recent_14d_count": 5,
+      "source_coverage": [
+        "careet",
+        "gogumafarm"
+      ],
+      "last_seen_at": "2026-06-30T00:00:00+00:00",
+      "summary": "트렌드를 읽는 가장 빠른 방법 그런데 이 말랑이 유행, 금세 식을 트렌드는 아닐 것으로 보여요. 현재 말랑이는 한국뿐만 아니라, 아시아와 북미를 포함한 전 세계에서 메가 트렌드로 부상하고 있거든요. 중국과 일본 등 해외 번화가에는 스퀴시 폴리우레탄 폼 등을 활용해 제작한 장난감으로, 말랑말랑하고 부드러운 촉감을 지님.",
+      "sample_contents": [
+        {
+          "source": "careet",
+          "title": "요즘 동묘 가면 30대들이 말랑이 만지면서 행복해 하고 있어요! 더 이상 애들 유행이 아니다! 전 세계가 만드는 ‘말랑이 경제’",
+          "url": "https://www.careet.net/1925",
+          "published_at": "2026-06-30T00:00:00+00:00",
+          "excerpt": "트렌드를 읽는 가장 빠른 방법"
+        },
+        {
+          "source": "gogumafarm",
+          "title": "가짜 배달 앱부터 온라인 담타까지, 요즘 Z세대가 빠진 웹 사이트 21가지",
+          "url": "https://gogumafarm.kr/%ea%b0%80%ec%a7%9c-%eb%b0%b0%eb%8b%ac-%ec%95%b1%eb%b6%80%ed%84%b0-%ec%98%a8%eb%9d%bc%ec%9d%b8-%eb%8b%b4%ed%83%80%ea%b9%8c%ec%a7%80-%ec%9a%94%ec%a6%98-z%ec%84%b8%eb%8c%80%ea%b0%80-%eb%b9%a0%ec%a7%84/",
+          "published_at": "2026-06-21T00:00:00+00:00",
+          "excerpt": "가짜 배달 앱부터 온라인 담타까지, 요즘 Z세대가 빠진 웹 사이트 21가지 | 고구마팜"
+        },
+        {
+          "source": "careet",
+          "title": "일 잘한 브랜드 담당자님 요즘 눈여겨보고 있는 브랜드 알려주세요! 업계 관계자 내부 정보 입수! 곧 뜰 예정인 국내외 브랜드 17",
+          "url": "https://www.careet.net/1920",
+          "published_at": "2026-06-17T00:00:00+00:00",
+          "excerpt": "트렌드를 읽는 가장 빠른 방법"
+        },
+        {
+          "source": "gogumafarm",
+          "title": "일본부터 영국까지, 문화 차이를 콘텐츠로 만드는 글로벌 크리에이터 15인 총정리",
+          "url": "https://gogumafarm.kr/%ec%9d%bc%eb%b3%b8%eb%b6%80%ed%84%b0-%ec%98%81%ea%b5%ad%ea%b9%8c%ec%a7%80-%eb%ac%b8%ed%99%94-%ec%b0%a8%ec%9d%b4%eb%a5%bc-%ec%bd%98%ed%85%90%ec%b8%a0%eb%a1%9c-%eb%a7%8c%eb%93%9c%eb%8a%94-%ea%b8%80/",
+          "published_at": "2026-06-15T00:00:00+00:00",
+          "excerpt": "일본부터 영국까지, 문화 차이를 콘텐츠로 만드는 글로벌 크리에이터 15인 총정리 | 고구마팜"
+        },
+        {
+          "source": "gogumafarm",
+          "title": "알고리즘을 장악한 시니어 숏폼 크리에이터 15인 총정리",
+          "url": "https://gogumafarm.kr/%ec%95%8c%ea%b3%a0%eb%a6%ac%ec%a6%98%ec%9d%84-%ec%9e%a5%ec%95%85%ed%95%9c-%ec%8b%9c%eb%8b%88%ec%96%b4-%ec%88%8f%ed%8f%bc-%ed%81%ac%eb%a6%ac%ec%97%90%ec%9d%b4%ed%84%b0-15%ec%9d%b8-%ec%b4%9d%ec%a0%95/",
+          "published_at": "2026-06-15T00:00:00+00:00",
+          "excerpt": "알고리즘을 장악한 시니어 숏폼 크리에이터 15인 총정리 | 고구마팜"
+        }
+      ]
+    },
+    {
+      "topic": "있습니다",
+      "topic_score": 71.28,
+      "base_score": 61.78,
+      "surge_boost": 9.5,
+      "delta_score": 0.0,
+      "growth_rate_pct": 0.0,
+      "evidence_count": 13,
+      "recent_14d_count": 5,
+      "source_coverage": [
+        "careet",
+        "gogumafarm"
+      ],
+      "last_seen_at": "2026-06-30T00:00:00+00:00",
+      "summary": "트렌드를 읽는 가장 빠른 방법 그런데 이 말랑이 유행, 금세 식을 트렌드는 아닐 것으로 보여요. 현재 말랑이는 한국뿐만 아니라, 아시아와 북미를 포함한 전 세계에서 메가 트렌드로 부상하고 있거든요. 중국과 일본 등 해외 번화가에는 스퀴시 폴리우레탄 폼 등을 활용해 제작한 장난감으로, 말랑말랑하고 부드러운 촉감을 지님.",
+      "sample_contents": [
+        {
+          "source": "careet",
+          "title": "요즘 동묘 가면 30대들이 말랑이 만지면서 행복해 하고 있어요! 더 이상 애들 유행이 아니다! 전 세계가 만드는 ‘말랑이 경제’",
+          "url": "https://www.careet.net/1925",
+          "published_at": "2026-06-30T00:00:00+00:00",
+          "excerpt": "트렌드를 읽는 가장 빠른 방법"
+        },
+        {
+          "source": "careet",
+          "title": "리스펙 인터뷰 브랜드와 팬덤 사이의 ‘감각 차이’ 번역하는 게 저희의 역할이라 생각해요 29CM 기획팀에게 콜라보 시장의 생존법을 묻다",
+          "url": "https://www.careet.net/1913",
+          "published_at": "2026-06-29T00:00:00+00:00",
+          "excerpt": "트렌드를 읽는 가장 빠른 방법"
+        },
+        {
+          "source": "gogumafarm",
+          "title": "가짜 배달 앱부터 온라인 담타까지, 요즘 Z세대가 빠진 웹 사이트 21가지",
+          "url": "https://gogumafarm.kr/%ea%b0%80%ec%a7%9c-%eb%b0%b0%eb%8b%ac-%ec%95%b1%eb%b6%80%ed%84%b0-%ec%98%a8%eb%9d%bc%ec%9d%b8-%eb%8b%b4%ed%83%80%ea%b9%8c%ec%a7%80-%ec%9a%94%ec%a6%98-z%ec%84%b8%eb%8c%80%ea%b0%80-%eb%b9%a0%ec%a7%84/",
+          "published_at": "2026-06-21T00:00:00+00:00",
+          "excerpt": "가짜 배달 앱부터 온라인 담타까지, 요즘 Z세대가 빠진 웹 사이트 21가지 | 고구마팜"
+        },
+        {
+          "source": "careet",
+          "title": "유행중 2026.06.19 북마크 20대가 옥반지를 찾는다고? BTS 픽 패션템부터 글로벌 유행템까지",
+          "url": "https://www.careet.net/1930",
+          "published_at": "2026-06-19T00:00:00+00:00",
+          "excerpt": "트렌드를 읽는 가장 빠른 방법"
+        },
+        {
+          "source": "careet",
+          "title": "일 잘한 브랜드 담당자님 요즘 눈여겨보고 있는 브랜드 알려주세요! 업계 관계자 내부 정보 입수! 곧 뜰 예정인 국내외 브랜드 17",
+          "url": "https://www.careet.net/1920",
+          "published_at": "2026-06-17T00:00:00+00:00",
+          "excerpt": "트렌드를 읽는 가장 빠른 방법"
+        }
+      ]
+    },
+    {
+      "topic": "가장",
+      "topic_score": 69.8,
+      "base_score": 60.3,
+      "surge_boost": 9.5,
+      "delta_score": 0.0,
+      "growth_rate_pct": 0.0,
+      "evidence_count": 17,
+      "recent_14d_count": 5,
+      "source_coverage": [
+        "careet",
+        "gogumafarm"
+      ],
+      "last_seen_at": "2026-06-30T00:00:00+00:00",
+      "summary": "트렌드를 읽는 가장 빠른 방법 그런데 이 말랑이 유행, 금세 식을 트렌드는 아닐 것으로 보여요. 현재 말랑이는 한국뿐만 아니라, 아시아와 북미를 포함한 전 세계에서 메가 트렌드로 부상하고 있거든요. 중국과 일본 등 해외 번화가에는 스퀴시 폴리우레탄 폼 등을 활용해 제작한 장난감으로, 말랑말랑하고 부드러운 촉감을 지님.",
+      "sample_contents": [
+        {
+          "source": "careet",
+          "title": "요즘 동묘 가면 30대들이 말랑이 만지면서 행복해 하고 있어요! 더 이상 애들 유행이 아니다! 전 세계가 만드는 ‘말랑이 경제’",
+          "url": "https://www.careet.net/1925",
+          "published_at": "2026-06-30T00:00:00+00:00",
+          "excerpt": "트렌드를 읽는 가장 빠른 방법"
+        },
+        {
+          "source": "careet",
+          "title": "리스펙 인터뷰 브랜드와 팬덤 사이의 ‘감각 차이’ 번역하는 게 저희의 역할이라 생각해요 29CM 기획팀에게 콜라보 시장의 생존법을 묻다",
+          "url": "https://www.careet.net/1913",
+          "published_at": "2026-06-29T00:00:00+00:00",
+          "excerpt": "트렌드를 읽는 가장 빠른 방법"
+        },
+        {
+          "source": "gogumafarm",
+          "title": "가짜 배달 앱부터 온라인 담타까지, 요즘 Z세대가 빠진 웹 사이트 21가지",
+          "url": "https://gogumafarm.kr/%ea%b0%80%ec%a7%9c-%eb%b0%b0%eb%8b%ac-%ec%95%b1%eb%b6%80%ed%84%b0-%ec%98%a8%eb%9d%bc%ec%9d%b8-%eb%8b%b4%ed%83%80%ea%b9%8c%ec%a7%80-%ec%9a%94%ec%a6%98-z%ec%84%b8%eb%8c%80%ea%b0%80-%eb%b9%a0%ec%a7%84/",
+          "published_at": "2026-06-21T00:00:00+00:00",
+          "excerpt": "가짜 배달 앱부터 온라인 담타까지, 요즘 Z세대가 빠진 웹 사이트 21가지 | 고구마팜"
+        },
+        {
+          "source": "careet",
+          "title": "유행중 2026.06.19 북마크 20대가 옥반지를 찾는다고? BTS 픽 패션템부터 글로벌 유행템까지",
+          "url": "https://www.careet.net/1930",
+          "published_at": "2026-06-19T00:00:00+00:00",
+          "excerpt": "트렌드를 읽는 가장 빠른 방법"
+        },
+        {
+          "source": "careet",
+          "title": "일 잘한 브랜드 담당자님 요즘 눈여겨보고 있는 브랜드 알려주세요! 업계 관계자 내부 정보 입수! 곧 뜰 예정인 국내외 브랜드 17",
+          "url": "https://www.careet.net/1920",
+          "published_at": "2026-06-17T00:00:00+00:00",
+          "excerpt": "트렌드를 읽는 가장 빠른 방법"
+        }
+      ]
+    }
+  ]
+}

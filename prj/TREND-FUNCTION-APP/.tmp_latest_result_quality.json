@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-06-19T07:56:01.346965+00:00",
+  "window_days": 90,
+  "source_health": {
+    "wepick": "empty",
+    "gogumafarm": "ok",
+    "careet": "ok",
+    "youtube": "disabled"
+  },
+  "ad_candidate_keywords": [
+    {
+      "keyword": "말랑이 경제",
+      "topic_score": 68.92,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet"
+      ],
+      "confidence": 59.69,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "주술 회전샷",
+      "topic_score": 63.18,
+      "growth_rate_pct": 100.0,
+      "source_coverage": [
+        "gogumafarm"
+      ],
+      "confidence": 60.38,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "릴스",
+      "topic_score": 58.18,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "gogumafarm"
+      ],
+      "confidence": 51.63,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "크리에이터 15인",
+      "topic_score": 55.98,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "gogumafarm"
+      ],
+      "confidence": 46.98,
+      "selection_reason": "multiword_phrase"
+    },
+    {
+      "keyword": "마케팅 레퍼런스",
+      "topic_score": 52.09,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "gogumafarm"
+      ],
+      "confidence": 44.07,
+      "selection_reason": "multiword_phrase"
+    },
+    {
+      "keyword": "굿즈",
+      "topic_score": 51.37,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "gogumafarm"
+      ],
+      "confidence": 51.53,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "대란 굿즈",
+      "topic_score": 49.87,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "gogumafarm"
+      ],
+      "confidence": 50.4,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "메지루시 굿즈",
+      "topic_score": 48.37,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "gogumafarm"
+      ],
+      "confidence": 49.28,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "챌린지",
+      "topic_score": 45.18,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "gogumafarm"
+      ],
+      "confidence": 46.88,
+      "selection_reason": "cue_term"
+    }
+  ],
+  "trend_keyword_quality": {
+    "total_topics": 10,
+    "accepted_topics": 9,
+    "rejected_topics": 1,
+    "rejected_reason_counts": {
+      "generic": 1
+    }
+  }
+}

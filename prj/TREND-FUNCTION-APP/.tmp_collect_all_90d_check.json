@@ -1,0 +1,18 @@
+{
+  "source_health": {
+    "wepick": "ok",
+    "gogumafarm": "ok",
+    "careet": "ok",
+    "youtube": "disabled"
+  },
+  "collection_config": {
+    "lookback_days": 90,
+    "collect_all_recent": true,
+    "max_articles_per_source": null
+  },
+  "doc_counts": {
+    "wepick": 489,
+    "gogumafarm": 12,
+    "careet": 9
+  }
+}

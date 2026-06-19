@@ -1,0 +1,68 @@
+{
+  "source_health": {
+    "wepick": "ok",
+    "gogumafarm": "ok",
+    "careet": "ok",
+    "youtube": "disabled"
+  },
+  "ad_candidate_keywords": [
+    {
+      "keyword": "릴스",
+      "topic_score": 56.68,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "gogumafarm",
+        "wepick"
+      ],
+      "confidence": 60.51,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "굿즈",
+      "topic_score": 47.87,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "gogumafarm",
+        "wepick"
+      ],
+      "confidence": 53.9,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "소비",
+      "topic_score": 46.64,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "wepick"
+      ],
+      "confidence": 47.98,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "메지루시 굿즈",
+      "topic_score": 45.87,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "wepick"
+      ],
+      "confidence": 47.4,
+      "selection_reason": "cue_term"
+    }
+  ],
+  "trend_keyword_quality": {
+    "total_topics": 15,
+    "accepted_topics": 4,
+    "rejected_topics": 11,
+    "rejected_reason_counts": {
+      "single_non_cue": 3,
+      "particle_phrase": 1,
+      "date_like": 1,
+      "phrase_noise": 5,
+      "generic": 1
+    }
+  }
+}
