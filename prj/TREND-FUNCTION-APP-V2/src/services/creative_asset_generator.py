@@ -89,7 +89,7 @@ class CreativeAssetGenerator:
         video_instructions = (
             "\n\n[VIDEO MODE]\n"
             "위 콘셉트와 메시지는 그대로 유지하고, 반드시 영상 광고용으로 제작하세요. "
-            "5~8초 분량, 장면 전환이 있는 시네마틱 모션, 카메라 무빙, 텍스트 오버레이, "
+            "영상길이 8초, 장면 전환이 있는 시네마틱 모션, 카메라 무빙, 텍스트 오버레이, "
             "브랜드 컬러 일관성, 마지막 1초 CTA 장면을 포함하세요."
         )
         return f"{prompt}{video_instructions}"
