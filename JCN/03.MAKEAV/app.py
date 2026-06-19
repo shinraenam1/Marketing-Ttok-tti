@@ -26,7 +26,7 @@ class SoraConfig:
     timeout_seconds: int = 600
 
 
-ALLOWED_SECONDS = {"4", "8", "12"}
+ALLOWED_SECONDS = {"8"}
 
 
 def load_config() -> SoraConfig:

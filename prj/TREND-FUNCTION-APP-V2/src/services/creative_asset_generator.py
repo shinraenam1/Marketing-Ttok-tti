@@ -46,7 +46,7 @@ class CreativeAssetGenerator:
         self.video_api_key = os.getenv("AZURE_OPENAI_API_KEY", "").strip() or self.openai_api_key
         self.video_model = os.getenv("AZURE_SORA_DEPLOYMENT", "sora-2").strip() or "sora-2"
         self.video_size = os.getenv("VIDEO_SIZE", "1280x720").strip() or "1280x720"
-        self.video_seconds = os.getenv("VIDEO_SECONDS", "8").strip() or "8"
+        self.video_seconds = "8"  # Hardcoded to 8 seconds - no environment override
         self.video_timeout = int(os.getenv("VIDEO_TIMEOUT_SECONDS", "180"))
         self.video_poll_interval = int(os.getenv("VIDEO_POLL_INTERVAL_SECONDS", "3"))
 
