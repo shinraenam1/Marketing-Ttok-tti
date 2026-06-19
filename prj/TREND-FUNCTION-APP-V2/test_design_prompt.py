@@ -3,7 +3,7 @@
 
 import json
 import sys
-from src.services.design_prompt_builder import DesignPromptBuilder
+from src.services.design_prompt_module import DesignPromptModule
 
 sample_payload = {
     "primary_keywords": {
@@ -25,8 +25,8 @@ if __name__ == "__main__":
     print("\n입력값:")
     print(json.dumps(sample_payload, indent=2, ensure_ascii=False))
     print("\n처리 중...")
-    builder = DesignPromptBuilder()
-    result = builder.generate(sample_payload)
+    module = DesignPromptModule()
+    result = module.generate(sample_payload)
     print("\n출력값:")
     print(json.dumps(result, indent=2, ensure_ascii=False))
     print("\n생성된 프롬프트:")
