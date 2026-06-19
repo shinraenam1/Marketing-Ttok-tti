@@ -1,0 +1,6 @@
+.venv
+.vscode
+.azurite
+__pycache__
+Dockerfile
+.dockerignore

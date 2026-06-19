@@ -1,0 +1,97 @@
+{
+    "properties":  {
+                       "parameters":  {
+
+                                      },
+                       "definition":  {
+                                          "triggers":  {
+                                                           "Recurrence":  {
+                                                                              "type":  "Recurrence",
+                                                                              "recurrence":  {
+                                                                                                 "frequency":  "Minute",
+                                                                                                 "interval":  30,
+                                                                                                 "timeZone":  "UTC"
+                                                                                             }
+                                                                          }
+                                                       },
+                                          "actions":  {
+                                                          "Invoke_youtube_trend_scraping":  {
+                                                                                                "runAfter":  {
+
+                                                                                                             },
+                                                                                                "type":  "Http",
+                                                                                                "inputs":  {
+                                                                                                               "method":  "POST",
+                                                                                                               "body":  {
+
+                                                                                                                        },
+                                                                                                               "headers":  {
+                                                                                                                               "x-functions-key":  "YOUR_AZURE_FUNCTION_KEY",
+                                                                                                                               "Content-Type":  "application/json"
+                                                                                                                           },
+                                                                                                               "uri":  "https://marketing-ttok-tti-functionappv2-bxayc6f7b4f5fhg0.swedencentral-01.azurewebsites.net/api/youtube_trend_scraping"
+                                                                                                           }
+                                                                                            },
+                                                          "Invoke_etc_event_scraping":  {
+                                                                                            "runAfter":  {
+
+                                                                                                         },
+                                                                                            "type":  "Http",
+                                                                                            "inputs":  {
+                                                                                                           "method":  "POST",
+                                                                                                           "body":  {
+
+                                                                                                                    },
+                                                                                                           "headers":  {
+                                                                                                                           "x-functions-key":  "YOUR_AZURE_FUNCTION_KEY",
+                                                                                                                           "Content-Type":  "application/json"
+                                                                                                                       },
+                                                                                                           "uri":  "https://marketing-ttok-tti-functionappv2-bxayc6f7b4f5fhg0.swedencentral-01.azurewebsites.net/api/etc_event_scraping"
+                                                                                                       }
+                                                                                        },
+                                                          "Compose_scraping_results":  {
+                                                                                           "runAfter":  {
+                                                                                                            "Invoke_etc_event_scraping":  [
+                                                                                                                                              "Succeeded"
+                                                                                                                                          ],
+                                                                                                            "Invoke_youtube_trend_scraping":  [
+                                                                                                                                                  "Succeeded"
+                                                                                                                                              ]
+                                                                                                        },
+                                                                                           "type":  "Compose",
+                                                                                           "inputs":  {
+                                                                                                          "card_events":  "@body(\u0027Invoke_etc_event_scraping\u0027)",
+                                                                                                          "youtube_trends":  "@body(\u0027Invoke_youtube_trend_scraping\u0027)"
+                                                                                                      }
+                                                                                       },
+                                                          "Invoke_analyze_result":  {
+                                                                                        "runAfter":  {
+                                                                                                         "Compose_scraping_results":  [
+                                                                                                                                          "Succeeded"
+                                                                                                                                      ]
+                                                                                                     },
+                                                                                        "type":  "Http",
+                                                                                        "inputs":  {
+                                                                                                       "method":  "POST",
+                                                                                                       "body":  "@outputs(\u0027Compose_scraping_results\u0027)",
+                                                                                                       "headers":  {
+                                                                                                                       "x-functions-key":  "YOUR_AZURE_FUNCTION_KEY",
+                                                                                                                       "Content-Type":  "application/json"
+                                                                                                                   },
+                                                                                                       "uri":  "https://marketing-ttok-tti-functionappv2-bxayc6f7b4f5fhg0.swedencentral-01.azurewebsites.net/api/analyze_result"
+                                                                                                   }
+                                                                                    }
+                                                      },
+                                          "contentVersion":  "1.0.0.0",
+                                          "outputs":  {
+
+                                                      },
+                                          "parameters":  {
+
+                                                         },
+                                          "$schema":  "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#"
+                                      },
+                       "state":  "Enabled"
+                   },
+    "location":  "swedencentral"
+}

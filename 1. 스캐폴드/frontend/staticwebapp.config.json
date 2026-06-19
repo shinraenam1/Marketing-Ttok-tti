@@ -1,0 +1,9 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html"
+  },
+  "mimeTypes": {
+    ".json": "application/json",
+    ".wasm": "application/wasm"
+  }
+}
