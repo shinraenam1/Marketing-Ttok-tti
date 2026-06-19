@@ -1,0 +1,42 @@
+.keyword-cloud-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.keyword-cloud-canvas {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.cloud-word {
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  user-select: none;
+  font-family: inherit;
+}
+
+.cloud-word:hover {
+  opacity: 0.75;
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.cloud-legend {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.78rem;
+  opacity: 0.65;
+  margin-top: 0.25rem;
+}
+
+.legend-meme {
+  color: #f59e0b;
+}
+
+.legend-card {
+  color: #00d4ff;
+}

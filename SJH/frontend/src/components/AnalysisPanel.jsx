@@ -1,4 +1,5 @@
 import React from 'react'
+import KeywordCloud from './KeywordCloud'
 import './AnalysisPanel.css'
 
 function AnalysisPanel({ analysisSummary, cardEvents, youtubeTrends }) {
@@ -49,7 +50,13 @@ function AnalysisPanel({ analysisSummary, cardEvents, youtubeTrends }) {
   return (
     <div className="analysis-panel">
       <div className="analysis-header">
-        <h3>📊 [1-2단계] 정기 트렌드 & 타사 동향 리포트 (08:00 AM 실행 완료)</h3>
+        <h3>📊 [1-2단계] 정기 트렌드 &amp; 타사 동향 리포트 (08:00 AM 실행 완료)</h3>
+      </div>
+
+      {/* 키워드 클라우드 */}
+      <div className="insight-section cloud-section">
+        <h4>☁️ 키워드 클라우드</h4>
+        <KeywordCloud cardEvents={cardEvents} youtubeTrends={youtubeTrends} />
       </div>
 
       <div className="insight-grid">

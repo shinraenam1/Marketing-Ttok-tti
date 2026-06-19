@@ -5,27 +5,6 @@ import UserInputForm from './components/UserInputForm'
 import PromotionalContent from './components/PromotionalContent'
 import './App.css'
 
-const DEFAULT_CARD_EVENTS = {
-  scraped_at: new Date().toISOString(),
-  total: 224,
-  by_category: [
-    { category: '주유/교통', count: 93 },
-    { category: '생활/구독', count: 51 },
-    { category: '쇼핑', count: 37 }
-  ],
-  events: []
-}
-
-const DEFAULT_YOUTUBE_TRENDS = {
-  meme: '거제 야호',
-  total: 14,
-  trends: [
-    { keyword: '거제 야호', meme_score: 71, growth_rate_pct: 100 },
-    { keyword: '주유 챌린지', meme_score: 65, growth_rate_pct: 100 },
-    { keyword: '캐치캐치 밈', meme_score: 53, growth_rate_pct: 100 }
-  ]
-}
-
 function App() {
   const [reportId, setReportId] = useState(null)
   const [analysisSummary, setAnalysisSummary] = useState('')
@@ -70,28 +49,48 @@ function App() {
   )
 
   const normalizeCardEvents = (value) => {
-    if (!value || isHtmlLike(value)) {
-      return DEFAULT_CARD_EVENTS
-    }
-
+    if (!value || isHtmlLike(value)) return null
     const byCategory = Array.isArray(value.by_category) ? value.by_category : []
-    if (byCategory.length === 0) {
-      return DEFAULT_CARD_EVENTS
-    }
-
+    if (byCategory.length === 0) return null
     return value
   }
 
+  // 응답 형식 정규화:
+  //   1. { trends: [{keyword, meme_score}] }  ← 기본 형식
+  //   2. { meme_trends: [{keyword, meme_score}] }  ← trends/meme 응답
+  //   3. { trending_memes: [{meme, trend_score}] }  ← trends/trending-meme-final 응답
   const normalizeYoutubeTrends = (value) => {
-    if (!value || isHtmlLike(value)) {
-      return DEFAULT_YOUTUBE_TRENDS
+    if (!value || isHtmlLike(value)) return null
+
+    // 형식 2: meme_trends 필드
+    if (Array.isArray(value.meme_trends) && value.meme_trends.length > 0) {
+      return {
+        meme: value.meme_trends[0]?.keyword || '',
+        total: value.meme_trends.length,
+        trends: value.meme_trends.map(m => ({
+          keyword: m.keyword,
+          meme_score: m.meme_score || 0,
+          growth_rate_pct: m.growth_rate_pct || 0,
+        })),
+      }
     }
 
+    // 형식 3: trending_memes 필드
+    if (Array.isArray(value.trending_memes) && value.trending_memes.length > 0) {
+      return {
+        meme: value.trending_memes[0]?.meme || '',
+        total: value.trending_memes.length,
+        trends: value.trending_memes.map(m => ({
+          keyword: m.meme || m.keyword || '',
+          meme_score: m.trend_score || 0,
+          growth_rate_pct: 100,
+        })),
+      }
+    }
+
+    // 형식 1: 기본 trends 필드
     const trends = Array.isArray(value.trends) ? value.trends : []
-    if (trends.length === 0) {
-      return DEFAULT_YOUTUBE_TRENDS
-    }
-
+    if (trends.length === 0) return null
     return value
   }
 
@@ -264,7 +263,14 @@ function App() {
             </div>
             
             {error && <div className="error-banner">{error}</div>}
-            
+
+            {loading && !cardEvents && !youtubeTrends && (
+              <div className="loading-panel">
+                <div className="loading-spinner" />
+                <p>스크래핑 데이터 로드 중...</p>
+              </div>
+            )}
+
             {(cardEvents || youtubeTrends) && (
               <AnalysisPanel 
                 analysisSummary={analysisSummary}
