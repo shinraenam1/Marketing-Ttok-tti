@@ -6,6 +6,12 @@ import PromotionalContent from './components/PromotionalContent'
 import './App.css'
 
 function App() {
+  const CARD_CATEGORY_STOPWORDS = new Set([
+    '카드', '혜택', '이벤트', '프로모션', '할인', '적립', '결제', '최대', '요약', '정리',
+    'this', 'month', 'where', 'is', 'the', 'biggest', 'real', 'discount', 'benefit', 'summary',
+    'in', 'one', 'view', 'for', 'and', 'with', 'from', 'to', 'of', 'a', 'an', 'vs'
+  ])
+
   const [reportId, setReportId] = useState(null)
   const [analysisSummary, setAnalysisSummary] = useState('')
   const [memeExplanation, setMemeExplanation] = useState('')
@@ -49,6 +55,21 @@ function App() {
     }
   }
 
+  const callFunctionWithRouteFallback = async (routes, payload = {}) => {
+    let lastError = null
+    for (const route of routes) {
+      try {
+        return await callFunction(route, payload)
+      } catch (err) {
+        lastError = err
+        if (err?.response?.status !== 404) {
+          throw err
+        }
+      }
+    }
+    throw lastError || new Error('함수 엔드포인트 호출에 실패했습니다.')
+  }
+
   const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
   const isHtmlLike = (value) => (
@@ -57,9 +78,70 @@ function App() {
 
   const normalizeCardEvents = (value) => {
     if (!value || isHtmlLike(value)) return null
+
     const byCategory = Array.isArray(value.by_category) ? value.by_category : []
-    if (byCategory.length === 0) return null
-    return value
+    if (byCategory.length > 0) return value
+
+    // V2 응답: card_event_insights + related_contents 를 기존 by_category/events 형식으로 변환
+    const relatedContents = Array.isArray(value.related_contents) ? value.related_contents : []
+    const sourceCounts = {}
+    const tokenCounts = {}
+
+    const addToken = (rawToken) => {
+      const token = (rawToken || '').trim().toLowerCase()
+      if (!token) return
+      if (token.length < 2) return
+      if (CARD_CATEGORY_STOPWORDS.has(token)) return
+      if (/^\d+$/.test(token)) return
+      tokenCounts[token] = (tokenCounts[token] || 0) + 1
+    }
+
+    const events = relatedContents.map((item, idx) => {
+      const source = item?.source || '기타'
+      sourceCounts[source] = (sourceCounts[source] || 0) + 1
+
+      const titleTokens = String(item?.title || '').split(/[^\p{L}\p{N}]+/u)
+      titleTokens.forEach(addToken)
+
+      const tags = Array.isArray(item?.tags) ? item.tags : []
+      tags.forEach(addToken)
+
+      return {
+        id: `${source}-${idx}`,
+        title: item?.title || '',
+        source,
+        url: item?.url || '',
+      }
+    })
+
+    let derivedByCategory = Object.entries(tokenCounts)
+      .map(([category, count]) => ({ category, count }))
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 10)
+
+    if (derivedByCategory.length === 0) {
+      derivedByCategory = Object.entries(sourceCounts)
+        .map(([category, count]) => ({ category, count }))
+        .sort((a, b) => b.count - a.count)
+        .slice(0, 10)
+    }
+
+    if (derivedByCategory.length === 0 && Array.isArray(value.card_event_insights)) {
+      derivedByCategory = value.card_event_insights
+        .slice(0, 10)
+        .map((insight, idx) => ({
+          category: (insight?.top_theme || '').trim() || `카드이벤트 ${idx + 1}`,
+          count: (insight?.recommended_angles?.length || 0) + (insight?.copy_seed?.length || 0) || 1,
+        }))
+    }
+
+    if (derivedByCategory.length === 0) return null
+
+    return {
+      by_category: derivedByCategory,
+      events,
+      schema_version: value.schema_version || 'v1',
+    }
   }
 
   // 응답 형식 정규화:
@@ -126,6 +208,29 @@ function App() {
     return `${topCategory} 이벤트 집중 구간에 '${topMeme}' 밈 키워드를 결합한 프로모션 메시지를 우선 집행하는 전략을 추천합니다.`
   }
 
+  const buildKeywordExplanationMaps = (etcData, ytData) => {
+    const memeMap = {}
+    const cardMap = {}
+
+    const memeTop = Array.isArray(ytData?.trends) ? ytData.trends.slice(0, 10) : []
+    memeTop.forEach((item) => {
+      const keyword = item?.keyword
+      if (!keyword) return
+      const score = Math.round(Number(item?.meme_score || 0))
+      memeMap[keyword] = `최근 확산 점수 ${score}로 반응이 빠르게 올라온 키워드입니다.`
+    })
+
+    const cardTop = Array.isArray(etcData?.by_category) ? etcData.by_category.slice(0, 10) : []
+    cardTop.forEach((item) => {
+      const category = item?.category
+      if (!category) return
+      const count = Number(item?.count || 0)
+      cardMap[category] = `최근 이벤트 언급 ${count}건으로 노출 빈도가 높은 카테고리입니다.`
+    })
+
+    return { memeMap, cardMap }
+  }
+
   const extractSummaryFromAnalyzeResponse = (analysisResult, etcData, ytData) => {
     if (typeof analysisResult === 'string') {
       return toOneLineSummary(analysisResult) || buildFallbackSummary(etcData, ytData)
@@ -167,8 +272,12 @@ function App() {
           setLoadingMessage(`스크래퍼 결과 대기 중... (${elapsedSec}s 경과)`)
 
           const [etcResponse, youtubeResponse] = await Promise.allSettled([
-            callFunction('etc_event_scraping'),
-            callFunction('youtube_trend_scraping')
+            callFunctionWithRouteFallback(['etc_event_scraping', 'trends/competitor-keyword']),
+            callFunctionWithRouteFallback([
+              'youtube_trend_scraping',
+              'trends/meme',
+              'trends/trending-meme-final',
+            ])
           ])
 
           if (etcResponse.status === 'fulfilled') {
@@ -192,10 +301,15 @@ function App() {
         setReportId(`live-${Date.now()}`)
         setCardEvents(etcData)
         setYoutubeTrends(ytData)
+        setAnalysisSummary(buildFallbackSummary(etcData, ytData))
+
+        const { memeMap, cardMap } = buildKeywordExplanationMaps(etcData, ytData)
+        setMemeKeywordExplanations(memeMap)
+        setCardKeywordExplanations(cardMap)
 
         // analyze_result 호출 - OpenAI 분석
         try {
-          const analysisResponse = await callFunction('analyze_result', {
+          const analysisResponse = await callFunctionWithRouteFallback(['analyze_result'], {
             card_events: etcData,
             youtube_trends: ytData
           })
@@ -261,14 +375,17 @@ function App() {
           benefits: [params.category, params.budget].filter(Boolean),
           conditions: [params.focus].filter(Boolean),
         },
-        trend_summary: selectedMemeKeyword?.explanation
-          ? [selectedMemeKeyword.explanation]
+        trend_summary: (selectedMemeKeyword?.explanation || selectedMemeKeyword?.keyword)
+          ? [selectedMemeKeyword.explanation || selectedMemeKeyword.keyword]
           : [],
-        event_summary: selectedCardKeyword?.explanation || '',
+        event_summary: selectedCardKeyword?.explanation || selectedCardKeyword?.category || '',
         free_input: params.free_input || '',
       }
 
-      const res = await callFunction('trends/design-prompt', payload)
+      const res = await callFunctionWithRouteFallback(
+        ['trends/design-prompt', 'design-prompt'],
+        payload
+      )
       const result = res.data || {}
       const generatedPrompt = result.prompt || ''
 
