@@ -389,6 +389,16 @@ function App() {
       const result = res.data || {}
       const generatedPrompt = result.prompt || ''
 
+      const assetRes = await callFunctionWithRouteFallback(
+        ['trends/creative-assets'],
+        {
+          prompt: generatedPrompt,
+          include_image: true,
+          include_video: true,
+        }
+      )
+      const assets = assetRes.data || {}
+
       console.log('=== [Step 3-4] 이미지 생성 프롬프트 ===')
       console.log(generatedPrompt)
       console.log('=== payload ===')
@@ -402,7 +412,10 @@ function App() {
       setPromotional({
         id: promotional_id,
         content: generatedPrompt,
-        timestamp: timestamp
+        timestamp: timestamp,
+        imageDataUrl: assets?.image?.data_url || '',
+        videoDataUrl: assets?.video?.data_url || '',
+        assetErrors: Array.isArray(assets?.errors) ? assets.errors : [],
       })
     } catch (err) {
       setError(err.message || '프롬프트 생성 실패')
@@ -532,6 +545,9 @@ function App() {
               <PromotionalContent 
                 content={promotional.content}
                 params={userParams}
+                imageDataUrl={promotional.imageDataUrl}
+                videoDataUrl={promotional.videoDataUrl}
+                assetErrors={promotional.assetErrors}
                 onReset={() => {
                   setPromotional(null)
                   setUserParams(null)

@@ -5,7 +5,8 @@ import azure.functions as func
 from src.services.trend_engine import TrendEngine
 
 
-app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
+# Frontend preview calls this API directly without exposing function keys.
+app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 engine = TrendEngine()
 
 
@@ -73,4 +74,11 @@ def trends_trending_meme_final(req: func.HttpRequest) -> func.HttpResponse:
 def trends_design_prompt(req: func.HttpRequest) -> func.HttpResponse:
     payload = _read_json(req)
     report = engine.generate_design_prompt(payload)
+    return _json_response(report)
+
+
+@app.route(route="trends/creative-assets", methods=["POST"])
+def trends_creative_assets(req: func.HttpRequest) -> func.HttpResponse:
+    payload = _read_json(req)
+    report = engine.generate_creative_assets(payload)
     return _json_response(report)

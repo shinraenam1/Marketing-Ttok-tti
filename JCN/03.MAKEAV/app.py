@@ -32,7 +32,7 @@ ALLOWED_SECONDS = {"4", "8", "12"}
 def load_config() -> SoraConfig:
     endpoint = os.getenv("AZURE_SORA_VIDEO_URL", "").strip().rstrip("/")
     if not endpoint:
-        endpoint = "https://testuser27-4790-resource.openai.azure.com/openai/v1/videos"
+        endpoint = "https://testuser27-4790-resource.cognitiveservices.azure.com/openai/v1/videos"
 
     api_key = os.getenv("AZURE_OPENAI_API_KEY", "").strip()
     if not api_key:
