@@ -1,16 +1,49 @@
 import './AnalysisPanel.css'
 
 function AnalysisPanel({ analysisSummary, cardEvents, youtubeTrends }) {
+  const topMemeTrends = Array.isArray(youtubeTrends?.trends)
+    ? [...youtubeTrends.trends]
+        .sort((a, b) => Number(b?.meme_score || 0) - Number(a?.meme_score || 0))
+        .slice(0, 3)
+    : []
+
+  const topCardCategories = Array.isArray(cardEvents?.by_category)
+    ? [...cardEvents.by_category]
+        .sort((a, b) => Number(b?.count || 0) - Number(a?.count || 0))
+        .slice(0, 3)
+    : []
+
+  const combinedSummaries = []
+  for (const category of topCardCategories) {
+    for (const meme of topMemeTrends) {
+      if (combinedSummaries.length >= 5) {
+        break
+      }
+
+      combinedSummaries.push(
+        `'${category.category}' 카테고리(${category.count}건) 이벤트와 '${meme.keyword}' 밈(점수 ${Math.round(meme.meme_score)})을 결합한 메시지를 우선 테스트하세요.`
+      )
+    }
+
+    if (combinedSummaries.length >= 5) {
+      break
+    }
+  }
+
+  const summaryItems = analysisSummary
+    ? [analysisSummary, ...combinedSummaries].slice(0, 5)
+    : combinedSummaries
+
   const memeItems = Array.isArray(youtubeTrends?.trends)
-    ? youtubeTrends.trends.slice(0, 5)
+    ? topMemeTrends
     : []
 
   const categoryItems = Array.isArray(cardEvents?.by_category)
-    ? cardEvents.by_category.slice(0, 5)
+    ? topCardCategories
     : []
 
   const fallbackSummary = '최다 이벤트 카테고리와 상위 밈 키워드를 결합한 메시지 중심 프로모션을 우선 실행하는 전략을 추천합니다.'
-  const summaryText = analysisSummary || fallbackSummary
+  const summaryText = summaryItems.length > 0 ? summaryItems : [fallbackSummary]
 
   return (
     <div className="analysis-panel">
@@ -53,8 +86,12 @@ function AnalysisPanel({ analysisSummary, cardEvents, youtubeTrends }) {
       </div>
 
       <div className="insight-section">
-        <h4>💡 [AI 마케터 분석 한줄 요약]</h4>
-        <p className="insight-text">{summaryText}</p>
+        <h4>💡 [조합 요약 데이터]</h4>
+        <ol className="summary-list">
+          {summaryText.map((item, idx) => (
+            <li key={`summary-${idx}`} className="insight-text">{item}</li>
+          ))}
+        </ol>
       </div>
     </div>
   )

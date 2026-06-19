@@ -115,6 +115,17 @@
   margin: 0;
 }
 
+.summary-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.summary-list .insight-text {
+  margin: 0;
+}
+
 @media (max-width: 1024px) {
   .insight-grid {
     grid-template-columns: 1fr;
