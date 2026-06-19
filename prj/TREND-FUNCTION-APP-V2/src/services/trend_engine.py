@@ -9,6 +9,7 @@ from typing import Dict, List, Optional
 
 from src.collectors.web_meme_collectors import WebMemeCollector
 from src.collectors.youtube_collector import YouTubeCollector
+from src.services.design_prompt_builder import DesignPromptBuilder
 from src.services.keyword_expander import expand_keyword
 from src.services.safety import analyze_text_risk, evaluate_contents_safety, safe_copy_suggestion
 from src.services.scoring import extract_meme_candidates, score_related_content, tokenize
@@ -104,8 +105,12 @@ class TrendEngine:
         self.web_collector = WebMemeCollector()
         self.youtube_collector = YouTubeCollector(api_key=os.getenv("YOUTUBE_API_KEY"))
         self.trending_meme_pipeline = TrendingMemePipeline(collector=self.web_collector)
+        self.design_prompt_builder = DesignPromptBuilder()
         self._snapshot_path = Path(__file__).resolve().parents[2] / "data" / "youtube_keyword_snapshot.json"
         self._site_topic_snapshot_path = Path(__file__).resolve().parents[2] / "data" / "site_topic_snapshot.json"
+
+    def generate_design_prompt(self, payload: dict) -> dict:
+        return self.design_prompt_builder.generate(payload)
 
     def generate_trending_meme_report(self, payload: dict) -> dict:
         return self.trending_meme_pipeline.run(payload)

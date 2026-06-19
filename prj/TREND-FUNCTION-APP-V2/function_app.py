@@ -67,3 +67,10 @@ def trends_trending_meme_final(req: func.HttpRequest) -> func.HttpResponse:
     payload = _read_json(req)
     report = engine.generate_trending_meme_report(payload)
     return _json_response(report)
+
+
+@app.route(route="trends/design-prompt", methods=["POST"])
+def trends_design_prompt(req: func.HttpRequest) -> func.HttpResponse:
+    payload = _read_json(req)
+    report = engine.generate_design_prompt(payload)
+    return _json_response(report)
