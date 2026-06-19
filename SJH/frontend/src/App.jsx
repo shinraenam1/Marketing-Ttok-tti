@@ -12,6 +12,8 @@ function App() {
   const [cardExplanation, setCardExplanation] = useState('')
   const [memeKeywordExplanations, setMemeKeywordExplanations] = useState({})
   const [cardKeywordExplanations, setCardKeywordExplanations] = useState({})
+  const [selectedMemeKeyword, setSelectedMemeKeyword] = useState(null)
+  const [selectedCardKeyword, setSelectedCardKeyword] = useState(null)
   const [cardEvents, setCardEvents] = useState(null)
   const [youtubeTrends, setYoutubeTrends] = useState(null)
   const [promotional, setPromotional] = useState(null)
@@ -252,6 +254,52 @@ function App() {
     setError(null)
     try {
       setUserParams(params)
+
+      const payload = {
+        primary_keywords: {
+          targets: [params.age, params.job].filter(Boolean),
+          benefits: [params.category, params.budget].filter(Boolean),
+          conditions: [params.focus].filter(Boolean),
+        },
+        trend_summary: selectedMemeKeyword?.explanation
+          ? [selectedMemeKeyword.explanation]
+          : [],
+        event_summary: selectedCardKeyword?.explanation || '',
+        free_input: params.free_input || '',
+      }
+
+      const res = await callFunction('trends/design-prompt', payload)
+      const result = res.data || {}
+      const generatedPrompt = result.prompt || ''
+
+      console.log('=== [Step 3-4] 이미지 생성 프롬프트 ===')
+      console.log(generatedPrompt)
+      console.log('=== payload ===')
+      console.log(JSON.stringify(payload, null, 2))
+      console.log('=== full response ===')
+      console.log(JSON.stringify(result, null, 2))
+
+      const promotional_id = Math.random().toString(36).substring(7)
+      const timestamp = new Date().toISOString()
+
+      setPromotional({
+        id: promotional_id,
+        content: generatedPrompt,
+        timestamp: timestamp
+      })
+    } catch (err) {
+      setError(err.message || '프롬프트 생성 실패')
+      console.error('프롬프트 생성 오류:', err)
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  const _handleGeneratePromotional_UNUSED = async (params) => {
+    setLoading(true)
+    setError(null)
+    try {
+      setUserParams(params)
       
       // Mock promotional content for demo
       const mockContent = `### 1. 배너 광고 (Banner Ad)
@@ -343,6 +391,10 @@ function App() {
                 cardExplanation={cardExplanation}
                 memeKeywordExplanations={memeKeywordExplanations}
                 cardKeywordExplanations={cardKeywordExplanations}
+                selectedMemeKeyword={selectedMemeKeyword}
+                selectedCardKeyword={selectedCardKeyword}
+                onMemeSelect={setSelectedMemeKeyword}
+                onCardSelect={setSelectedCardKeyword}
               />
             )}
           </section>
@@ -356,6 +408,8 @@ function App() {
               <UserInputForm 
                 onSubmit={handleGeneratePromotional}
                 loading={loading}
+                selectedMemeKeyword={selectedMemeKeyword}
+                selectedCardKeyword={selectedCardKeyword}
               />
             ) : (
               <PromotionalContent 

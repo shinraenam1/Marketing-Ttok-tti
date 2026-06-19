@@ -111,6 +111,46 @@
   margin: 0;
 }
 
+.keyword-clickable {
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.keyword-clickable:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateX(2px);
+}
+
+.keyword-selected {
+  background: rgba(255, 165, 0, 0.15);
+  border-left: 3px solid #f59e0b;
+  padding-left: 0.5rem;
+  border-radius: 4px;
+}
+
+.card-column .keyword-selected {
+  background: rgba(0, 212, 255, 0.1);
+  border-left: 3px solid #00d4ff;
+}
+
+.selected-badge {
+  margin-left: auto;
+  font-size: 0.7rem;
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.card-column .selected-badge {
+  color: #00d4ff;
+}
+
+.select-hint {
+  font-size: 0.72rem;
+  color: rgba(180, 180, 200, 0.7);
+  margin: 0.2rem 0 0.5rem;
+  font-style: italic;
+}
+
 @media (max-width: 1024px) {
   .keyword-analysis-grid {
     grid-template-columns: 1fr;

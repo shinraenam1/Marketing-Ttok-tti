@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import './UserInputForm.css'
 
-function UserInputForm({ onSubmit, loading }) {
+function UserInputForm({ onSubmit, loading, selectedMemeKeyword, selectedCardKeyword }) {
   const [form, setForm] = useState({
     age: '20-30대',
     job: '직장인',
     category: '패션',
     budget: '중간',
-    focus: '신규 고객'
+    focus: '신규 고객',
+    free_input: ''
   })
 
   const handleChange = (key, value) => {
@@ -21,6 +22,25 @@ function UserInputForm({ onSubmit, loading }) {
 
   return (
     <form className="user-form" onSubmit={handleSubmit}>
+
+      {/* 선택된 키워드 요약 */}
+      <div className="selected-keywords-summary">
+        <h4>선택된 키워드 (Step 1-2에서 클릭)</h4>
+        <div className="selected-keyword-row">
+          <span className="selected-label meme-label">소셜 트렌드</span>
+          {selectedMemeKeyword
+            ? <span className="selected-value">{selectedMemeKeyword.keyword} — {selectedMemeKeyword.explanation || '설명 없음'}</span>
+            : <span className="selected-empty">왼쪽 패널에서 소셜 급등 키워드를 클릭하세요</span>
+          }
+        </div>
+        <div className="selected-keyword-row">
+          <span className="selected-label card-label">카드 이벤트</span>
+          {selectedCardKeyword
+            ? <span className="selected-value">{selectedCardKeyword.category} — {selectedCardKeyword.explanation || '설명 없음'}</span>
+            : <span className="selected-empty">왼쪽 패널에서 카드 카테고리를 클릭하세요</span>
+          }
+        </div>
+      </div>
       <label>연령대
         <select value={form.age} onChange={(e) => handleChange('age', e.target.value)}>
           <option>10-20대</option>
@@ -74,8 +94,17 @@ function UserInputForm({ onSubmit, loading }) {
         </select>
       </label>
 
+      <label>추가 요청사항 (자유 입력)
+        <textarea
+          value={form.free_input}
+          onChange={(e) => handleChange('free_input', e.target.value)}
+          placeholder="예: 여름 분위기, 밝은 톤, 20대 여성 타겟..."
+          rows={3}
+        />
+      </label>
+
       <button type="submit" disabled={loading}>
-        {loading ? '생성 중...' : 'Step 4: 홍보물 생성'}
+        {loading ? '생성 중...' : 'Step 4: 이미지 프롬프트 생성'}
       </button>
     </form>
   )

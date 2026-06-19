@@ -11,7 +11,11 @@ function AnalysisPanel({
   memeExplanation = '',
   cardExplanation = '',
   memeKeywordExplanations = {},
-  cardKeywordExplanations = {}
+  cardKeywordExplanations = {},
+  selectedMemeKeyword = null,
+  selectedCardKeyword = null,
+  onMemeSelect,
+  onCardSelect
 }) {
   const topMemeTrends = Array.isArray(youtubeTrends?.trends)
     ? [...youtubeTrends.trends]
@@ -57,6 +61,10 @@ function AnalysisPanel({
         cardExplanation={cardExplanation}
         memeKeywordExplanations={memeKeywordExplanations}
         cardKeywordExplanations={cardKeywordExplanations}
+        selectedMemeKeyword={selectedMemeKeyword}
+        selectedCardKeyword={selectedCardKeyword}
+        onMemeSelect={onMemeSelect}
+        onCardSelect={onCardSelect}
       />
 
       {/* 조합 요약 데이터 */}
