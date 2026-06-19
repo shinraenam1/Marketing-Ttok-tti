@@ -7,7 +7,7 @@ import './App.css'
 
 function App() {
   const [reportId, setReportId] = useState(null)
-  const [analysis, setAnalysis] = useState(null)
+  const [analysisSummary, setAnalysisSummary] = useState('')
   const [cardEvents, setCardEvents] = useState(null)
   const [youtubeTrends, setYoutubeTrends] = useState(null)
   const [promotional, setPromotional] = useState(null)
@@ -15,50 +15,71 @@ function App() {
   const [error, setError] = useState(null)
   const [userParams, setUserParams] = useState(null)
 
-  const FUNCTION_BASE_URL = 'https://marketing-ttok-tti-functionappv2-bxayc6f7b4f5fhg0.swedencentral-01.azurewebsites.net/api'
-  const FUNCTION_KEY = 'YOUR_AZURE_FUNCTION_KEY'
+  const FUNCTION_BASE_URL = import.meta.env.VITE_FUNCTION_BASE_URL || '/api'
+  const FUNCTION_KEY = import.meta.env.VITE_FUNCTION_KEY || ''
 
   const buildFunctionUrl = (route) => {
     const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-    if (isLocal) {
-      return `/api/${route}`
+    if (!isLocal) {
+      return `${FUNCTION_BASE_URL}/${route}`
     }
-    return `${FUNCTION_BASE_URL}/${route}?code=${FUNCTION_KEY}`
+
+    const base = FUNCTION_BASE_URL.replace(/\/$/, '')
+    if (!FUNCTION_KEY) {
+      return `${base}/${route}`
+    }
+
+    return `${base}/${route}?code=${FUNCTION_KEY}`
   }
 
-  const buildAnalysisText = (etcData, ytData) => {
-    const totalEvents = typeof etcData?.total === 'number'
-      ? etcData.total
-      : Array.isArray(etcData?.events)
-        ? etcData.events.length
-        : 0
+  const toOneLineSummary = (value) => {
+    if (!value || typeof value !== 'string') {
+      return ''
+    }
 
+    const lines = value
+      .split('\n')
+      .map((line) => line.replace(/^[-#*\s]+/, '').trim())
+      .filter(Boolean)
+
+    return lines[0] || ''
+  }
+
+  const buildFallbackSummary = (etcData, ytData) => {
     const topCategory = Array.isArray(etcData?.by_category) && etcData.by_category.length > 0
-      ? `${etcData.by_category[0].category} (${etcData.by_category[0].count}�?`
-      : '카테고리 집계 ?�음'
+      ? `${etcData.by_category[0].category} 카테고리`
+      : '주요 카테고리'
 
-    const firstEventTitle = Array.isArray(etcData?.events) && etcData.events.length > 0
-      ? etcData.events[0].title
-      : '?�벤???�목 ?�음'
+    const topMeme = Array.isArray(ytData?.trends) && ytData.trends.length > 0
+      ? ytData.trends[0].keyword
+      : ytData?.meme || '밈 키워드'
 
-    const memeText = ytData?.meme || '거제 ?�호'
+    return `${topCategory} 이벤트 집중 구간에 '${topMeme}' 밈 키워드를 결합한 프로모션 메시지를 우선 집행하는 전략을 추천합니다.`
+  }
 
-    return `
-## 마�???분석 결과 (?�시�??�집)
+  const extractSummaryFromAnalyzeResponse = (analysisResult, etcData, ytData) => {
+    if (typeof analysisResult === 'string') {
+      return toOneLineSummary(analysisResult) || buildFallbackSummary(etcData, ytData)
+    }
 
-### 1. 카드???�벤??주요 ?�택
-- ?�집???�벤???? ${totalEvents}�?
-- ?�위 카테고리: ${topCategory}
-- ?�???�벤?? ${firstEventTitle}
+    if (analysisResult && typeof analysisResult === 'object') {
+      const candidates = [
+        analysisResult.summary,
+        analysisResult.one_line_summary,
+        analysisResult.oneLineSummary,
+        analysisResult.insight,
+        analysisResult.analysis
+      ]
 
-### 2. YouTube ?�렌??주요 ?�워??
-- ?�플 �??�워?? ${memeText}
+      for (const candidate of candidates) {
+        const oneLine = toOneLineSummary(candidate)
+        if (oneLine) {
+          return oneLine
+        }
+      }
+    }
 
-### 3. 마�???기회 �??�안
-**기회 1:** ${memeText} ?�워?��? ?�행/?��? 카테고리 ?�벤?��? 결합??SNS 캠페??
-**기회 2:** ?�위 카테고리 중심?�로 ?�기 ?�로모션 배너 메시지 A/B ?�스??
-**기회 3:** ?�???�벤??중심 ?�딩?�이지 + ?��??�령?��?카피 분기
-    `
+    return buildFallbackSummary(etcData, ytData)
   }
 
   // 스크래핑 결과 로드 및 분석
@@ -84,12 +105,12 @@ function App() {
             card_events: etcData,
             youtube_trends: ytData
           })
-          
+
           const analysisResult = analysisResponse.data || {}
-          setAnalysis(analysisResult.analysis || buildAnalysisText(etcData, ytData))
+          setAnalysisSummary(extractSummaryFromAnalyzeResponse(analysisResult, etcData, ytData))
         } catch (analyzeErr) {
           console.error('분석 호출 실패:', analyzeErr)
-          setAnalysis(buildAnalysisText(etcData, ytData))
+          setAnalysisSummary(buildFallbackSummary(etcData, ytData))
         }
       } catch (err) {
         setError('스크래핑 데이터 로드 실패')
@@ -167,23 +188,23 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>?�� 마�???분석 ?�?�보??/h1>
-        <p>?�크?�핑 ?�이??분석 �?맞춤???�보�??�성</p>
+        <h1>마케팅 분석 대시보드</h1>
+        <p>스크래핑 데이터 분석 및 맞춤형 홍보물 생성</p>
       </header>
 
       <main className="app-main">
         <div className="dashboard-grid">
           <section className="left-panel">
             <div className="panel-header">
-              <h2>?�� Step 1-2: 분석 결과</h2>
-              {reportId && <span className="report-id">리포??ID: {reportId.substring(0, 8)}...</span>}
+              <h2>Step 1-2: 분석 결과</h2>
+              {reportId && <span className="report-id">리포트 ID: {reportId.substring(0, 8)}...</span>}
             </div>
             
             {error && <div className="error-banner">{error}</div>}
             
-            {analysis && (
+            {(cardEvents || youtubeTrends) && (
               <AnalysisPanel 
-                analysis={analysis}
+                analysisSummary={analysisSummary}
                 cardEvents={cardEvents}
                 youtubeTrends={youtubeTrends}
               />
@@ -192,7 +213,7 @@ function App() {
 
           <section className="right-panel">
             <div className="panel-header">
-              <h2>?�� Step 3-4: 맞춤??콘텐�?/h2>
+              <h2>Step 3-4: 맞춤형 콘텐츠</h2>
             </div>
 
             {!promotional ? (
