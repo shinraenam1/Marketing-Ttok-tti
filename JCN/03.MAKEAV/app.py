@@ -38,9 +38,7 @@ def load_config() -> SoraConfig:
     if not api_key:
         raise ValueError("AZURE_OPENAI_API_KEY is required")
 
-    seconds = os.getenv("VIDEO_SECONDS", "8").strip()
-    if seconds not in ALLOWED_SECONDS:
-        seconds = "8"
+    seconds = "8"
 
     return SoraConfig(
         endpoint=endpoint,

@@ -82,3 +82,25 @@ def trends_creative_assets(req: func.HttpRequest) -> func.HttpResponse:
     payload = _read_json(req)
     report = engine.generate_creative_assets(payload)
     return _json_response(report)
+
+
+# Backward-compatible legacy routes used by older frontend/Logic App definitions.
+@app.route(route="etc_event_scraping", methods=["POST"])
+def legacy_etc_event_scraping(req: func.HttpRequest) -> func.HttpResponse:
+    payload = _read_json(req)
+    report = engine.generate_competitor_report(payload)
+    return _json_response(report)
+
+
+@app.route(route="youtube_trend_scraping", methods=["POST"])
+def legacy_youtube_trend_scraping(req: func.HttpRequest) -> func.HttpResponse:
+    payload = _read_json(req)
+    report = engine.generate_meme_report(payload)
+    return _json_response(report)
+
+
+@app.route(route="analyze_result", methods=["POST"])
+def legacy_analyze_result(req: func.HttpRequest) -> func.HttpResponse:
+    payload = _read_json(req)
+    report = engine.generate_keyword_summary(payload)
+    return _json_response(report)

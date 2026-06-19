@@ -13,25 +13,92 @@ function App() {
   ])
 
   const CATEGORY_RULES = [
-    ['여행', ['여행', '해외', '항공', '항공권', '호텔', '숙박', '리조트', '펜션', '투어', '크루즈', '면세', '에어비앤비', '레고랜드', '에버랜드', '롯데월드', '놀이공원', '테마파크']],
-    ['외식', ['외식', '식당', '레스토랑', '카페', '커피', '치킨', '피자', '배달', '버거', '스타벅스', '맥도날드', '푸드', '맛집', '다이닝', '스테이크']],
-    ['교통', ['주유', '주유소', '자동차', '렌탈', '렌트', '택시', '고속도로', '주차', '전기차', '충전', '버스', '지하철']],
-    ['문화레저', ['문화', '공연', '영화', '도서', '음악', '전시', '스포츠', '레저', '골프', '야구', '콘서트', '미술관', '박물관']],
-    ['헬스뷰티', ['헬스', '뷰티', '화장품', '피부', '미용', '헬스장', '피트니스', '요가', '필라테스', '올리브영']],
-    ['디지털통신', ['디지털', '통신', '휴대폰', '전자', '게임', 'ott', '스트리밍', '인터넷', '넷플릭스', '구독', '앱', 'sk', 'kt']],
-    ['금융할부', ['무이자', '할부', '보험', '대출', '연회비', '마일리지', '리워드', '포인트', '적립']],
-    ['쇼핑', ['백화점', '마트', '온라인쇼핑', '이마트', '롯데마트', '홈플러스', '마켓', '쿠팡', '11번가']],
-    ['생활편의', ['편의점', '교육', '학원', '세탁', '구청', 'cu', 'gs25', '세븐일레븐', '미니스톱']],
+    ['여행', [
+      '여행', '해외', '항공', '항공권', '호텔', '숙박', '리조트', '펜션', '투어',
+      '크루즈', '면세점', '면세', '에어비앤비', '트립닷컴', '아고다', '호텔스닷컴',
+      '라쿠텐트래블', '렌탈카스닷컴', '에어알로', '클룩', '웹투어', '와이페이모어',
+      '레고랜드', '에버랜드', '롯데월드', '놀이공원', '테마파크', '일본', '유럽',
+      '미국', '중국', '태국', '싱가포르', '하와이', '나리타', '하네다', '오사카',
+      '후쿠오카', '파리', '런던', '바르셀로나', '홍콩', '마카오', '코나', '발리',
+      '태국여행', '관광', '비스터', '라발레', '라로카', 'ihg', '프리퍼드호텔',
+      '펜타포트', '페스티벌', '국내선', '국제선'
+    ]],
+    ['외식', [
+      '외식', '식당', '레스토랑', '카페', '커피', '치킨', '피자', '배달', '버거',
+      '스타벅스', '맥도날드', '푸드', '맛집', '메가mgc커피', '교촌허니콤보',
+      '다이닝', '스테이크', '스시', '라멘', '수블리엠', '이자카야', '쿠팡이츠', '배달의민족'
+    ]],
+    ['교통', [
+      '주유', '주유소', '주유권', '자동차', '렌탈', '렌트', '택시', '고속도로', '주차',
+      '전기차', 'ev충전', '충전', '버스', '지하철', '기차', '철도', '고속버스',
+      '해외운전', '국내선항공', '항공운임', 'ev카드', '스피드메이트', '티스테이션', '트랩'
+    ]],
+    ['문화레저', [
+      '문화', '공연', '영화', '도서', '음악', '전시', '스포츠', '레저', '골프', '야구',
+      'cgv', '메가박스', '볼링', '당첨확인', '콘서트', '미술관', '박물관', '두산베어스',
+      '펜타포트', '인천펜타포트', '락페스티벌', '월드컵', '응원키트', '운동권'
+    ]],
+    ['헬스뷰티', [
+      '헬스', '뷰티', '화장품', '피부', '미용', '헬스장', '피트니스', '요가', '필라테스',
+      '올리브영', '다이소', '임산', '병원', '약국', '의료', '마스크팩', '마스크', '스킨케어'
+    ]],
+    ['디지털통신', [
+      '디지털', '통신', '휴대폰', '전자', '휴대폰포로콘', '게임', 'ott', '스트리밍', '인터넷',
+      '넷플릭스', '구독', '앱', 'sk', 'kt', 'lg유플', 'skt', 'kt스카이라이프', '단말기',
+      't라이트', 'liivmii', 'lg헬로비전', '케이블tv', 'ai플랫폼', 'ai활용', '인터넷전화',
+      '휴대폰 단말기', '단말기값', 'esim', '데이터 로밍'
+    ]],
+    ['금융할부', [
+      '무이자', '할부', '보험', '대출', '연회비', '마일리지', '리워드', '포인트적립', '포인트리',
+      '포인트 제공', 'h.point', '삼성화재', '현대화재', '자동차보험', '미니코부매스터',
+      '파이낸싱', '시세로인튀리튬', '정기결제', '자동납부', '적립마일리지', 'p마일리지',
+      '국세', '지방세', '소상공인', '연회비 100%'
+    ]],
+    ['쇼핑', [
+      '백화점', '마트', '온라인쇼핑', '이마트', '롯데마트', '홈플러스', 'g마켓', '쿠팡', '11번가',
+      '아울렛', '시세이즈마션', '로드샵시쿠니승마승', '뷔스트마션', '히아 레이드스마선',
+      '쇼핑', '클리어마션', 'h.이포인트', '쿠팡와우', '네이버플러스스토어', '슬포츠마존',
+      '시세통통말이제도', '무통보너스마스터', '비스터업설그라니스포리툼'
+    ]],
+    ['생활편의', [
+      '편의점', '교육', '학원', '세탁', '구청요금', 'cu', 'gs25', '세븐일레븐', '미니스톱',
+      '이마트24', '팸샵', '주거', '화백', '캐릭팩키지', '중국집데일레븐'
+    ]],
+    ['시즌취미', [
+      '시즌', '문화상품권', '도서제당', '스탬프', '월드컵', '운동원', '여름', '겨울',
+      '보열스노우파트 코리아', '새해', '추석', '설날', 'summer', 'winter', '황금연휴',
+      '명절', '발렌타인'
+    ]],
   ]
 
-  const categorizeEvent = (title, subtitle, benefitSummary) => {
-    const text = `${title} ${subtitle} ${benefitSummary}`.toLowerCase()
+  const ALLOWED_CATEGORY_NAMES = new Set(CATEGORY_RULES.map(([name]) => name))
+
+  const toCategoryText = (item) => {
+    const values = [
+      item?.title,
+      item?.subtitle,
+      item?.benefit_summary,
+      item?.summary,
+      item?.snippet,
+      item?.source,
+      item?.description,
+      ...(Array.isArray(item?.categories) ? item.categories : []),
+      ...(Array.isArray(item?.tags) ? item.tags : []),
+      ...(Array.isArray(item?.matched_terms) ? item.matched_terms : []),
+    ]
+    return values
+      .filter(Boolean)
+      .map((value) => String(value).toLowerCase())
+      .join(' ')
+  }
+
+  const categorizeEvent = (text) => {
     for (const [category, keywords] of CATEGORY_RULES) {
-      if (keywords.some(kw => text.includes(kw.toLowerCase()))) {
+      if (keywords.some((kw) => text.includes(kw.toLowerCase()))) {
         return category
       }
     }
-    return '기타'
+    return null
   }
 
   const [reportId, setReportId] = useState(null)
@@ -106,7 +173,6 @@ function App() {
 
     // V2 응답: card_event_insights + related_contents 를 기존 by_category/events 형식으로 변환
     const relatedContents = Array.isArray(value.related_contents) ? value.related_contents : []
-    const sourceCounts = {}
     const tokenCounts = {}
 
     const addToken = (rawToken) => {
@@ -120,7 +186,6 @@ function App() {
 
     const events = relatedContents.map((item, idx) => {
       const source = item?.source || '기타'
-      sourceCounts[source] = (sourceCounts[source] || 0) + 1
 
       const titleTokens = String(item?.title || '').split(/[^\p{L}\p{N}]+/u)
       titleTokens.forEach(addToken)
@@ -131,15 +196,23 @@ function App() {
       return {
         id: `${source}-${idx}`,
         title: item?.title || '',
+        subtitle: item?.subtitle || '',
+        benefit_summary: item?.benefit_summary || item?.summary || item?.snippet || '',
+        categories: Array.isArray(item?.categories) ? item.categories : [],
+        tags,
+        matched_terms: Array.isArray(item?.matched_terms) ? item.matched_terms : [],
         source,
         url: item?.url || '',
       }
     })
 
-    // 카테고리 규칙 기반 분류
+    // CATEGORY_RULES 기반 분류만 허용
     const categoryCount = {}
-    events.forEach(event => {
-      const cat = categorizeEvent(event.title, event.source, '')
+    events.forEach((event) => {
+      const categoryText = toCategoryText(event)
+      const cat = categorizeEvent(categoryText)
+      if (!cat) return
+      if (!ALLOWED_CATEGORY_NAMES.has(cat)) return
       categoryCount[cat] = (categoryCount[cat] || 0) + 1
     })
 
@@ -148,21 +221,18 @@ function App() {
       .sort((a, b) => b.count - a.count)
       .slice(0, 10)
 
-    // 폴백: 토큰 기반 분류
-    if (derivedByCategory.length === 0 || derivedByCategory[0].count === 0) {
-      derivedByCategory = Object.entries(tokenCounts)
+    // 폴백도 CATEGORY_RULES 내부 키워드에 한해 매핑
+    if (derivedByCategory.length === 0) {
+      const tokenCategoryCount = {}
+      Object.entries(tokenCounts).forEach(([token, count]) => {
+        const cat = categorizeEvent(token)
+        if (!cat) return
+        tokenCategoryCount[cat] = (tokenCategoryCount[cat] || 0) + count
+      })
+      derivedByCategory = Object.entries(tokenCategoryCount)
         .map(([category, count]) => ({ category, count }))
         .sort((a, b) => b.count - a.count)
         .slice(0, 10)
-    }
-
-    if (derivedByCategory.length === 0 && Array.isArray(value.card_event_insights)) {
-      derivedByCategory = value.card_event_insights
-        .slice(0, 10)
-        .map((insight, idx) => ({
-          category: (insight?.top_theme || '').trim() || `카드이벤트 ${idx + 1}`,
-          count: (insight?.recommended_angles?.length || 0) + (insight?.copy_seed?.length || 0) || 1,
-        }))
     }
 
     if (derivedByCategory.length === 0) return null

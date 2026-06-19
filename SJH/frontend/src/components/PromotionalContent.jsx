@@ -80,14 +80,15 @@ function PromotionalContent({ content, params, imageDataUrl, videoDataUrl, asset
 
       <div className="button-group">
         <button type="button" onClick={onReset}>다시 생성하기</button>
-        <button
-          type="button"
-          className="view-gallery-btn"
-          onClick={() => setGalleryOpen(true)}
-          disabled={!isComplete}
-        >
-          홍보물 확인
-        </button>
+        {isComplete && (
+          <button
+            type="button"
+            className="view-gallery-btn"
+            onClick={() => setGalleryOpen(true)}
+          >
+            홍보물 확인
+          </button>
+        )}
       </div>
 
       {zoomOpen && imageDataUrl && (
