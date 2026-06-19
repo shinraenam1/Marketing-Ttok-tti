@@ -1,0 +1,30 @@
+.user-form {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.user-form label {
+  display: grid;
+  gap: 0.4rem;
+  color: #d7deef;
+  font-size: 0.9rem;
+}
+
+.user-form select {
+  border: 1px solid #2f3b53;
+  border-radius: 8px;
+  background: #141a27;
+  color: #e6edff;
+  padding: 0.65rem 0.7rem;
+}
+
+.user-form button {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  background: linear-gradient(135deg, #26a0ff, #4361ee);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
