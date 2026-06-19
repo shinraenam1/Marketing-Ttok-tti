@@ -8,28 +8,31 @@ import './App.css'
 function App() {
   const [reportId, setReportId] = useState(null)
   const [analysisSummary, setAnalysisSummary] = useState('')
+  const [memeExplanation, setMemeExplanation] = useState('')
+  const [cardExplanation, setCardExplanation] = useState('')
+  const [memeKeywordExplanations, setMemeKeywordExplanations] = useState({})
+  const [cardKeywordExplanations, setCardKeywordExplanations] = useState({})
   const [cardEvents, setCardEvents] = useState(null)
   const [youtubeTrends, setYoutubeTrends] = useState(null)
   const [promotional, setPromotional] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
+  const [loadingMessage, setLoadingMessage] = useState('스크래핑 데이터 로드 중...')
   const [userParams, setUserParams] = useState(null)
 
-  const FUNCTION_BASE_URL = import.meta.env.VITE_FUNCTION_BASE_URL || '/api'
+  const SCRAPER_POLL_INTERVAL_MS = 10000
+  const SCRAPER_MAX_WAIT_MS = 15 * 60 * 1000
+
+  const FUNCTION_BASE_URL = import.meta.env.VITE_FUNCTION_BASE_URL
+    || 'https://marketing-ttok-tti-functionappv2-bxayc6f7b4f5fhg0.swedencentral-01.azurewebsites.net/api'
   const FUNCTION_KEY = import.meta.env.VITE_FUNCTION_KEY || ''
 
   const buildFunctionUrl = (route) => {
-    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-    if (!isLocal) {
-      return `${FUNCTION_BASE_URL}/${route}`
-    }
-
     const base = FUNCTION_BASE_URL.replace(/\/$/, '')
-    if (!FUNCTION_KEY) {
-      return `${base}/${route}`
-    }
-
-    return `${base}/${route}?code=${FUNCTION_KEY}`
+    const url = `${base}/${route}`
+    if (!FUNCTION_KEY) return url
+    const hasQuery = url.includes('?')
+    return `${url}${hasQuery ? '&' : '?'}code=${encodeURIComponent(FUNCTION_KEY)}`
   }
 
   const callFunction = async (route, payload = {}) => {
@@ -43,6 +46,8 @@ function App() {
       throw err
     }
   }
+
+  const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
   const isHtmlLike = (value) => (
     typeof value === 'string' && value.trim().toLowerCase().startsWith('<!doctype html')
@@ -149,13 +154,38 @@ function App() {
     const loadLiveData = async () => {
       try {
         setLoading(true)
-        const [etcResponse, youtubeResponse] = await Promise.all([
-          callFunction('etc_event_scraping'),
-          callFunction('youtube_trend_scraping')
-        ])
+        setError(null)
 
-        const etcData = normalizeCardEvents(etcResponse.data || {})
-        const ytData = normalizeYoutubeTrends(youtubeResponse.data || {})
+        const startedAt = Date.now()
+        let etcData = null
+        let ytData = null
+
+        while (Date.now() - startedAt < SCRAPER_MAX_WAIT_MS) {
+          const elapsedSec = Math.floor((Date.now() - startedAt) / 1000)
+          setLoadingMessage(`스크래퍼 결과 대기 중... (${elapsedSec}s 경과)`)
+
+          const [etcResponse, youtubeResponse] = await Promise.allSettled([
+            callFunction('etc_event_scraping'),
+            callFunction('youtube_trend_scraping')
+          ])
+
+          if (etcResponse.status === 'fulfilled') {
+            etcData = normalizeCardEvents(etcResponse.value?.data || {})
+          }
+          if (youtubeResponse.status === 'fulfilled') {
+            ytData = normalizeYoutubeTrends(youtubeResponse.value?.data || {})
+          }
+
+          if (etcData && ytData) {
+            break
+          }
+
+          await wait(SCRAPER_POLL_INTERVAL_MS)
+        }
+
+        if (!etcData || !ytData) {
+          throw new Error('스크래퍼 결과가 아직 준비되지 않았습니다. 잠시 후 다시 시도해주세요.')
+        }
 
         setReportId(`live-${Date.now()}`)
         setCardEvents(etcData)
@@ -170,15 +200,48 @@ function App() {
 
           const analysisResult = analysisResponse.data || {}
           setAnalysisSummary(extractSummaryFromAnalyzeResponse(analysisResult, etcData, ytData))
+
+          // 밈/트렌드 키워드별 설명 생성 (비동기)
+          const topMemes = ytData.trends?.slice(0, 10) || []
+          if (topMemes.length > 0) {
+            callFunction('analyze_result', {
+              youtube_trends: { trends: topMemes },
+              analysis_type: 'meme_keywords_explanation'
+            })
+              .then(res => {
+                const explanations = res.data?.keyword_explanations || {}
+                if (Object.keys(explanations).length > 0) {
+                  setMemeKeywordExplanations(explanations)
+                }
+              })
+              .catch(e => console.error('밈 키워드 설명 생성 실패:', e))
+          }
+
+          // 카드 이벤트 키워드별 설명 생성 (비동기)
+          const topCategories = etcData.by_category?.slice(0, 10) || []
+          if (topCategories.length > 0) {
+            callFunction('analyze_result', {
+              card_events: { by_category: topCategories },
+              analysis_type: 'card_keywords_explanation'
+            })
+              .then(res => {
+                const explanations = res.data?.keyword_explanations || {}
+                if (Object.keys(explanations).length > 0) {
+                  setCardKeywordExplanations(explanations)
+                }
+              })
+              .catch(e => console.error('카드 키워드 설명 생성 실패:', e))
+          }
         } catch (analyzeErr) {
           console.error('분석 호출 실패:', analyzeErr)
           setAnalysisSummary(buildFallbackSummary(etcData, ytData))
         }
       } catch (err) {
-        setError('스크래핑 데이터 로드 실패')
+        setError(err?.message || '스크래핑 데이터 로드 실패')
         console.error('스크래핑 데이터 로드 실패:', err)
       } finally {
         setLoading(false)
+        setLoadingMessage('스크래핑 데이터 로드 중...')
       }
     }
     loadLiveData()
@@ -267,7 +330,7 @@ function App() {
             {loading && !cardEvents && !youtubeTrends && (
               <div className="loading-panel">
                 <div className="loading-spinner" />
-                <p>스크래핑 데이터 로드 중...</p>
+                <p>{loadingMessage}</p>
               </div>
             )}
 
@@ -276,6 +339,10 @@ function App() {
                 analysisSummary={analysisSummary}
                 cardEvents={cardEvents}
                 youtubeTrends={youtubeTrends}
+                memeExplanation={memeExplanation}
+                cardExplanation={cardExplanation}
+                memeKeywordExplanations={memeKeywordExplanations}
+                cardKeywordExplanations={cardKeywordExplanations}
               />
             )}
           </section>
