@@ -1,0 +1,120 @@
+{
+  "source_health": {
+    "wepick": "ok",
+    "gogumafarm": "ok",
+    "careet": "ok",
+    "youtube": "disabled"
+  },
+  "ad_candidate_keywords": [
+    {
+      "keyword": "릴스",
+      "topic_score": 75.22,
+      "growth_rate_pct": 100.0,
+      "source_coverage": [
+        "careet",
+        "gogumafarm",
+        "wepick"
+      ],
+      "confidence": 79.41,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "소비",
+      "topic_score": 57.14,
+      "growth_rate_pct": 100.0,
+      "source_coverage": [
+        "careet",
+        "wepick"
+      ],
+      "confidence": 60.86,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "메지루시 굿즈",
+      "topic_score": 56.37,
+      "growth_rate_pct": 100.0,
+      "source_coverage": [
+        "careet",
+        "wepick"
+      ],
+      "confidence": 60.28,
+      "selection_reason": "cue_term"
+    }
+  ],
+  "trend_keyword_quality": {
+    "total_topics": 14,
+    "accepted_topics": 3,
+    "rejected_topics": 11,
+    "rejected_reason_counts": {
+      "date_like": 1,
+      "single_non_cue": 4,
+      "generic": 1,
+      "particle_phrase": 1,
+      "phrase_noise": 4
+    }
+  },
+  "top_topics": [
+    {
+      "topic": "2026년 6월",
+      "topic_score": 82.0,
+      "source_coverage": [
+        "wepick"
+      ]
+    },
+    {
+      "topic": "고구마팜",
+      "topic_score": 76.19,
+      "source_coverage": [
+        "gogumafarm"
+      ]
+    },
+    {
+      "topic": "릴스",
+      "topic_score": 75.22,
+      "source_coverage": [
+        "careet",
+        "gogumafarm",
+        "wepick"
+      ]
+    },
+    {
+      "topic": "2026년",
+      "topic_score": 66.41,
+      "source_coverage": [
+        "wepick"
+      ]
+    },
+    {
+      "topic": "말랑이 경제",
+      "topic_score": 64.46,
+      "source_coverage": [
+        "careet",
+        "gogumafarm",
+        "wepick"
+      ]
+    },
+    {
+      "topic": "z세대가 빠진",
+      "topic_score": 64.16,
+      "source_coverage": [
+        "gogumafarm"
+      ]
+    },
+    {
+      "topic": "vol",
+      "topic_score": 62.91,
+      "source_coverage": [
+        "wepick"
+      ]
+    },
+    {
+      "topic": "콜라보",
+      "topic_score": 61.47,
+      "source_coverage": [
+        "careet",
+        "gogumafarm",
+        "wepick"
+      ]
+    }
+  ]
+}

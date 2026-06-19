@@ -1,0 +1,2995 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>카드사 이벤트 현황 리포트 — 2026.06.19 16:50</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #f8fafc;
+      --card: #fff;
+      --border: #e2e8f0;
+      --text: #1e293b;
+      --sub: #64748b;
+      --primary: #1a56db;
+      --row-hover: #f0f9ff;
+    }
+    body {
+      font-family: 'Pretendard', 'Apple SD Gothic Neo', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* 헤더 */
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #1a56db);
+      color: #fff;
+      padding: 24px 32px;
+      position: sticky; top: 0; z-index: 50;
+    }
+    header h1 { font-size: 1.25rem; font-weight: 700; }
+    header p { font-size: .8rem; opacity: .75; margin-top: 2px; }
+
+    /* TOC */
+    .toc {
+      display: flex; flex-wrap: wrap; gap: 6px;
+      padding: 14px 32px;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 68px; z-index: 40;
+    }
+    .toc-item {
+      padding: 4px 12px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      font-size: .78rem;
+      text-decoration: none;
+      color: var(--text);
+      transition: all .12s;
+    }
+    .toc-item:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .toc-item span { color: var(--sub); font-size: .72rem; }
+    .toc-item:hover span { color: rgba(255,255,255,.8); }
+
+    /* 본문 */
+    main { padding: 24px 32px; max-width: 1200px; margin: 0 auto; }
+
+    /* 카테고리 섹션 */
+    .cat-section { margin-bottom: 32px; }
+    .cat-header {
+      display: flex; align-items: center; gap: 8px;
+      padding: 10px 16px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 8px 8px 0 0;
+      font-weight: 700;
+      font-size: .95rem;
+    }
+    .cat-emoji { font-size: 1.1rem; }
+    .cat-count { margin-left: auto; font-size: .8rem; opacity: .85; font-weight: 400; }
+
+    /* 이벤트 행 */
+    .rows {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      overflow: hidden;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr auto;
+      gap: 12px;
+      align-items: start;
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--border);
+      transition: background .1s;
+    }
+    .row:last-child { border-bottom: none; }
+    .row:hover { background: var(--row-hover); }
+
+    .row-left { display: flex; align-items: flex-start; gap: 8px; flex-wrap: wrap; }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px; border-radius: 5px;
+      font-size: .72rem; font-weight: 700; color: #fff;
+      white-space: nowrap; flex-shrink: 0;
+    }
+    .ev-title { font-size: .87rem; font-weight: 600; line-height: 1.45; }
+
+    .row-benefit { font-size: .83rem; color: var(--text); line-height: 1.5; }
+    .no-benefit { color: var(--sub); font-style: italic; }
+
+    .row-meta {
+      display: flex; flex-direction: column; gap: 4px;
+      align-items: flex-end; white-space: nowrap; flex-shrink: 0;
+    }
+    .date { font-size: .75rem; color: var(--sub); }
+    .url-link {
+      font-size: .75rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 2px 8px;
+      border: 1px solid var(--primary);
+      border-radius: 4px;
+      transition: all .12s;
+    }
+    .url-link:hover { background: var(--primary); color: #fff; }
+    .no-url { font-size: .75rem; color: var(--sub); }
+
+    /* 푸터 */
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: .78rem;
+      color: var(--sub);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 700px) {
+      header, .toc, main { padding-left: 16px; padding-right: 16px; }
+      .row { grid-template-columns: 1fr; gap: 6px; }
+      .row-meta { align-items: flex-start; }
+      .toc { top: 60px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>🏦 타 카드사 이벤트 현황 리포트</h1>
+  <p>기준일: 2026.06.19 16:50 &nbsp;|&nbsp; 총 249건 &nbsp;|&nbsp; KB국민카드 · 페이북(BC카드) · 롯데카드 · 삼성카드</p>
+</header>
+
+<nav class="toc"><a href="#cat-쇼핑" class="toc-item">🛍️ 쇼핑 <span>4</span></a><a href="#cat-외식" class="toc-item">🍽️ 외식 <span>13</span></a><a href="#cat-여행" class="toc-item">✈️ 여행 <span>93</span></a><a href="#cat-생활편의" class="toc-item">🏠 생활편의 <span>1</span></a><a href="#cat-교통" class="toc-item">🚗 교통 <span>24</span></a><a href="#cat-문화레저" class="toc-item">🎭 문화레저 <span>3</span></a><a href="#cat-금융할부" class="toc-item">💰 금융할부 <span>51</span></a><a href="#cat-헬스뷰티" class="toc-item">💄 헬스뷰티 <span>3</span></a><a href="#cat-디지털통신" class="toc-item">💻 디지털통신 <span>19</span></a><a href="#cat-시즌취미" class="toc-item">🎉 시즌취미 <span>1</span></a><a href="#cat-기타" class="toc-item">📌 기타 <span>37</span></a></nav>
+
+<main>
+
+  <section class="cat-section" id="cat-쇼핑">
+    <div class="cat-header">
+      <span class="cat-emoji">🛍️</span>
+      <span class="cat-name">쇼핑</span>
+      <span class="cat-count">4건</span>
+    </div>
+    <div class="rows">
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">해로즈, 라파예트 최대 10% 캐시백</span>
+        </div>
+        <div class="row-benefit">행사 기간 동안 대상카드로 프랑스 라파예트백화점, 영국 해로즈백화점에서 기준금액 이상 결제하면 최대 10% 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000606" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">쿠팡와우카드 한정 추가 혜택 모음</span>
+        </div>
+        <div class="row-benefit">쿠팡와우카드 한정 추가 혜택 모음</div>
+        <div class="row-meta">
+          <span class="date">📅 2025.08.12~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000083" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">매월 최대 36,500원 할인 받고 최대 57만원 상당 혜택까지</span>
+        </div>
+        <div class="row-benefit">③ 쇼핑업종(오프라인) 5만원 이상 포함 이용하면 추가 2만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11111&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">롯데백화점 5% 할인 e-쿠폰 혜택</span>
+        </div>
+        <div class="row-benefit">롯데백화점 5% 현장할인 e-쿠폰</div>
+        <div class="row-meta">
+          <span class="date">📅 2025.10.01~2026.09.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=7642&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-외식">
+    <div class="cat-header">
+      <span class="cat-emoji">🍽️</span>
+      <span class="cat-name">외식</span>
+      <span class="cat-count">13건</span>
+    </div>
+    <div class="rows">
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">편의점? 커피? 마트?스탬프 찍고 포인트리!</span>
+        </div>
+        <div class="row-benefit">대상 업종에서 KB Pay로 건당 2만원 이상 결제하면 스탬프 1회 적립 기회 부여되며,</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.05~2026.07.17</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001209" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">KB Pay 첫 만남 기념커피 쿠폰 받기</span>
+        </div>
+        <div class="row-benefit">기간 동안 KB Pay 최초 신규가입하고 응모하면 메가MGC커피 ICE 아메리카노 쿠폰 1매를 받을 수 있어요.(이벤트/혜택 PUSH 동의 필수)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001028" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">쿠팡 외 최대2.4%적립쿠팡, 쿠팡이츠 4%적립</span>
+        </div>
+        <div class="row-benefit">카드혜택(2%) 중복 적용시 4% 적립</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.15~2026.10.15</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000647" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">자동납부 신규등록최대 5천원 할인 — 사립유치원</span>
+        </div>
+        <div class="row-benefit">BC카드로 사립유치원 자동납부 신규 신청 후 납부 시, 최대 5천원(1회) 결제일 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120012" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">KT 통신요금최대 5천원 결제일할인 — 통신요금 자동납부</span>
+        </div>
+        <div class="row-benefit">BC카드로 통신요금(KT) 자동납부 시, 최대 5천원(1회) 결제일 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120011" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">자동납부 신규등록최대 5천원 할인 — 4대보험</span>
+        </div>
+        <div class="row-benefit">최초 5천원(1회) 결제일 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120010" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">자동납부 신규등록최대 5천원 할인 — 학부모 부담금</span>
+        </div>
+        <div class="row-benefit">BC카드로 학부모 부담금 자동납부 신규 신청 후 납부 시, 최대 5천원(1회) 결제일 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120009" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">자동납부 신규등록최대 5천원 할인 — 전기요금</span>
+        </div>
+        <div class="row-benefit">BC카드로 전기 요금 자동납부 신규 신청 후 납부 시, 최대 5천원(1회) 결제일 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120008" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">자동납부 신규등록최대 5천원 할인 — 도시가스</span>
+        </div>
+        <div class="row-benefit">BC카드로 도시가스 자동납부 신규 신청 후 납부 시, 최대 5천원(1회) 결제일 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120007" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">신규등록최대 5천원 할인 — 아파트관리비</span>
+        </div>
+        <div class="row-benefit">BC카드로 아파트관리비 자동납부 신규 신청 후 납부 시, 최대 5천원(1회) 결제일 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120006" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">신규등록최대 3만5천원 할인 — 생활요금 자동납부</span>
+        </div>
+        <div class="row-benefit">최대 5,000원 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120005" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">아시안푸드 전문점 생어거스틴 10% 결제일 할인받아요</span>
+        </div>
+        <div class="row-benefit">일 1회, 이용금액 기준 20만원 까지 (할인한도 2만원) 할인</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.01~2026.10.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=8334&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">미스터피자 15% / 40% 할인 혜택</span>
+        </div>
+        <div class="row-benefit">② 혜택02 : 지난달(1일~말일) 일시불 및 할부 이용금액 20만원 이상 시 일 1회, 월 1회, 연 12회, 일 결제금액 기준 20만원까지 제공</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=7637&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-여행">
+    <div class="cat-header">
+      <span class="cat-emoji">✈️</span>
+      <span class="cat-name">여행</span>
+      <span class="cat-count">93건</span>
+    </div>
+    <div class="rows">
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">KB와 함께하는SUMMER PLAY</span>
+        </div>
+        <div class="row-benefit">혜택 2. 레고랜드® 호텔 숙박 15% 할인!</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.18~2026.07.16</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001290" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">트립닷컴 월드컵팩최대 20% 할인</span>
+        </div>
+        <div class="row-benefit">행사 기간 안에 KB국민 비자 개인 신용/체크 국내외겸용 카드로 KB국민카드 전용 트립닷컴 페이지에서 달러(USD)로 결제할 때 프로모션코드를 입력하면 북중미 20%, 그 외 지역 15% 즉시 할인(ID 당 3회, 최대 할인 80달러(USD))</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.22~2026.08.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001276" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">준비! Again2002해외이용하고 응원키트받기</span>
+        </div>
+        <div class="row-benefit">참가상	16달러(USD) 이상 결제 고객 전원	우리의 주장을 응원해요</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.12~2026.06.26</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001258" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">스타샵 이용하고인천 펜타포트 즐기자!</span>
+        </div>
+        <div class="row-benefit">응모하고 전국 9만여 스타샵(온/오프라인)적립 가맹점에서 KB국민카드를 이용하면 추첨을 통해 「KB국민카드 인천 펜타포트 페스티벌 2026」‘1일권 초대권’ 증정(제공처: 경기일보 / 1인 2매, 총 600매)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.15~2026.07.10</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001253" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">2026 펜타포트 티켓,체크하고 GET!</span>
+        </div>
+        <div class="row-benefit">* 단, 신규 발급 고객이 행사 기간 안에 &#x27;행사 1 이용금액 조건(1만원 이상(KB Pay로 1건 이상))&#x27; 충족 시 추첨 기회 1회 추가 부여</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.15~2026.07.10</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001248" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">해외결제는 1400원으로고정환율 적용</span>
+        </div>
+        <div class="row-benefit">응모하고 기간 동안 해외 가맹점에서 합산 30만원 이상 이용하면 1달러(USD) = 1,400원 고정환율을 적용하여 환율 차액은 포인트리 제공(최대 20,000포인트리)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.15~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001244" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">KB국민카드와 함께펜타포트 페스티벌 GO!</span>
+        </div>
+        <div class="row-benefit">응모하고 기간동안 개인 신용카드로 30만원 이상 이용한 고객 중 150명 추첨하여 &#x27;2026 인천 펜타포트 락 페스티벌&#x27; 티켓 1일권 증정(1인 2매)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.15~2026.07.05</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001234" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">와우카드 할부 이용하면펜타포트락페스티벌 티켓이</span>
+        </div>
+        <div class="row-benefit">행사 기간 동안 응모하고 쿠팡 와우 카드로 합산 5만원 이상 할부(무이자/유이자) 이용하신 고객 대상, 300명 추첨하여 &#x27;2026 인천펜타포트 락 페스티벌&#x27; 초대권(1일권) 2매 증정</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.10~2026.07.05</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001232" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">호텔스닷컴 최대 40%할인+추가 10% 할인!</span>
+        </div>
+        <div class="row-benefit">혜택 1. 행사 기간 안에 대상카드로 하단의 바로가기와 연결된 호텔스닷컴 페이지에서 달러(USD) 결제 시 국내외호텔 최대 40% 할인 + 프로모션코드 10KBCARD 입력하면 10% 추가 즉시 할인</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.04~2026.07.13</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001201" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">웹투어에서 국내선체크 최대 10% 캐시백</span>
+        </div>
+        <div class="row-benefit">웹투어에서 KB국민 체크카드로 국내선 항공권 결제 시 최대 10% 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.05~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001183" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">와이페이모어에서 국내선체크 최대10% 캐시백</span>
+        </div>
+        <div class="row-benefit">와이페이모어에서 KB국민 체크카드로 국내선 항공권 결제하면 최대 10% 캐시백(최대 10만원)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.02~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001182" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">여름휴가 준비 한번에클리어!</span>
+        </div>
+        <div class="row-benefit">행사 기간 동안 선응모하고 KB국민 체크카드로 숙박 대상 가맹점, 철도/고속·시외버스 업종에서 합산 30만원 이상 이용 시 5% 캐시백(최대 2만원, 선착순 5백명)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001173" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">라쿠텐트래블과 여름을!최대 20% 즉시할인</span>
+        </div>
+        <div class="row-benefit">라쿠텐 트래블에서 일본 전 지역 숙소 결제할 때 사용 가능한 최대 20% 즉시할인 쿠폰 제공(최대 1만5천엔(JPY)까지 할인)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.04~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001170" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">롯데월드 종합이용권할인 이벤트</span>
+        </div>
+        <div class="row-benefit">* 온라인: 본인 32,500원/26,500원 + 동반 1인 30%</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001168" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">Visa카드 에어비앤비최대 4.5만원 혜택!</span>
+        </div>
+        <div class="row-benefit">응모하고 행사 기간 동안 대상카드로 에어비앤비에서 미화환산금액 100/200/300달러(USD) 이상 결제하면 네이버페이 포인트 쿠폰 1.5만/3만/4.5만원 제공</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.08.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001136" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">많이 쓴 만큼 더 할인국내선 최대 8%!</span>
+        </div>
+        <div class="row-benefit">30만원 이상	4%	10만원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.08~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001133" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">여행부터 일상까지 챙겨요!트래블 체크로 갈아타기</span>
+        </div>
+        <div class="row-benefit">* 조건: 원화환산누적금액 30/50/100만원이상 이용 시, CU 3천원/5천원/1만원 모바일쿠폰</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001122" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">몰테일 중국 특별 요금+ 배송비 할인 5회!</span>
+        </div>
+        <div class="row-benefit">혜택 2. 행사 기간 동안 대상카드로 중국 온라인 가맹점에서 100달러(USD) 구매 인증 후 몰테일에 배송대행 신청하면 배송비 3달러(USD) 할인 제공(ID당 최대 5회 가능, 선착순 4천건 한정)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.26~2026.08.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001117" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">Amex 40% 할인프리미엄 다이닝 컬렉션</span>
+        </div>
+        <div class="row-benefit">주요 프리미엄 호텔 레스토랑 특정 메뉴 40% 할인</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.26~2026.07.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001114" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">에버랜드 놀이기구 타고최대 14만원 캐시백!</span>
+        </div>
+        <div class="row-benefit">행사 1. 대상카드로 에버랜드 정기권 14만원 이상 결제하면 12만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001106" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">KB할인팩 신청하면대한항공 8% 즉시할인</span>
+        </div>
+        <div class="row-benefit">KB Pay 앱에서 KB할인팩 &#x27;대한항공 즉시할인 쿠폰&#x27; 신청하여 쿠폰을 발급받은 후 대한항공 홈페이지/앱에서 행사 노선 결제시 쿠폰 적용하면 일반석 항공권 8% 즉시할인</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001101" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">해외이용하면 최대100만원 혜택!</span>
+        </div>
+        <div class="row-benefit">응모하고 행사 기간 동안 대상카드로 해외 온오프라인 가맹점에서 원화환산금액 기준 50 / 100 / 200 / 300 / 500 / 1,000 / 2,000 / 3,000 / 4,000 / 5,000만원 이상 이용하면 1 / 2 / 4 / 6 / 10 / 20 / 40 / 60 / 80 / 100만 롯데백화점 상품권 제공</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.27~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001097" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">국제선 항공권 청구할인With 와이페이모어</span>
+        </div>
+        <div class="row-benefit">30만원 이상	4%	10만원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001038" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">유니온페이 해외10% 즉시할인</span>
+        </div>
+        <div class="row-benefit">행사 기간 안에 대상카드로 아래 &#x27;사전 등록 하기&#x27;에서 결제하기 전에 ① 카드 번호 등록, ② 혜택 적용 받을 카드 &#x27;선택 확인&#x27; 하고 일본, 베트남, 대만, 홍콩, 마카오, 영국, 이탈리아 오프라인 가맹점에서 대상카드로 건당 미화환산금액 50달러(USD) 이상 결제하면 10% 즉시 할인(결제 건당 최대 20달러(USD), 카드당 최대 3회 제공)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.16~2026.08.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000981" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">봄 여행, 그린카드로타면 할인! 머물면 적립</span>
+        </div>
+        <div class="row-benefit">혜택 2. KTX 역사 또는 코레일톡(모바일앱)에서 저탄소인증 노선(서울 ↔ 부산)을 포함한 전체 노선 예매(결제)하면 10%캐시백(1인 최대 3만원, 결제횟수 제한없음)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.22~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000872" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">KB Pay X 에버랜드가정의달 1+1 할인</span>
+        </div>
+        <div class="row-benefit">대인종일권	5월	68,000원	40,800원	40% 할인</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.28~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000855" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">전세계 프리퍼드 호텔4박 예약 시 1박 무료</span>
+        </div>
+        <div class="row-benefit">행사 기간 안에 대상카드로 &#x27;자세히 보기&#x27;에서 예약 및 결제하면 4박 예약 시 1박 무료 혜택 제공(World, World Elite 등급 고객은 Prefer 포인트 5,000점 추가 적립)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.06~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000717" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">Again! 해외이용하면 최대 100만 포인트리</span>
+        </div>
+        <div class="row-benefit">응모하고 행사 기간 동안 대상카드로 해외 온오프라인 가맹점에서 30 / 50 / 100 / 200 / 300 / 500 / 1,000 / 1,500 / 2,000 / 3,000 / 4,000 / 5,000만원 이상 이용하면 0.5 / 1 / 2 / 4 / 6 / 10 / 20 / 30 / 40 / 60 / 80 / 100만 포인트리 제공</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000701" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">아고다최대 10% 즉시할인</span>
+        </div>
+        <div class="row-benefit">행사 기간 안에 KB국민 개인 신용/체크 국내외겸용 카드로 KB국민카드 전용 아고다 페이지에서 해외호텔 예약 및 달러(USD) 결제할 때 최대 10% 즉시 할인(할인금액 제한 없음)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000678" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">유니온페이 중국 본토10% 즉시할인</span>
+        </div>
+        <div class="row-benefit">행사 기간 동안 대상카드로 아래 ‘사전 등록 하기’에서 결제하기 전에 카드 번호 등록, 혜택 적용 받을 카드 ‘선택 확인’을 하고, 중국 본토 오프라인 가맹점에서 건당 500위안(CNY) 이상 결제하면 10% 즉시할인(결제건당 최대 100위안(CNY), 카드당 최대 5회 제공)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.03.30~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000667" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">일본 공항 면세점최대 10% 페이백</span>
+        </div>
+        <div class="row-benefit">응모하고 행사 기간 동안 대상카드로 일본 3개 도시 공항 면세점(나리타, 하네다, 오사카, 후쿠오카)에서 월 합산 1만엔(JPY) 이상 이용하면 KB Pay 외화머니 1천엔(JPY) 제공</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000655" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">일본 3대 편의점최대 50% 페이백</span>
+        </div>
+        <div class="row-benefit">응모하고 행사 기간 동안 대상카드로 일본 3대 편의점(세븐일레븐, 로손, 패밀리마트) 건당 1천엔(JPY) 이상 이용하면 이용 건수만큼 KB Pay 외화머니 500엔(JPY) 제공(최대 5천엔(JPY))</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000654" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">일본여행 필수품 JCB 20% 캐시백</span>
+        </div>
+        <div class="row-benefit">행사 기간 안에 대상카드로 일본 현지에서 엔화(JPY)로 결제하면 20% 캐시백 제공(대상 매장과 제외 매장은 자세히 보기 에서 확인)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000613" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">홍콩&amp;마카오 쇼핑최대 10% 캐시백</span>
+        </div>
+        <div class="row-benefit">행사 기간 동안 MTR서비스 바로가기에서 대상카드를 등록하고 각 가맹점별로 혜택 활성화 한 후 홍콩, 마카오 대상 가맹점에서 결제하면 캐시백 제공</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000607" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">일본 한큐&amp;한신백화점 2천엔(JPY) 캐시백</span>
+        </div>
+        <div class="row-benefit">행사 기간 동안 MTR서비스 바로가기에서 대상카드를 등록하고 혜택 활성화한 후 일본 한큐 백화점 우메다, 한큐 멘즈 오사카, 한큐 멘즈 도쿄, 하카타 한큐, 고베 한큐에서 건당 3만엔(JPY) 이상 결제하면 2천엔(JPY) 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000605" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">오사카 레고랜드 온라인 예약 5% 캐시백</span>
+        </div>
+        <div class="row-benefit">행사 기간 동안 대상카드로 &#x27;오사카 레고랜드 예약하기&#x27;를 통해 접속한 페이지에서 결제하면 5% 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000604" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">DiDi 5위안(CNY) 캐시백</span>
+        </div>
+        <div class="row-benefit">행사 기간 동안 &#x27;MTR 서비스 바로가기&#x27;에서 대상카드를 등록하고, 혜택 활성화한 후 DiDi 택시 앱에 등록하고 중국 본토에서 건당 100위안(CNY) 이상 결제하면 5위안(CNY) 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000603" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">알리페이 5위안(CNY) 캐시백</span>
+        </div>
+        <div class="row-benefit">행사 기간 동안 &#x27;MTR 서비스 바로가기&#x27;에서 대상카드를 등록하고, 혜택 활성화한 후 알리페이에 등록하고 중국 본토 가맹점에서 Alipay wallet을 통해 건당 30위안(CNY) 이상 결제하면 5위안(CNY) 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000602" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">일본 백화점3천엔(JPY) 캐시백</span>
+        </div>
+        <div class="row-benefit">행사 기간 동안 &#x27;MTR 서비스 바로가기&#x27;에서 대상카드를 등록하고, 혜택 활성화한 후 일본 다이마루 후쿠오카 텐진 백화점, 오다큐 백화점, 세이부 &amp; 소고 백화점에서 건당 3만엔(JPY) 이상 결제하면 3천엔(JPY) 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000601" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">빅카메라2천엔(JPY) 캐시백</span>
+        </div>
+        <div class="row-benefit">행사 기간 동안 &#x27;MTR 서비스 바로가기&#x27;에서 대상카드를 등록하고, 혜택 활성화한 후 일본 빅카메라에서 건당 3만엔(JPY) 이상 결제하면 2천엔(JPY) 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000600" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">돈키호테 1천엔(JPY) 캐시백</span>
+        </div>
+        <div class="row-benefit">행사 기간 동안 &#x27;MTR 서비스 바로가기&#x27;에서 대상카드를 등록하고, 혜택 활성화한 후 일본 돈키호테에서 건당 1만엔(JPY) 이상 결제하면 1천엔(JPY) 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000599" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">아고다 유니온페이카드최대 15% 즉시할인</span>
+        </div>
+        <div class="row-benefit">행사 기간 안에 대상카드로 유니온페이카드 전용 아고다 페이지에서 국내외호텔 예약 및 달러(USD) 결제할 때 할인코드 입력하면 최대 15% 즉시 할인(할인금액 100달러(USD), 카드별 최대 3회 제공)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.03.16~2026.08.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000570" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">Visa카드 카타르항공최대 15% 즉시할인</span>
+        </div>
+        <div class="row-benefit">바로가기 페이지에서 예약 기간 안에 대상카드로 왕복 항공권 결제할 때 VISAKRJP 입력하면 기본 항공운임의 최대 15% 즉시할인</div>
+        <div class="row-meta">
+          <span class="date">📅 2025.10.01~2026.10.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000332" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">KB가 해외이벤트에얼마나 진심인지 감도안옴</span>
+        </div>
+        <div class="row-benefit">쓰는 순간, 캐시백 ON!</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000177" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">라쿠텐트래블최대 20% 즉시할인</span>
+        </div>
+        <div class="row-benefit">라쿠텐 트래블에서 일본 전 지역 숙소 결제할 때 사용 가능한 최대 20% 즉시할인 쿠폰 제공(일반카드 최대 1만 5천엔(JPY), 프리미엄카드 최대 100달러(USD)까지 할인)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.15~2026.12.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000097" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">Visa카드 아시아태평양IHG호텔 20%즉시할인</span>
+        </div>
+        <div class="row-benefit">바로가기 페이지에서 IHG One Rewards 멤버십 가입하고 대상카드로 예약할 때 싱가포르, 태국, 베트남, 대한민국, 인도네시아, 말레이시아, 필리핀, 몰디브, 라오스, 일본, 미크로네시아, 호주, 뉴질랜드 및 남태평양 지역 IHG호텔에서 최대 우대 요금(BFR, Best Flexible Rate)의 20% 할인(목요일, 금요일, 토요일, 일요일 중</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000091" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">렌탈카스닷컴5% 즉시할인</span>
+        </div>
+        <div class="row-benefit">행사 기간 안에 KB국민 개인 신용/체크 국내외겸용 카드로 렌탈카스닷컴에서 예약하면 5% 즉시할인</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000067" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">JCB카드로 하와이트롤리 핑크라인 무료!</span>
+        </div>
+        <div class="row-benefit">행사 기간 안에 하와이 와이키키 트롤리 핑크라인 탑승할 때 대상카드 제시하면 무료 탑승</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000065" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">에어알로 eSIM20% 즉시할인</span>
+        </div>
+        <div class="row-benefit">행사 기간 안에 에어알로(Airalo)에서 eSIM 구매할 때 KB국민카드 전용 프로모션 코드 KB2026 입력하면 20% 즉시할인</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000064" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">할인한도 없는 트립닷컴최대 6% 즉시할인</span>
+        </div>
+        <div class="row-benefit">행사 기간 안에 KB국민 개인 신용/체크 국내외겸용 카드로 KB국민카드 전용 트립닷컴 페이지에서 달러(USD)로 결제할 때 프로모션코드를 입력하면 최대 6% 즉시 할인</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000058" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">클룩 유럽 상품최대 50% 할인 쿠폰</span>
+        </div>
+        <div class="row-benefit">혜택 3. 유럽 상품 전체 100달러(USD) 이상 결제할 때 10% 즉시할인(최대 15달러(USD))</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000057" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">할인한도없는 호텔스닷컴최대 12% 혜택</span>
+        </div>
+        <div class="row-benefit">혜택 1. 행사 기간 안에 대상카드로 KB국민카드 전용 호텔스닷컴 페이지에서 국내외호텔 달러(USD) 결제할 때 프로모션코드 10KBCARD 입력하면 10% 즉시 할인(할인한도금액 제한 없음, 고객당 5회까지 할인 적용 가능)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000052" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">비스터컬렉션 유럽9개도시명품 10% 상시할인</span>
+        </div>
+        <div class="row-benefit">유럽 여행 명품 쇼핑 필수 코스! 파리, 런던, 바르셀로나 등 총 유럽 9개 빌리지에서 KB국민카드 고객만을 위한 단독 VIP 패스(10% 할인) 제공</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000043" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">유럽VIP쇼핑 런던비스터빌리지 쇼핑지원!</span>
+        </div>
+        <div class="row-benefit">응모하고 행사 기간 동안 대상카드로 Top3 가맹점(몽클레어, 프라다, 버버리)에서 각 브랜드별 미화환산금액 100달러(USD) 이상 구매하면 구매 브랜드 개수만큼 혜택 제공(1/2/3개 브랜드: KB Pay 외화머니 10/30/50달러(USD))</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000025" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">유럽VIP쇼핑 파리라발레빌리지 쇼핑지원!</span>
+        </div>
+        <div class="row-benefit">응모하고 행사 기간 동안 대상카드로 Top3 가맹점(몽클레어, 프라다, 버버리)에서 각 브랜드별 미화환산금액 100달러(USD) 이상 구매하면 구매 브랜드 개수만큼 혜택 제공(1/2/3개 브랜드: KB Pay 외화머니 10/30/50달러(USD))</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000024" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">유럽VIP쇼핑 바르셀로나라로카빌리지 쇼핑지원!</span>
+        </div>
+        <div class="row-benefit">응모하고 행사 기간 동안 대상카드로 Top3 가맹점(몽클레어, 프라다, 버버리)에서 각 브랜드별 미화환산금액 100달러(USD) 이상 구매하면 구매 브랜드 개수만큼 혜택 제공(1/2/3개 브랜드: KB Pay 외화머니 10/30/50달러(USD))</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000023" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">객실 5% 할인테마파크 26% 할인 — 제주신화월드</span>
+        </div>
+        <div class="row-benefit">BC카드 결제 시 객실•직영식음료•테마파크 현장 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060026" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">일본 여행은BC 아이가 — 이스타항공</span>
+        </div>
+        <div class="row-benefit">항공권 30만원 이상 결제 시 2만원 캐시백</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060012" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">제휴 호텔브런치2만원 구매 특가 — 전월 실적 30만원 이상시</span>
+        </div>
+        <div class="row-benefit">제휴 호텔 레스토랑 브런치 이용권 1인 2만원 구매 특가 (선착순 500명)</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050018" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">서울랜드 파크이용권최대 54% 할인 — 워터워즈 페스티벌 오픈기념</span>
+        </div>
+        <div class="row-benefit">서울랜드 제휴 서비스 혜택 카드가 아니어도 이용실적과 상관없이 종일권 23,900원, 야간권 21,900원</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050010" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">고환율에도 걱정✖️최대 10만원 혜택 — 해외 온라인·직구·여행</span>
+        </div>
+        <div class="row-benefit">~50만 원 미만	1%	2%</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050007" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">경상도레저부터 호캉스까지 — 지금은 경상여행각</span>
+        </div>
+        <div class="row-benefit">마이태그 후 3만원 이상 결제 시 5천원 결제일 할인(1일 1인 1회 한정)</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026040019" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">해외호텔 결제하면5만원 즉시 할인 — 하나투어 이벤트</span>
+        </div>
+        <div class="row-benefit">해외호텔 60만원 이상 결제 시, 5만원 즉시 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026010026" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">유류할증료 부담 제로요금 인상없는 해외여행 — 하나투어 이벤트</span>
+        </div>
+        <div class="row-benefit">BC VIP 카드 결제 시 해외여행 최대 7% 할인 적용</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026040014" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">호텔 예약최대 10% 추가 할인 — 아고다</span>
+        </div>
+        <div class="row-benefit">전 세계 호텔 상시 7% 추가 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030051" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">트립닷컴최대 6% 할인 — 할인 받고 떠나자</span>
+        </div>
+        <div class="row-benefit">BC카드로 결제 시, 항공 3%, 호텔 6% 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030050" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">최대 10% 추가할인 — 호텔스닷컴 호텔 예약</span>
+        </div>
+        <div class="row-benefit">BC카드 고객 대상, 호텔스닷컴 해외 호텔 예약 시 최대 10% 추가 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030048" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">호텔 예약8% 추가 할인 — 익스피디아</span>
+        </div>
+        <div class="row-benefit">전 세계 호텔 상시 최대 8% 추가 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030045" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">중국 본토 오프라인10% 즉시 할인 — BC유니온페이</span>
+        </div>
+        <div class="row-benefit">사전등록 페이지에서 결제시각 이전 ‘카드번호 등록 및 혜택받을 카드 선택확인‘ 완료한 고객에 한해 즉시 할인 혜택 제공(등록 후 할인 적용까지 약 2분 소요)</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030042" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">혜택대상 업종 할부 시6개월 부분 무이자 — 온라인•백화점•여행 등</span>
+        </div>
+        <div class="row-benefit">혜택 대상 업종에서 할부 결제 시 6개월 부분무이자 혜택 제공</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030036" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">국내•해외 호텔최대 15% 할인 — 유니온페이 x 아고다</span>
+        </div>
+        <div class="row-benefit">프로모션 전용 페이지를 통해 BC 유니온페이 카드로 국내외 호텔 결제 시 최대 15% 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030007" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">해외여행 데이터 로밍최대 15% 할인 — 와이파이 도시락</span>
+        </div>
+        <div class="row-benefit">와이드모바일 페이북 전용 페이지에서 예약 시 와이파이도시락 15% 할인 및 도시락유심/eSIM 5% 할인 제공</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2024120018" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">일본 가맹점 쿠폰 할인 — BC유니온페이 카드결제 시</span>
+        </div>
+        <div class="row-benefit">최대 7% 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026020003" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">해외 온•오프라인 결제기본3%+추가3% 적립 — 26년 GOAT카드</span>
+        </div>
+        <div class="row-benefit">※ 월 최대 한도 3만원 (3개월 단위 최대 9만원), 실적 조건 없음</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025110033" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">골프여행할인 혜택 모음 — 그린재킷투어</span>
+        </div>
+        <div class="row-benefit">해외 골프여행 예약 시 최대 4% 할인 적용</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025060040" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">Hotels.com X 대한항공 트리플 마일리지 적립 프로모션</span>
+        </div>
+        <div class="row-benefit">Trip to 로카 해외 결제하면 한도 없는 최대 4.5% 할인</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11162&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">서킷의 전율을 온몸으로, 직관 티켓과 항공권+숙박권 받아요</span>
+        </div>
+        <div class="row-benefit">500만원 이상 ~ 1000만원 미만	20개</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.15~2026.07.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11159&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">트래블월렛 하이브리드 롯데카드 20만원 캐시백</span>
+        </div>
+        <div class="row-benefit">트래블월렛 하이브리드 롯데카드로 이용 기간 내 국내 및 해외에서 30만원 이상 결제 시 트래블월렛 원화(KRW) 20만원 지급</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11145&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">힐튼 아너스 아멕스 쓰고 최대 160만원 상당 혜택 받으세요</span>
+        </div>
+        <div class="row-benefit">ⓐ카드 혜택 : 해외 매출 1,500원 당 8포인트 적립 ( 6,000,000원/1,500원 = 4,000 , 4,000 * 8포인트 = 3.2만 포인트 적립)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11107&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">LG전자 온라인몰(LGE.COM) 최대 50만원 캐시백</span>
+        </div>
+        <div class="row-benefit">해외겸용(AMEX, MASTER) 20,000원 | 가족카드 13,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11079&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">하나투어와 해외여행 떠나면 5% 결제일 할인 또는 24개월 무이자</span>
+        </div>
+        <div class="row-benefit">5% 결제일 할인	일시불 결제 시	유류할증료, 제세공과금, 선택 관광비용 등 제외 / 혜택 중복 적용 불가</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.29~2026.12.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=8466&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">여행사 · 항공사 업종 무이자/부분 무이자 할부 혜택</span>
+        </div>
+        <div class="row-benefit">무이자할부 혜택이 적용된 결제 건은 포인트 및 마일리지가 적립되지 않습니다. (단, 일부 상품 제외)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=8393&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">마스터카드 보너스 리베이트 프로그램</span>
+        </div>
+        <div class="row-benefit">일본에서 마스터카드 이용 시 각 프로모션 차수 별(매 분기)로 캐시백 지급</div>
+        <div class="row-meta">
+          <span class="date">📅 2025.10.01~2026.09.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=8364&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">힐튼 아너스 아멕스 카드 주말 숙박권 &amp; 등급 업그레이드</span>
+        </div>
+        <div class="row-benefit">혜택 02	대상카드로 1차년도 이용금액이 1,200만원 이상 시 다이아몬드 등급으로 업그레이드	대상카드로 1차년도 이용금액이 600만원 이상 시 골드 등급으로 업그레이드</div>
+        <div class="row-meta">
+          <span class="date">📅 2025.09.01~2026.12.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=8356&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">Trip to 로카 해외 결제하면 한도 없는 최대 4.5% 할인</span>
+        </div>
+        <div class="row-benefit">브랜드사 해외 할인율	[AMEX] 기본 2.0% + 행사 2.5%</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.12.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=8011&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">롯데, 신라아이파크 면세점 5~15% 할인 혜택</span>
+        </div>
+        <div class="row-benefit">혜택02	신라아이파크면세점 이용 시 10~15% 현장할인</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=7638&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">놀이공원 이용권 40~50% 할인 혜택</span>
+        </div>
+        <div class="row-benefit">혜택02	광주패밀리랜드 본인 자유이용권 50% 현장할인 / 서울랜드 본인 자유이용권 40% 현장할인</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=7633&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">서울랜드 봄축제 K 도파민 페스티벌 파크이용권 특별 할인</span>
+        </div>
+        <div class="row-benefit">종일권	어른	52,000원	104,000원	49,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=7264&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#3b82f6">삼성카드</span>
+          <span class="ev-title">롯데면세점 최대 16% 즉시할인</span>
+        </div>
+        <div class="row-benefit">최대 16% 즉시할인(USD 70 이상 결제 시 최대 USD 160 할인)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.15~2026.06.30</span>
+          <a href="https://www.samsungcard.com/personal/event/ing/UHPPBE1403M0.jsp?cms_id=3746683" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#3b82f6">삼성카드</span>
+          <span class="ev-title">최대 28만원 혜택 하나투어 여행 찬스</span>
+        </div>
+        <div class="row-benefit">① 5만/10만원 결제일할인(국내외 여행상품 건별 150/300만원 이상 결제 시)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.15~2026.06.30</span>
+          <a href="https://www.samsungcard.com/personal/event/ing/UHPPBE1403M0.jsp?cms_id=3746195" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#3b82f6">삼성카드</span>
+          <span class="ev-title">롯데월드를 빨리 만나는 법 삼성카드 전용 게이트</span>
+        </div>
+        <div class="row-benefit">어른 67,000원	36,850원	36,850원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.10~2026.07.05</span>
+          <a href="https://www.samsungcard.com/personal/event/ing/UHPPBE1403M0.jsp?cms_id=3746653" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#3b82f6">삼성카드</span>
+          <span class="ev-title">면세점에서 삼성카드 쓰면 최대 6만원 할인</span>
+        </div>
+        <div class="row-benefit">행사 1,2는 각각 1인 1회 제공</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.05~2026.06.19</span>
+          <a href="https://www.samsungcard.com/personal/event/ing/UHPPBE1403M0.jsp?cms_id=3746677" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#3b82f6">삼성카드</span>
+          <span class="ev-title">호텔스닷컴 최대 40%할인에 추가 7% 할인쿠폰까지</span>
+        </div>
+        <div class="row-benefit">호텔 7% 즉시할인 쿠폰코드(SSCARD7)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.04~2026.07.13</span>
+          <a href="https://www.samsungcard.com/personal/event/ing/UHPPBE1403M0.jsp?cms_id=3744960" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-생활편의">
+    <div class="cat-header">
+      <span class="cat-emoji">🏠</span>
+      <span class="cat-name">생활편의</span>
+      <span class="cat-count">1건</span>
+    </div>
+    <div class="rows">
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">이번 달 학원비는KB가 쏩니다!</span>
+        </div>
+        <div class="row-benefit">(예시: 누적 40만원 이용 시 1장 / 68만원 이용 시 3장 / 102만원 이용 시 6장)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001146" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-교통">
+    <div class="cat-header">
+      <span class="cat-emoji">🚗</span>
+      <span class="cat-name">교통</span>
+      <span class="cat-count">24건</span>
+    </div>
+    <div class="rows">
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">다이렉트 자동차보험주유권+5개월 무이자할부</span>
+        </div>
+        <div class="row-benefit">결제 방식에 따라 5만원 이상 할부 결제 시 제공되는 할부개월수 별 무이자할부 혜택 및 부분 무이자할부 정보를 안내합니다.</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001191" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">고유가시대 주유비를국민카드가 지원합니다.</span>
+        </div>
+        <div class="row-benefit">상품서비스: 전월 이용실적 30만원 이상 시 제공(할인한도: 일 30만원 / 월 30만원 이용금액까지 적용)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001172" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">주유할수록 쌓인다!최대 1만원 주유비 지원</span>
+        </div>
+        <div class="row-benefit">예시) 행사 기간 주유 금액이 총 30만원인 경우 7,500원 행사 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001169" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">코웨이Ⅱ카드 자동납부추가할인!</span>
+        </div>
+        <div class="row-benefit">* 추가할인은 전월 이용실적별 기본 혜택금액을 초과하는 경우에만 제공됩니다.(예. 전월 이용실적이 40만원 이상인 경우 렌탈료 건당 15,000원 초과 결제 금액에 대해서만 추가할인 적용)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001124" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">쿠쿠렌탈Ⅱ카드 자동납부추가할인!</span>
+        </div>
+        <div class="row-benefit">* 추가할인은 자동납부 건당 승인금액이 전월 이용실적별 기본혜택 금액을 초과하는 경우에만 제공됩니다.(예. 전월 이용 실적이 30만원 이상인 경우 렌탈료 건당 12,000원 초과 결제 시 추가할인적용)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001123" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">볼트업 EV카드 충전요금최대 50% 할인!</span>
+        </div>
+        <div class="row-benefit">추가 혜택(30%)	15,000원	22,500원	30,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001085" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">삼성화재자동차보험 캐시백최대3만원 신규가입 혜택</span>
+        </div>
+        <div class="row-benefit">하단 &#x27;바로가기&#x27; 버튼을 통해 삼성화재 다이렉트 자동차보험 &#x27;신규&#x27; 계약 및 최종 건당 50만원이상 결제 시 최대 3만원 캐시백 지급</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.08.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001083" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">[스피드메이트]할인은 기본 혜택은 더함</span>
+        </div>
+        <div class="row-benefit">타이어 할인표는 타이어 종류, 쿠폰번호, 할인율, 비고로 구성되어 있습니다.</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000644" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">에버온 EV카드 충전요금월 최대 4만원 할인!</span>
+        </div>
+        <div class="row-benefit">추가 혜택	에버온 충전기(에버온 회원 인증 후 전기차 충전)	추가 20%	1만원	1만 5천원	2만원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.16~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000104" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">티스테이션에서 타이어할인+ 모바일 주유권까지</span>
+        </div>
+        <div class="row-benefit">타이어 2개 / 4개 구매하면, 모바일 주유권 1만원 / 2만원 지급</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000092" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">무신사 무진장26 여름 블프 — 무신사 x BC카드</span>
+        </div>
+        <div class="row-benefit">전 상품 8만원 이상 결제 시 4천원 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060022" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">녹색소비주간에그린카드로 혜택받기 — 그린카드 녹색소비주간</span>
+        </div>
+        <div class="row-benefit">행사 기간 내 &#x27;녹색소비주간&#x27; 마이태그 후 제휴유통사에서 5만원 이상 결제 시 에코머니포인트 1만점 적립!</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060011" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">주유 10% 할인받고5% 추가 혜택까지 — BC바로 MACAO카드</span>
+        </div>
+        <div class="row-benefit">주유 이용 시 5% 추가할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060008" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">5MAZINGCARD WEEKS — 신세계 x BC바로카드</span>
+        </div>
+        <div class="row-benefit">신세계백화점에서 5만원 이상 결제 시 2~12개월 무이자 할부 혜택 제공</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050022" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">교통비 3만원 달성하면최대 1만원 캐시백 — 경남은행 K-패스 카드</span>
+        </div>
+        <div class="row-benefit">이벤트 기간 중 K-패스 체크카드로 대중교통(시내버스•지하철) 3만원 이상 이용 시 5천원 캐시백</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050020" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">자동차구매는 IBK카드다이렉트 오토캐시백 — 다이렉트 오토캐시백</span>
+        </div>
+        <div class="row-benefit">IBK개인 신용카드로 신차 또는 중고차 구매 시 최대 1.8% 캐시백 제공</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026040026" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">신규30만원BC카드결제페이북머니 최대 3만원 — 한화손보 캐롯 자동차보험</span>
+        </div>
+        <div class="row-benefit">한화손보 캐롯 자동차보험 신규 가입 및 BC카드 30만원 이상 결제 시 페이북머니 최대 3만원 지급</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030041" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">삼성화재 다이렉트 자동차보험 신규 가입 시 최대 3만원 캐시백</span>
+        </div>
+        <div class="row-benefit">삼성화재 다이렉트 자동차 보험료 50만원 이상 롯데카드로 결제 시 최대 3만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11152&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">최대 5% 적립에 최대 55.4만원 상당 혜택까지</span>
+        </div>
+        <div class="row-benefit">① 2026.07.10(금)까지 롯데멤버스카드로 16만원 이상 이용 시 5만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11148&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">롯데멤버스 카드 한번 써보세요 캐시백 + 내년 연회비 면제</span>
+        </div>
+        <div class="row-benefit">롯데멤버스 카드 국내외 가맹점 0.5%, 롯데멤버스 브랜드 최대 5% 혜택 모두 지난달(전월) 50만원 이상 시</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.07.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11136&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">롯데카드 주유 전용 카드 이용하면 캐시백 + 연회비 면제까지!</span>
+        </div>
+        <div class="row-benefit">주유 건당 5만원 이상 결제 시 월 5천원 한도 내 제공</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11031&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">롯데멤버스 카드 한번 써보세요 캐시백 + 내년 연회비 면제</span>
+        </div>
+        <div class="row-benefit">롯데멤버스 카드 국내외 가맹점 0.5%, 롯데멤버스 브랜드 최대 5% 혜택 모두 지난달(전월) 50만원 이상 시 제공되</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=8188&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#3b82f6">삼성카드</span>
+          <span class="ev-title">자동차보험, 차량별로 상품권 혜택 제공</span>
+        </div>
+        <div class="row-benefit">아래 ‘참여방법’을 통해 자동차보험에 가입하고 삼성개인신용카드(가족카드 포함)로 결제 시 자동차 보험료 30만원 이상인 경우 최대 30,000원 신세계상품권 모바일교환권 제공(차량별 혜택 제공)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.09.30</span>
+          <a href="https://www.samsungcard.com/personal/event/ing/UHPPBE1403M0.jsp?cms_id=3736924" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#3b82f6">삼성카드</span>
+          <span class="ev-title">혼다 자동차, 다이렉트 오토 혜택으로 만나 보세요.</span>
+        </div>
+        <div class="row-benefit">카드일시불 1.2% 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.samsungcard.com/personal/event/ing/UHPPBE1403M0.jsp?cms_id=3747275" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-문화레저">
+    <div class="cat-header">
+      <span class="cat-emoji">🎭</span>
+      <span class="cat-name">문화레저</span>
+      <span class="cat-count">3건</span>
+    </div>
+    <div class="rows">
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">받자! 최!강!두!산!두산베어스 KB카드</span>
+        </div>
+        <div class="row-benefit">이용 기간 동안 대상카드로 10만원 이상 이용하고 응모하면 10만원 캐시백(응모/동의 필수)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001093" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">두산베어스 KB카드선수 포토카드 증정!</span>
+        </div>
+        <div class="row-benefit">두산베어스 KB카드 발급하면 두산베어스 선수 포토카드 1종 제공(선착순 3천명)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.02.25~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000326" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">BC카드 VIP 전용특별 할인 공연•전시 — VIP 문화•예술서비스</span>
+        </div>
+        <div class="row-benefit">서울, 수도권, 지방지역 뮤지컬, 연극 공연 특별 할인 혜택</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2024120020" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-금융할부">
+    <div class="cat-header">
+      <span class="cat-emoji">💰</span>
+      <span class="cat-name">금융할부</span>
+      <span class="cat-count">51건</span>
+    </div>
+    <div class="rows">
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">신차 할부금융 다이렉트최대 60개월로 빠르게!</span>
+        </div>
+        <div class="row-benefit">할인 금리	3.70%	3.70%	3.70%	3.70%	3.70%</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.08~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001200" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">신차 살 땐 최대 60개월슬림 할부로 가볍게!</span>
+        </div>
+        <div class="row-benefit">할부 금리	3.0%	3.0%	3.5%	3.7%	3.7%	3.7%	3.7%</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001174" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">국세·지방세부분 무이자할부!</span>
+        </div>
+        <div class="row-benefit">6개월 부분무이자할부는 6개월 할부 결제 시에만 적용(할부수수료 1 ~ 3회차 고객부담, 4회차부터 면제)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001153" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">생활편의업종무이자할부</span>
+        </div>
+        <div class="row-benefit">5만원 이상 할부 이용하면 무이자, 부분무이자할부 혜택(업종별 상이)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001152" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">U+ 유모바일 Ⅱ카드자동납부요금 청구할인!</span>
+        </div>
+        <div class="row-benefit">70만원(2구간)	11,000원 + 9,000원	20,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001127" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">온라인 신규 발급 고객연회비 100% 캐시백</span>
+        </div>
+        <div class="row-benefit">신청한 달의 다음 달 말일까지 동의하고, 캐시백 지급일까지 유지</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001095" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">H.Point 카드10만P 특별 적립!</span>
+        </div>
+        <div class="row-benefit">카드이용기간 동안 H.Point KB국민카드로 현대백화점 그룹 가맹점에서 10만원 이상 이용하면 H.Point 10만P 적립(응모필수)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001092" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">보람상조 자동납부요금추가 청구할인!</span>
+        </div>
+        <div class="row-benefit">80만원 이상(2구간)	8,000원	11,000원	19,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001084" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">KB라이프 딱좋은요즘건강보험료자동납부 청구할인!</span>
+        </div>
+        <div class="row-benefit">추가 할인 한도	+ 10,000원	+ 10,000원	+ 10,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001071" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">스타샵 가맹점에서5천 포인트리 추가 적립!</span>
+        </div>
+        <div class="row-benefit">응모하고 전국 10만여 스타샵(오프라인) 적립가맹점에서 KB국민카드로 누적 5만원 이상 결제하면 5천 포인트리 추가 적립</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000856" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">Apple 제품 구매 시최대 18개월 무이자할부</span>
+        </div>
+        <div class="row-benefit">Apple Store 온라인 또는 Apple Store 매장에서 40만원 이상 결제하면 6/12개월, 120만원 이상 결제하면 18개월 무이자할부 혜택 제공</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.20~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000766" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">네이버+ 스토어 특별금리최대 60개월로 가볍게!</span>
+        </div>
+        <div class="row-benefit">할부 금리	7.0%	7.0%	8.0%	8.0%</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000597" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">쿠팡와우카드소액 무이자 할부 행사</span>
+        </div>
+        <div class="row-benefit">쿠팡와우카드로 쿠팡에서 1만원 이상 ~ 5만원 미만 할부 이용 시 2~3개월 무이자 적용</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.03.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000468" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">마음 든든! 운영 튼튼!소상공인경영안정바우처</span>
+        </div>
+        <div class="row-benefit">3만원 캐시백!</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.02.09~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000277" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">Visa카드 부킹닷컴최대 10% 월렛포인트</span>
+        </div>
+        <div class="row-benefit">KB국민 Visa 개인 신용카드 전용 바로가기 페이지에서 대상카드로 캐시백 배지가 있는 숙소를 예약하고 결제하면 체크아웃 시점으로부터 64일 후 부킹닷컴 월렛 포인트 최대 10% 지급</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000060" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">신차타GO~할인받GO~!</span>
+        </div>
+        <div class="row-benefit">* 청구할인(또는 캐시백)을 신청한 신차 구매 이용금액은 다른 이벤트행사 및 상품 서비스 혜택(포인트리, 마일리지 적립, 할인 등)에서 제외됩니다.</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.02.19~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000020" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">2•3개월 무이자6•10•12부분무이자 — 세금 업종 할부 시</span>
+        </div>
+        <div class="row-benefit">국세•지방세 업종에서 5만원 이상 결제 시, 최대 3개월 무이자 할부 혜택</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060010" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">최대 5개월무이자 — 업종별 무이자할부</span>
+        </div>
+        <div class="row-benefit">업종별 무이자 대상 업종에서 5만원 이상 결제 시 2~5개월 무이자 할부 혜택 제공</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060009" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">BC바로 MACAO카드연회비 100% 캐시백 — BC 바로카드 이벤트</span>
+        </div>
+        <div class="row-benefit">가입 첫 해 연회비 100% 결제일 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050017" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">BC바로 에어마스터카드연회비 100% 캐시백 — BC 바로카드 이벤트</span>
+        </div>
+        <div class="row-benefit">가입 첫 해 연회비 100% 결제일 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050016" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">BC바로 에어맥스카드연회비 100% 캐시백 — BC 바로카드 이벤트</span>
+        </div>
+        <div class="row-benefit">가입 첫 해 연회비 100% 결제일 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050015" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">BC바로 ZONE카드연회비 100% 캐시백 — BC 바로카드 이벤트</span>
+        </div>
+        <div class="row-benefit">가입 첫 해 연회비 100% 결제일 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050014" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">K-패스 카드연회비 100%청구할인 — 바로카드 연회비 이벤트</span>
+        </div>
+        <div class="row-benefit">전월실적 100만원 이상 시 대중교통 포함 월 최대 통합할인한도 30,000원</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050013" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">10•12개월부분무이자 — 부분 무이자할부 이용 시</span>
+        </div>
+        <div class="row-benefit">혜택 대상 업종에서 할부 결제 시 10•12개월 부분 무이자 혜택 제공</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030039" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">Light할부 이용 시최대 12개월 할부 — 2026년 2분기</span>
+        </div>
+        <div class="row-benefit">2026년 2분기 Light할부 이용 시, 행사 기간 동안 혜택 제공</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030038" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">할부 결제 시최대 3개월 무이자 — 영중소 가맹점에서</span>
+        </div>
+        <div class="row-benefit">영세•중소 가맹점에서 5만원 이상 결제 시 2~3개월 무이자 할부 혜택 제공</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030034" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">삼성화재 내차 보험료 조회하면 네이버페이 포인트 7천원 지급</span>
+        </div>
+        <div class="row-benefit">삼성화재에서 내 차 보험료 조회 시 네이버페이 7,0000원 즉시 제공</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11172&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">롯데카드 회원에게만 드리는 트레비클럽 신규 가입 혜택</span>
+        </div>
+        <div class="row-benefit">연회비	5,000,000원	8,000,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.19~2026.07.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11171&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">TELLO T 라이트 할부 카드 월 최대 29,000원 캐시백 혜택</span>
+        </div>
+        <div class="row-benefit">80만원이상	13,000원	16,000원	29,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11153&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">총 1,431명 당첨 행운! 단기카드 대출 최대 100만원 캐시 Dream</span>
+        </div>
+        <div class="row-benefit">띵코인은 1포인트부터 사용 가능(1포인트=1원)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11140&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">트래블월렛 하이브리드 롯데카드 캐시백+내년 연회비 면제까지</span>
+        </div>
+        <div class="row-benefit">국내전용 : 기본 7,000원 · 제휴 13,000원 · 총 20,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.07.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11139&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">LOCA MONEY 카드 캐시백+내년 연회비 면제까지</span>
+        </div>
+        <div class="row-benefit">국내외 가맹점에서 한도 제한없이 로카코인 적립 (기본적립 1% / 특별적립 2%)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.07.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11138&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">LOCA LIKIT 1.2 카드 캐시백+내년 연회비 면제까지</span>
+        </div>
+        <div class="row-benefit">LOCA LIKIT 1.2 카드로 해당 기간(2026.07.01(수)~07.31(금)) 동안 10만원 이상 이용 시 1만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.07.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11137&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">LOCA 나누기 한번 써보세요 캐시백 + 내년 연회비 면제</span>
+        </div>
+        <div class="row-benefit">01	LOCA 나누기 카드로 해당 기간(2026.07.01(수)~07.31(금)) 동안 10만원 이상 이용 시 2만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.07.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11135&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">디지로카 Las Vegas 한번 써보세요 캐시백 + 내년 연회비 면제</span>
+        </div>
+        <div class="row-benefit">디지로카 Las Vegas 카드로 해당 기간(2026.07.01(수)~07.31(금)) 동안 10만원 이상 이용 시 2만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.07.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11134&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">디지로카 London 한번 써보세요 캐시백 + 내년 연회비 면제</span>
+        </div>
+        <div class="row-benefit">01	디지로카 London 카드로 해당 기간(2026.07.01(수)~07.31(금)) 동안 10만원 이상 이용 시 2만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.07.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11116&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">디지로카 Paris 한번 써보세요 캐시백 + 내년 연회비 면제</span>
+        </div>
+        <div class="row-benefit">01	디지로카 Paris 카드로 해당 기간(2026.07.01(수)~07.31(금)) 동안 10만원 이상 이용 시 2만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.07.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11115&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">롯데카드와 첫 만남의 혜택 연회비 캐시백 100% 지급!</span>
+        </div>
+        <div class="row-benefit">일부 결제금액 이월약정(리볼빙)수수료율 : 연 4.9% ~ 19.9%(변동금리)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.28~2026.12.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11084&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">트래블월렛 하이브리드 롯데카드 캐시백+내년 연회비 면제까지</span>
+        </div>
+        <div class="row-benefit">국내전용 : 기본 7,000원 · 제휴 13,000원 · 총 20,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11061&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">LOCA MONEY 카드 캐시백 + 내년 연회비 면제까지</span>
+        </div>
+        <div class="row-benefit">국내외 가맹점에서 한도 제한없이 로카코인 적립 (기본적립 1% / 특별적립 2%)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=8463&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">LOCA LIKIT 1.2 카드 캐시백 + 내년 연회비 면제까지</span>
+        </div>
+        <div class="row-benefit">LOCA LIKIT 1.2 카드로 해당 기간(2026.06.01(월)~06.30(화)) 동안 10만원 이상 이용 시 1만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=8462&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">삼성화재 · DB손해보험등 무이자/부분 무이자 할부 혜택</span>
+        </div>
+        <div class="row-benefit">무이자할부 혜택이 적용된 결제 건은 포인트 및 마일리지가 적립되지 않습니다. (단, 일부 상품 제외)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=8394&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">생활 플러스 업종 2~5개월 무이자 할부</span>
+        </div>
+        <div class="row-benefit">12	7~12회차 할부 수수료 면제(1~6회차 할부 수수료 고객 부담)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=8392&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">디지로카 Las Vegas 한번 써보세요 캐시백 + 내년 연회비 면제</span>
+        </div>
+        <div class="row-benefit">디지로카 Las Vegas 카드로 해당 기간(2026.06.01(월)~06.30(화)) 동안 10만원 이상 이용 시 2만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=8160&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">LOCA 나누기 한번 써보세요 캐시백 + 내년 연회비 면제</span>
+        </div>
+        <div class="row-benefit">01	LOCA 나누기 카드로 해당 기간(2026.06.01(월)~06.30(화)) 동안 10만원 이상 이용 시 2만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=7935&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">디지로카 London 한번 써보세요 캐시백 + 내년 연회비 면제</span>
+        </div>
+        <div class="row-benefit">01	디지로카 London 카드로 해당 기간(2026.06.01(월)~06.30(화)) 동안 10만원 이상 이용 시 2만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=7934&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">디지로카 Paris 한번 써보세요 캐시백 + 내년 연회비 면제</span>
+        </div>
+        <div class="row-benefit">01	디지로카 Paris 카드로 해당 기간(2026.06.01(월)~06.30(화)) 동안 10만원 이상 이용 시 2만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=7933&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">전월실적 부담 DOWN! 백점짜리 LOCA 100 프로모션</span>
+        </div>
+        <div class="row-benefit">단기카드대출 및 장기카드대출 이자율 연 4.9% ~ 19.9%</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.12.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=7295&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">LOCA MONEY 카드, 지난달 실적 기준을 낮춰 부담을 줄여드려요!</span>
+        </div>
+        <div class="row-benefit">(지난달 월 평균 장기,단기 카드대출 이용잔액이 300만원 이상 인 경우 2% 적립)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=6553&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">슬기로운 카드 생활, LOCA가 맞춰 드릴게요</span>
+        </div>
+        <div class="row-benefit">단기카드대출 이자율은 연 4.9% ~ 19.9%, 장기카드대출 이자율은 연 4.9% ~ 19.9%</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.12.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=6254&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#3b82f6">삼성카드</span>
+          <span class="ev-title">Audi 구매는 삼성카드 다이렉트 오토로</span>
+        </div>
+        <div class="row-benefit">연 할부 금리	3.8%	3.8%	3.8%	3</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.samsungcard.com/personal/event/ing/UHPPBE1403M0.jsp?cms_id=3747176" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-헬스뷰티">
+    <div class="cat-header">
+      <span class="cat-emoji">💄</span>
+      <span class="cat-name">헬스뷰티</span>
+      <span class="cat-count">3건</span>
+    </div>
+    <div class="rows">
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">쿠팡•다이소 등6월 마이태그 혜택 — 여름 준비</span>
+        </div>
+        <div class="row-benefit">6월 마이태그 특별 혜택</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060005" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">박준 뷰티랩, 박승철 헤어스투디오 할인 혜택</span>
+        </div>
+        <div class="row-benefit">박준 뷰티랩 이용 시 20% 현장할인</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=7635&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">세상을 바꾸는 가치 있는 생각 띵크어스</span>
+        </div>
+        <div class="row-benefit">박준 뷰티랩, 박승철 헤어스투디오 할인 혜택</div>
+        <div class="row-meta">
+          <span class="date">📅 2025.08.04~9999.12.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=7423&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-디지털통신">
+    <div class="cat-header">
+      <span class="cat-emoji">💻</span>
+      <span class="cat-name">디지털통신</span>
+      <span class="cat-count">19건</span>
+    </div>
+    <div class="rows">
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">SK에너지 러브유 카드연회비 100% 캐시백!</span>
+        </div>
+        <div class="row-benefit">행사 기간 안에 PC/모바일 홈페이지 또는 KB Pay에서 대상카드를 발급하고, 1건 이상 이용하면 연회비 100% 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001171" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">기기값 걱정 끝!KT단말기 추가할인!</span>
+        </div>
+        <div class="row-benefit">70만원 이상	12,000원	12,000원	24,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001137" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">KT스카이라이프카드추가할인!</span>
+        </div>
+        <div class="row-benefit">70만원(2구간)	11,000원 + 6,000원	17,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001131" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">LG헬로비전 Ⅱ카드자동납부요금 청구할인!</span>
+        </div>
+        <div class="row-benefit">70만원(2구간)	11,000원 + 8,000원	19,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001129" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">SK 7mobileⅡ카드자동납부요금 청구할인!</span>
+        </div>
+        <div class="row-benefit">70만원(2구간)	11,000원 + 10,000원	21,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001126" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">ktM mobileⅡ카드자동납부요금 청구할인!</span>
+        </div>
+        <div class="row-benefit">70만원(2구간)	11,000원 + 13,000원	24,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001125" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">SKT단말기값이 부담?T라이트 할부로 가볍게!</span>
+        </div>
+        <div class="row-benefit">70만원 이상	12,000원	12,000원	24,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001111" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">기기값 부담 가볍게!LGU+단말기 추가할인!</span>
+        </div>
+        <div class="row-benefit">70만원 이상	12,000원	12,000원	24,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001110" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">T-economySKT 통신요금 할인꿀팁</span>
+        </div>
+        <div class="row-benefit">30만원 미만	10,000원	10,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001094" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">KT서빙로봇 도입하고40만원 캐시백+무이자</span>
+        </div>
+        <div class="row-benefit">KB국민 개인 신용카드로 KT에서 KT서빙로봇 구입 시 700만원 이상 결제하면 40만원 캐시백! + 36개월 무이자할부</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001090" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">연회비 100% 캐시백KB라이프 딱좋은요즘건강</span>
+        </div>
+        <div class="row-benefit">행사 시작일부터 2026.7.10(금)까지 &#x27;KB Pay&#x27; 앱에 대상카드 등록하고 캐시백 지급 시까지 유지하면 연회비 100% 캐시백(초년도 연회비만 해당) 지급</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001070" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">KT 통신요금월 최대 2.7만원할인 — KT SUPER DC 카드</span>
+        </div>
+        <div class="row-benefit">추가 할인 혜택을 받기 위해, KT 통신요금을 꼭 자동이체 납부해주세요.</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025030014" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">KT 알뜰폰 통신요금24개월동안 추가 할인 — KT 마이알뜰폰 카드</span>
+        </div>
+        <div class="row-benefit">~70만원 미만</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2024050010" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">BC바로카드 통신비추가 할인 프로모션 — kt DC PLUS</span>
+        </div>
+        <div class="row-benefit">이용금액	할인금액</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2023090043" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">1만원 이상 결제하면최대 10만원 당첨 — 결제할수록 커지는 혜택</span>
+        </div>
+        <div class="row-benefit">온•오프라인 어디서나 1만원 이상 결제하고 &#x27;페이북 앱 &gt; 카드 이용내역&#x27;에서 머니박스를 확인하면 매일 최대 10만원을 머니로 돌려드려요.</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120003" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">롯데카드 TELLO SE로 통신요금 월 최대 29,000원 결제일 할인</span>
+        </div>
+        <div class="row-benefit">80만원 이상	13,000원	16,000원	29,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11151&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">유플러스 통신요금 월 최대 27,000원 할인 혜택</span>
+        </div>
+        <div class="row-benefit">70만원 이상	15,000원	11,000원	26,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11106&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">KT DC PLUS 롯데카드로 KT통신요금 월 최대 29,000원 결제일 할인</span>
+        </div>
+        <div class="row-benefit">80만원 이상	13,000원	16,000원	29,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11105&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">SKT KT LGU+ 알뜰폰 요금 월 최대 3만원, 최대 72만원 할인혜택!</span>
+        </div>
+        <div class="row-benefit">70만원	15,000원	13,000원	28,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11086&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-시즌취미">
+    <div class="cat-header">
+      <span class="cat-emoji">🎉</span>
+      <span class="cat-name">시즌취미</span>
+      <span class="cat-count">1건</span>
+    </div>
+    <div class="rows">
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">시원하게 살 준비!여름가전 카드혜택 모음</span>
+        </div>
+        <div class="row-benefit">KB할인팩 신청 후, 전 품목 건당 500만원 이상 결제하면 15만원 청구할인 (1인 1회 제공)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001279" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cat-section" id="cat-기타">
+    <div class="cat-header">
+      <span class="cat-emoji">📌</span>
+      <span class="cat-name">기타</span>
+      <span class="cat-count">37건</span>
+    </div>
+    <div class="rows">
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">6월의 햇살 가득한 혜택햇살론카드로 받아보세요</span>
+        </div>
+        <div class="row-benefit">카드 이용기간 동안 대상카드로 3만원 이상 이용하면 1만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001178" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">KB LiivMⅡ카드추가할인!</span>
+        </div>
+        <div class="row-benefit">70만원(2구간)	17,000원 + 5,000원	22,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001130" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">체크카드 신규 발급하면3만원 캐시백!</span>
+        </div>
+        <div class="row-benefit">대상 고객이 발급 기간 안에 발급하고, 대상카드로 이용 기간 동안 3만원 이상 이용하면 3만원 캐시백!</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001115" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">TMAP 최대 50%할인8만원 캐시백 혜택!</span>
+        </div>
+        <div class="row-benefit">행사 2. 행사 1을 충족하고 대상카드를 KB Pay에 등록하여 2만원 이상 이용하면 2만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001107" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">KB 마라톤카드 발급하고가민런 우선응모!</span>
+        </div>
+        <div class="row-benefit">- 2026.5.31(일) 기준 마라톤 카드 보유 고객이 행사 기간 안에 KB 마라톤 카드로 5만원 이상 이용 시 마라톤 대회 우선응모권* 접수 URL 문자메시지로 발송</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001065" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">밀크T카드 학습비 할인 월 최대 2만원 혜택!</span>
+        </div>
+        <div class="row-benefit">할인합계	15,000원	20,000원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001058" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">교원구몬카드 구몬 학습비 월 18,000원 할인!</span>
+        </div>
+        <div class="row-benefit">1만 4천원	+ 4천원	1만 8천원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001057" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">서울시 교통비는 기후동행체크로 신규 시 3만원!</span>
+        </div>
+        <div class="row-benefit">행사 기간 동안 KB국민 기후동행체크카드를 신규 발급하고, 2026.7.10(금)까지 합산 3만원 이상 결제하면 3만원 캐시백!</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001044" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">A/B 당신의 선택은?Youth Club 체크!</span>
+        </div>
+        <div class="row-benefit">행사 1. 행사 기간 안에 이벤트 페이지에서 KB Youth Club 체크카드 신규 발급하고 3만원 이상 사용 시 3만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001042" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">전통시장 온누리 체크3만원 캐시백!</span>
+        </div>
+        <div class="row-benefit">신규 고객이라면!? 3만원 캐시백! 전통시장온누리체크카드 신규 발급하고, 2026.7.10(금)까지 합산 3만원 이상 결제하면 3만원 캐시백!</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001036" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">교통비 아껴주는 K-패스체크 신규 시 3만원!</span>
+        </div>
+        <div class="row-benefit">K-패스체크카드 신규 발급하고, 2026.7.10(금)까지 합산 3만원 이상 결제 시 3만원 캐시백!</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001034" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">아산스파비스 워터파크/온천 특가 할인</span>
+        </div>
+        <div class="row-benefit">50,000원	23,900원</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001011" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">내셔널지오그래픽 특별기획체험전! 20% 단독할인</span>
+        </div>
+        <div class="row-benefit">기간 동안 NOL 티켓, 티켓링크, 카카오 예매에서 KB국민카드로 &quot;내셔널 지오그래픽 특별기획 체험전&quot; 입장권 결제 시 20% 즉시할인</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.20~2026.10.11</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1001004" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">어른이 5555명에게선물 대방출</span>
+        </div>
+        <div class="row-benefit">해피콘 3만원	300명</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.27~2026.06.21</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000895" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">KB저축은행 팡팡 체크카드최대 3만원 캐시백!</span>
+        </div>
+        <div class="row-benefit">혜택 2. 신규 발급한 KB저축은행 팡팡 KB체크카드로 2026.7.5(일)까지 합산 3만원 이상 결제 시 2만원 추가 캐시백 제공</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.05.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000894" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">쓰는 순간, 캐시백 ON!최대 5%!</span>
+        </div>
+        <div class="row-benefit">응모하고 기간 안에 오프라인에서 1,000위안(CNY) 이상 결제하면 50위안(CNY) 외화머니 제공</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.04.01~2026.06.30</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000676" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">AI자동화시대, 일잘러의페이백 플랜 보고서</span>
+        </div>
+        <div class="row-benefit">응모하고 대상카드로 행사 기간 동안 대상 AI 관련 플랫폼 누적 50/100/200달러(USD) 결제하면 5/10/20달러(USD) 외화머니 페이백 제공</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.03.16~2026.07.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000542" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#f59e0b">KB국민카드</span>
+          <span class="ev-title">쓰던카드 그대로 국내공항 라운지 F&amp;B 최대50%</span>
+        </div>
+        <div class="row-benefit">라운지 혜택: 스카이허브·마티나·마티나골드 라운지에서 본인이 성인 정상 요금을 결제하면 동반인 무료 입장(1+1) 또는 본인이 성인 정상 요금 결제하면 30% 현장할인(성인 정상 요금: 마티나 골드 55달러(USD), 그 외 라운지 45달러(USD))</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.03.09~2026.12.31</span>
+          <a href="https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?mainCC=a&amp;eventNum=1000455" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">입시전략가 샤론코치강연회 초청 이벤트 — BNK부산은행</span>
+        </div>
+        <div class="row-benefit">입시전략가 샤론코치강연회 초대권 추첨 900매(회차당 450매, 1인 1매 제공)</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060024" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">기아챔피언스필드스카이박스를잡아라 2탄 — 광주은행BC카드</span>
+        </div>
+        <div class="row-benefit">2026.06.10부터 추첨 전일까지 이벤트 응모 후 개인신용카드로 50만원 이상(기간 중 합산) 이용 고객 중 추첨을 통해 광주-기아챔피언스필드 스카이박스 일일 이용권 총 2매 추첨</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060032" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">대리운전 부를 땐무제한 11% 할인받기 — 페이북 x 안심대리</span>
+        </div>
+        <div class="row-benefit">안심대리 대리운전 이용시 11%무제한 할인 (금액•횟수 제한 없음)</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050011" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">어디서든 0.5% 적립많이 쓰면 1% 적립 — 페이북 머니 결제 혜택</span>
+        </div>
+        <div class="row-benefit">최대 1,500원 적립</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026040041" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">더클래식 멤버십단독 10% 할인 — 더중앙플러스 x BC카드</span>
+        </div>
+        <div class="row-benefit">모든 등급 사전 가입(하루 전 오픈) + 단독 10% 할인(얼리버드 제외)</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026040018" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">뮤지컬 〈그날들〉최대 25% 할인 — BC카드 결제 시</span>
+        </div>
+        <div class="row-benefit">기간 내에 BC카드로 조기 예매 결제 시 25% 할인</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026040002" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#10b981">페이북(BC카드)</span>
+          <span class="ev-title">어떤 카드로 결제해도보너스 머니박스 — 카드 이용내역</span>
+        </div>
+        <div class="row-benefit">카드사가 어디든 1만원 이상 결제하면 보너스 머니박스를 드려요.</div>
+        <div class="row-meta">
+          
+          <a href="https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030055" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">로카파트너스로 내 카드값 해결해 보세요</span>
+        </div>
+        <div class="row-benefit">좋은 신용카드를 추천하고 발급까지 연결하면 소득이 생기는 부업 모델입니다.</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.02.02~2026.12.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11160&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">간단하게 할인받고 최대 49만원 상당 혜택까지</span>
+        </div>
+        <div class="row-benefit">혜택 지급일	2026년 7월 말일 이내 롯데카드에서 자동이체 계좌로 캐시백 지급</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.08~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11154&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">K-패스엔로카, 교통·생활비 할인에 최대 20만원 캐시백까지!</span>
+        </div>
+        <div class="row-benefit">대상카드로 100/200/300/400/500만원 이상 이용시 1/2/3/4/7만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11147&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">여기저기 혜택받고 최대 62만원 상당 혜택까지</span>
+        </div>
+        <div class="row-benefit">① 25만원 이상 이용 시 15만원 캐시백</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11146&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">토스 플레이스 카드로 10만원 이상 이용하면 10만원 캐시백</span>
+        </div>
+        <div class="row-benefit">특별적립 2% 현금서비스 및 카드론 이용잔액 300만원 이상 인 경우 제공</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=11101&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">롯데ON 5% 할인 혜택</span>
+        </div>
+        <div class="row-benefit">롯데카드로 롯데ON에서 3만원 이상 구매 시 5% 할인 쿠폰 제공 (최대 3천원)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.01.01~2026.12.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=8375&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">한샘 X LOCA 플랜+카드 15만원 캐시백</span>
+        </div>
+        <div class="row-benefit">한샘에서 50만원 이상 이용 시 20/30만원 플랜할인 적용</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=7820&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#ef4444">롯데카드</span>
+          <span class="ev-title">100만원 이상 결제, LOCA 나누기로 부담을 덜어요</span>
+        </div>
+        <div class="row-benefit">3만원 이상 ~ 30만원 미만	3개월</div>
+        <div class="row-meta">
+          <span class="date">📅 2025.09.01~2026.08.31</span>
+          <a href="https://www.lottecard.co.kr/app/LPBNFDA_V300.lc?evnBultSeq=7533&amp;evnCtgSeq=9999&amp;bigTabGubun=2" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#3b82f6">삼성카드</span>
+          <span class="ev-title">캐리비안 베이 최대 59% 할인</span>
+        </div>
+        <div class="row-benefit">대인종일권	79,000원	35,500원	55%</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.19~2026.08.30</span>
+          <a href="https://www.samsungcard.com/personal/event/ing/UHPPBE1403M0.jsp?cms_id=3748014" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#3b82f6">삼성카드</span>
+          <span class="ev-title">웨스틴 조선 서울 할인 프로모션</span>
+        </div>
+        <div class="row-benefit">1박 최대 2객실 또는 2박(연박) 1객실 예약 가능 (2객실 또는 2박 투숙 시에도 1인 1회 혜택 제공)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.16~2026.08.31</span>
+          <a href="https://www.samsungcard.com/personal/event/ing/UHPPBE1403M0.jsp?cms_id=3745274" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#3b82f6">삼성카드</span>
+          <span class="ev-title">중복할인을 곁들인 진에어 최대 1.5만원 할인</span>
+        </div>
+        <div class="row-benefit">진에어페이에 등록된 삼성개인신용카드로 건별 30/60만원 이상 결제 시 10,000원/15,000원 즉시 할인</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.15~2026.06.30</span>
+          <a href="https://www.samsungcard.com/personal/event/ing/UHPPBE1403M0.jsp?cms_id=3747643" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-left">
+          <span class="badge" style="background:#3b82f6">삼성카드</span>
+          <span class="ev-title">웰스 삼성카드로 월 6,000원 추가 할인</span>
+        </div>
+        <div class="row-benefit">전월 이용금액 30만원 이상 시 6,000원 추가 결제일할인 (최초 제공시점으로부터 60개월 동안 제공)</div>
+        <div class="row-meta">
+          <span class="date">📅 2026.06.01~2026.06.30</span>
+          <a href="https://www.samsungcard.com/personal/event/ing/UHPPBE1403M0.jsp?cms_id=3747224" target="_blank" rel="noopener" class="url-link">상세 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  수집 데이터 기준일: 2026.06.19 16:50 &nbsp;|&nbsp; KB국민카드 · 페이북(BC카드) · 롯데카드 · 삼성카드
+</footer>
+</body>
+</html>

@@ -1,0 +1,106 @@
+{
+  "source_sizes": {
+    "wepick": 8,
+    "gogumafarm": 8,
+    "careet": 8
+  },
+  "wepick_titles": [
+    "AI 환각, 언제쯤 끝날까요?",
+    "구글은 거짓말 안 합니다, 다 안 알려줄 뿐: 검색 알고리즘 읽는 법",
+    "AEO 전략, AI가 당신의 글을 답변으로 선택하려면",
+    "페이스북 AI 모드 도입, 인스타그램 캡션 하나가 이제 AI 답변을 만든다",
+    "2026 화장품 GWP, 핸드크림・립밤 대신 ‘스카프’ 고르는 이유"
+  ],
+  "ad_candidate_keywords": [
+    {
+      "keyword": "말랑이 경제",
+      "topic_score": 68.92,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "gogumafarm",
+        "wepick"
+      ],
+      "confidence": 69.69,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "2026년 6월",
+      "topic_score": 65.46,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "wepick"
+      ],
+      "confidence": 49.09,
+      "selection_reason": "multiword_phrase"
+    },
+    {
+      "keyword": "릴스",
+      "topic_score": 56.68,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "gogumafarm",
+        "wepick"
+      ],
+      "confidence": 60.51,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "굿즈",
+      "topic_score": 47.87,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "gogumafarm",
+        "wepick"
+      ],
+      "confidence": 53.9,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "반복되는 소비",
+      "topic_score": 46.64,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "wepick"
+      ],
+      "confidence": 47.98,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "소비",
+      "topic_score": 46.64,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "wepick"
+      ],
+      "confidence": 47.98,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "메지루시 굿즈",
+      "topic_score": 45.87,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "wepick"
+      ],
+      "confidence": 47.4,
+      "selection_reason": "cue_term"
+    }
+  ],
+  "trend_keyword_quality": {
+    "total_topics": 15,
+    "accepted_topics": 7,
+    "rejected_topics": 8,
+    "rejected_reason_counts": {
+      "single_non_cue": 3,
+      "insufficient_signal": 1,
+      "generic": 1,
+      "low_score": 3
+    }
+  }
+}

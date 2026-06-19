@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-06-19T08:03:53.615913+00:00",
+  "window_days": 90,
+  "source_health": {
+    "wepick": "ok",
+    "gogumafarm": "ok",
+    "careet": "ok",
+    "youtube": "disabled"
+  },
+  "trend_keyword_quality": {
+    "total_topics": 15,
+    "accepted_topics": 4,
+    "rejected_topics": 11,
+    "rejected_reason_counts": {
+      "single_non_cue": 4,
+      "particle_phrase": 1,
+      "date_like": 1,
+      "generic": 1,
+      "phrase_noise": 4
+    }
+  },
+  "ad_candidate_keywords": [
+    {
+      "keyword": "릴스",
+      "topic_score": 60.72,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "gogumafarm",
+        "wepick"
+      ],
+      "confidence": 63.54,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "대란 굿즈",
+      "topic_score": 56.37,
+      "growth_rate_pct": 100.0,
+      "source_coverage": [
+        "careet",
+        "wepick"
+      ],
+      "confidence": 60.28,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "소비",
+      "topic_score": 46.64,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "wepick"
+      ],
+      "confidence": 47.98,
+      "selection_reason": "cue_term"
+    },
+    {
+      "keyword": "메지루시 굿즈",
+      "topic_score": 45.87,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "wepick"
+      ],
+      "confidence": 47.4,
+      "selection_reason": "cue_term"
+    }
+  ],
+  "topic_clusters_top5": [
+    {
+      "topic": "고구마팜",
+      "topic_score": 76.19,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "gogumafarm"
+      ],
+      "sample_title": "가짜 배달 앱부터 온라인 담타까지, 요즘 Z세대가 빠진 웹 사이트 21가지 | 고구마팜"
+    },
+    {
+      "topic": "말랑이 경제",
+      "topic_score": 72.96,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "gogumafarm",
+        "wepick"
+      ],
+      "sample_title": "요즘 동묘 가면 30대들이 말랑이 만지면서 행복해 하고 있어요! 더 이상 애들 유행이 아니다! 전 세계가 만드는 ‘말랑이 경제’"
+    },
+    {
+      "topic": "2026년 6월",
+      "topic_score": 69.5,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "wepick"
+      ],
+      "sample_title": "구글은 거짓말 안 합니다, 다 안 알려줄 뿐: 검색 알고리즘 읽는 법"
+    },
+    {
+      "topic": "릴스",
+      "topic_score": 60.72,
+      "growth_rate_pct": 0.0,
+      "source_coverage": [
+        "careet",
+        "gogumafarm",
+        "wepick"
+      ],
+      "sample_title": "페이스북 AI 모드 도입, 인스타그램 캡션 하나가 이제 AI 답변을 만든다"
+    },
+    {
+      "topic": "대란 굿즈",
+      "topic_score": 56.37,
+      "growth_rate_pct": 100.0,
+      "source_coverage": [
+        "careet",
+        "wepick"
+      ],
+      "sample_title": "요즘 동묘 가면 30대들이 말랑이 만지면서 행복해 하고 있어요! 더 이상 애들 유행이 아니다! 전 세계가 만드는 ‘말랑이 경제’"
+    }
+  ]
+}

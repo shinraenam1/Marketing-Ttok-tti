@@ -1,0 +1,371 @@
+{
+  "schema_version": "v1",
+  "stage": "trending_meme_pipeline",
+  "generated_at": "2026-06-19T10:36:21.699282+00:00",
+  "window_days": 50,
+  "collection_config": {
+    "lookback_days": 50,
+    "max_articles_per_source": 120,
+    "collect_all_recent": false,
+    "include_article_body": true
+  },
+  "source_health": {
+    "wepick": "ok",
+    "gogumafarm": "ok",
+    "careet": "ok"
+  },
+  "base_data": {
+    "total_posts": 139,
+    "doc_counts": {
+      "wepick": 120,
+      "gogumafarm": 12,
+      "careet": 7
+    },
+    "sample_posts": [
+      {
+        "source": "wepick",
+        "title": "2026 여름 굿즈 우양산 업체 고르는 법 — 이 3가지만 확인하세요",
+        "url": "https://letter.wepick.kr/post/25436",
+        "published_at": "2026-06-19T00:00:00+00:00"
+      },
+      {
+        "source": "wepick",
+        "title": "AI 환각, 언제쯤 끝날까요?",
+        "url": "https://letter.wepick.kr/post/25435",
+        "published_at": "2026-06-19T00:00:00+00:00"
+      },
+      {
+        "source": "wepick",
+        "title": "구글은 거짓말 안 합니다, 다 안 알려줄 뿐: 검색 알고리즘 읽는 법",
+        "url": "https://letter.wepick.kr/post/25434",
+        "published_at": "2026-06-19T00:00:00+00:00"
+      },
+      {
+        "source": "wepick",
+        "title": "AEO 전략, AI가 당신의 글을 답변으로 선택하려면",
+        "url": "https://letter.wepick.kr/post/25433",
+        "published_at": "2026-06-18T00:00:00+00:00"
+      },
+      {
+        "source": "wepick",
+        "title": "페이스북 AI 모드 도입, 인스타그램 캡션 하나가 이제 AI 답변을 만든다",
+        "url": "https://letter.wepick.kr/post/25432",
+        "published_at": "2026-06-18T00:00:00+00:00"
+      },
+      {
+        "source": "wepick",
+        "title": "2026 화장품 GWP, 핸드크림・립밤 대신 ‘스카프’ 고르는 이유",
+        "url": "https://letter.wepick.kr/post/25431",
+        "published_at": "2026-06-18T00:00:00+00:00"
+      },
+      {
+        "source": "wepick",
+        "title": "가전 업계 마케팅, 치열한 경쟁 속 타겟팅이 중요한 이유",
+        "url": "https://letter.wepick.kr/post/25430",
+        "published_at": "2026-06-18T00:00:00+00:00"
+      },
+      {
+        "source": "wepick",
+        "title": "500만 관객을 만든 마케팅 전략, 쇼핑몰에도 통할까?",
+        "url": "https://letter.wepick.kr/post/25427",
+        "published_at": "2026-06-18T00:00:00+00:00"
+      },
+      {
+        "source": "wepick",
+        "title": "[vol.250] 매일 마케팅 콘텐츠 100건, 다 떠먹여 드림",
+        "url": "https://letter.wepick.kr/post/25429",
+        "published_at": "2026-06-17T00:00:00+00:00"
+      },
+      {
+        "source": "wepick",
+        "title": "팝업키트, 일반 방문객과 VIP의 굿즈는 달라야 합니다",
+        "url": "https://letter.wepick.kr/post/25428",
+        "published_at": "2026-06-17T00:00:00+00:00"
+      }
+    ]
+  },
+  "trending_memes": [
+    {
+      "meme": "릴스",
+      "trend_score": 97.48,
+      "post_count": 6,
+      "last_seen_at": "2026-06-18T00:00:00+00:00",
+      "samples": [
+        {
+          "title": "페이스북 AI 모드 도입, 인스타그램 캡션 하나가 이제 AI 답변을 만든다",
+          "url": "https://letter.wepick.kr/post/25432",
+          "source": "wepick",
+          "published_at": "2026-06-18T00:00:00+00:00"
+        },
+        {
+          "title": "파라파라 챌린지 궁금한 사람들 당장 클릭하세요",
+          "url": "https://letter.wepick.kr/post/25369",
+          "source": "wepick",
+          "published_at": "2026-06-14T00:00:00+00:00"
+        },
+        {
+          "title": "2026 5월 인스타그램 CEO 아담 모세리의 Q&A 모음.zip",
+          "url": "https://letter.wepick.kr/post/25358",
+          "source": "wepick",
+          "published_at": "2026-06-11T00:00:00+00:00"
+        },
+        {
+          "title": "조회수 100만 뷰보다 중요한 것: 소비자는 '서사'를 소비합니다",
+          "url": "https://letter.wepick.kr/post/25335",
+          "source": "wepick",
+          "published_at": "2026-06-09T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "meme": "챌린지",
+      "trend_score": 70.81,
+      "post_count": 4,
+      "last_seen_at": "2026-06-18T00:00:00+00:00",
+      "samples": [
+        {
+          "title": "500만 관객을 만든 마케팅 전략, 쇼핑몰에도 통할까?",
+          "url": "https://letter.wepick.kr/post/25427",
+          "source": "wepick",
+          "published_at": "2026-06-18T00:00:00+00:00"
+        },
+        {
+          "title": "파라파라 챌린지 궁금한 사람들 당장 클릭하세요",
+          "url": "https://letter.wepick.kr/post/25369",
+          "source": "wepick",
+          "published_at": "2026-06-14T00:00:00+00:00"
+        },
+        {
+          "title": "이번 주 성수! 2026년 6월 둘째 주 성수동 팝업스토어",
+          "url": "https://letter.wepick.kr/post/25293",
+          "source": "wepick",
+          "published_at": "2026-06-04T00:00:00+00:00"
+        },
+        {
+          "title": "연기 챌린지? 주술 회전샷? 피드를 점령한 릴스 포맷 4가지 | 고구마팜",
+          "url": "https://gogumafarm.kr/%ec%97%b0%ea%b8%b0-%ec%b1%8c%eb%a6%b0%ec%a7%80-%ec%a3%bc%ec%88%a0-%ed%9a%8c%ec%a0%84%ec%83%b7-%ed%94%bc%eb%93%9c%eb%a5%bc-%ec%a0%90%eb%a0%b9%ed%95%9c-%eb%a6%b4%ec%8a%a4-%ed%8f%ac%eb%a7%b7-4%ea%b0%80/",
+          "source": "gogumafarm",
+          "published_at": "2026-06-04T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "meme": "트렌드",
+      "trend_score": 68.21,
+      "post_count": 4,
+      "last_seen_at": "2026-06-16T00:00:00+00:00",
+      "samples": [
+        {
+          "title": "2026 웰컴키트 트렌드, 올해 포인트는 키캡? 클리커?",
+          "url": "https://letter.wepick.kr/post/25415",
+          "source": "wepick",
+          "published_at": "2026-06-16T00:00:00+00:00"
+        },
+        {
+          "title": "다크 샤워·워리스톤·불안 가방… Z세대 멘탈 케어 트렌드 모음 | 고구마팜",
+          "url": "https://gogumafarm.kr/%eb%8b%a4%ed%81%ac-%ec%83%a4%ec%9b%8c%c2%b7%ec%9b%8c%eb%a6%ac%ec%8a%a4%ed%86%a4%c2%b7%eb%b6%88%ec%95%88-%ea%b0%80%eb%b0%a9-z%ec%84%b8%eb%8c%80-%eb%a9%98%ed%83%88-%ec%bc%80%ec%96%b4-%ed%8a%b8/",
+          "source": "gogumafarm",
+          "published_at": "2026-06-05T00:00:00+00:00"
+        },
+        {
+          "title": "Z세대가 말랑이를 찾는 이유! 촉감 소비 트렌드 뜯어보기 | 고구마팜",
+          "url": "https://gogumafarm.kr/z%ec%84%b8%eb%8c%80%ea%b0%80-%eb%a7%90%eb%9e%91%ec%9d%b4%eb%a5%bc-%ec%b0%be%eb%8a%94-%ec%9d%b4%ec%9c%a0-%ec%b4%89%ea%b0%90-%ec%86%8c%eb%b9%84-%ed%8a%b8%eb%a0%8c%eb%93%9c-%eb%9c%af%ec%96%b4%eb%b3%b4/",
+          "source": "gogumafarm",
+          "published_at": "2026-05-29T00:00:00+00:00"
+        },
+        {
+          "title": "비주얼부터 ASMR까지, 오감을 모두 만족시키는 최신 F&B 트렌드 한눈에 보기 | 고구마팜",
+          "url": "https://gogumafarm.kr/%eb%b9%84%ec%a3%bc%ec%96%bc%eb%b6%80%ed%84%b0-asmr%ea%b9%8c%ec%a7%80-%ec%98%a4%ea%b0%90%ec%9d%84-%eb%aa%a8%eb%91%90-%eb%a7%8c%ec%a1%b1%ec%8b%9c%ed%82%a4%eb%8a%94-%ec%b5%9c%ec%8b%a0-fb-%ed%8a%b8/",
+          "source": "gogumafarm",
+          "published_at": "2026-05-28T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "meme": "말랑이",
+      "trend_score": 59.92,
+      "post_count": 3,
+      "last_seen_at": "2026-06-30T00:00:00+00:00",
+      "samples": [
+        {
+          "title": "다크 샤워·워리스톤·불안 가방… Z세대 멘탈 케어 트렌드 모음 | 고구마팜",
+          "url": "https://gogumafarm.kr/%eb%8b%a4%ed%81%ac-%ec%83%a4%ec%9b%8c%c2%b7%ec%9b%8c%eb%a6%ac%ec%8a%a4%ed%86%a4%c2%b7%eb%b6%88%ec%95%88-%ea%b0%80%eb%b0%a9-z%ec%84%b8%eb%8c%80-%eb%a9%98%ed%83%88-%ec%bc%80%ec%96%b4-%ed%8a%b8/",
+          "source": "gogumafarm",
+          "published_at": "2026-06-05T00:00:00+00:00"
+        },
+        {
+          "title": "Z세대가 말랑이를 찾는 이유! 촉감 소비 트렌드 뜯어보기 | 고구마팜",
+          "url": "https://gogumafarm.kr/z%ec%84%b8%eb%8c%80%ea%b0%80-%eb%a7%90%eb%9e%91%ec%9d%b4%eb%a5%bc-%ec%b0%be%eb%8a%94-%ec%9d%b4%ec%9c%a0-%ec%b4%89%ea%b0%90-%ec%86%8c%eb%b9%84-%ed%8a%b8%eb%a0%8c%eb%93%9c-%eb%9c%af%ec%96%b4%eb%b3%b4/",
+          "source": "gogumafarm",
+          "published_at": "2026-05-29T00:00:00+00:00"
+        },
+        {
+          "title": "요즘 동묘 가면 30대들이 말랑이 만지면서 행복해 하고 있어요! 더 이상 애들 유행이 아니다! 전 세계가 만드는 ‘말랑이 경제’",
+          "url": "https://www.careet.net/1925",
+          "source": "careet",
+          "published_at": "2026-06-30T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "meme": "백룸",
+      "trend_score": 44.15,
+      "post_count": 2,
+      "last_seen_at": "2026-06-18T00:00:00+00:00",
+      "samples": [
+        {
+          "title": "500만 관객을 만든 마케팅 전략, 쇼핑몰에도 통할까?",
+          "url": "https://letter.wepick.kr/post/25427",
+          "source": "wepick",
+          "published_at": "2026-06-18T00:00:00+00:00"
+        },
+        {
+          "title": "‘백룸’의 새로운 공식: 젠지가 만든 괴담이 영화가 되기까지",
+          "url": "https://letter.wepick.kr/post/25388",
+          "source": "wepick",
+          "published_at": "2026-06-16T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "meme": "말랑이 경제",
+      "trend_score": 33.25,
+      "post_count": 1,
+      "last_seen_at": "2026-06-30T00:00:00+00:00",
+      "samples": [
+        {
+          "title": "요즘 동묘 가면 30대들이 말랑이 만지면서 행복해 하고 있어요! 더 이상 애들 유행이 아니다! 전 세계가 만드는 ‘말랑이 경제’",
+          "url": "https://www.careet.net/1925",
+          "source": "careet",
+          "published_at": "2026-06-30T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "meme": "유행이 아니다",
+      "trend_score": 33.25,
+      "post_count": 1,
+      "last_seen_at": "2026-06-30T00:00:00+00:00",
+      "samples": [
+        {
+          "title": "요즘 동묘 가면 30대들이 말랑이 만지면서 행복해 하고 있어요! 더 이상 애들 유행이 아니다! 전 세계가 만드는 ‘말랑이 경제’",
+          "url": "https://www.careet.net/1925",
+          "source": "careet",
+          "published_at": "2026-06-30T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "meme": "만드는 말랑이",
+      "trend_score": 33.25,
+      "post_count": 1,
+      "last_seen_at": "2026-06-30T00:00:00+00:00",
+      "samples": [
+        {
+          "title": "요즘 동묘 가면 30대들이 말랑이 만지면서 행복해 하고 있어요! 더 이상 애들 유행이 아니다! 전 세계가 만드는 ‘말랑이 경제’",
+          "url": "https://www.careet.net/1925",
+          "source": "careet",
+          "published_at": "2026-06-30T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "meme": "말랑이 만지면서",
+      "trend_score": 33.25,
+      "post_count": 1,
+      "last_seen_at": "2026-06-30T00:00:00+00:00",
+      "samples": [
+        {
+          "title": "요즘 동묘 가면 30대들이 말랑이 만지면서 행복해 하고 있어요! 더 이상 애들 유행이 아니다! 전 세계가 만드는 ‘말랑이 경제’",
+          "url": "https://www.careet.net/1925",
+          "source": "careet",
+          "published_at": "2026-06-30T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "meme": "애들 유행이",
+      "trend_score": 33.25,
+      "post_count": 1,
+      "last_seen_at": "2026-06-30T00:00:00+00:00",
+      "samples": [
+        {
+          "title": "요즘 동묘 가면 30대들이 말랑이 만지면서 행복해 하고 있어요! 더 이상 애들 유행이 아니다! 전 세계가 만드는 ‘말랑이 경제’",
+          "url": "https://www.careet.net/1925",
+          "source": "careet",
+          "published_at": "2026-06-30T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "meme": "30대들이 말랑이",
+      "trend_score": 33.25,
+      "post_count": 1,
+      "last_seen_at": "2026-06-30T00:00:00+00:00",
+      "samples": [
+        {
+          "title": "요즘 동묘 가면 30대들이 말랑이 만지면서 행복해 하고 있어요! 더 이상 애들 유행이 아니다! 전 세계가 만드는 ‘말랑이 경제’",
+          "url": "https://www.careet.net/1925",
+          "source": "careet",
+          "published_at": "2026-06-30T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "meme": "글로벌 유행템까지",
+      "trend_score": 32.49,
+      "post_count": 1,
+      "last_seen_at": "2026-06-19T00:00:00+00:00",
+      "samples": [
+        {
+          "title": "유행중 2026.06.19 북마크 20대가 옥반지를 찾는다고? BTS 픽 패션템부터 글로벌 유행템까지",
+          "url": "https://www.careet.net/1930",
+          "source": "careet",
+          "published_at": "2026-06-19T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "meme": "유행중 2026",
+      "trend_score": 32.49,
+      "post_count": 1,
+      "last_seen_at": "2026-06-19T00:00:00+00:00",
+      "samples": [
+        {
+          "title": "유행중 2026.06.19 북마크 20대가 옥반지를 찾는다고? BTS 픽 패션템부터 글로벌 유행템까지",
+          "url": "https://www.careet.net/1930",
+          "source": "careet",
+          "published_at": "2026-06-19T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "meme": "백룸 새로운",
+      "trend_score": 28.21,
+      "post_count": 1,
+      "last_seen_at": "2026-06-16T00:00:00+00:00",
+      "samples": [
+        {
+          "title": "‘백룸’의 새로운 공식: 젠지가 만든 괴담이 영화가 되기까지",
+          "url": "https://letter.wepick.kr/post/25388",
+          "source": "wepick",
+          "published_at": "2026-06-16T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "meme": "강변테크노마트 지하 1층이 백룸이다",
+      "trend_score": 28.21,
+      "post_count": 1,
+      "last_seen_at": "2026-06-16T00:00:00+00:00",
+      "samples": [
+        {
+          "title": "‘백룸’의 새로운 공식: 젠지가 만든 괴담이 영화가 되기까지",
+          "url": "https://letter.wepick.kr/post/25388",
+          "source": "wepick",
+          "published_at": "2026-06-16T00:00:00+00:00"
+        }
+      ]
+    }
+  ]
+}

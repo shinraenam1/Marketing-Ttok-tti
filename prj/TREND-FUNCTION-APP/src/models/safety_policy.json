@@ -1,0 +1,29 @@
+{
+  "version": "2026-06-19-v1",
+  "categories": [
+    {
+      "id": "P0_완전금지",
+      "default_action": "block",
+      "terms": ["자살", "죽어", "테러", "혐오"],
+      "patterns": ["불법\\s*(거래|판매|구매)", "(해킹|사기)\\s*(방법|가이드)"]
+    },
+    {
+      "id": "P1_강한비속어",
+      "default_action": "block",
+      "terms": ["ㅅㅂ", "ㅂㅅ", "개새"],
+      "patterns": []
+    },
+    {
+      "id": "P2_브랜드리스크",
+      "default_action": "review",
+      "terms": ["무조건", "100%", "공짜", "대박보장", "몰빵", "한탕", "패닉", "충격"],
+      "patterns": []
+    },
+    {
+      "id": "P3_주의키워드",
+      "default_action": "review",
+      "terms": ["가짜", "불안", "중독", "폭망", "논란", "자극", "멘붕"],
+      "patterns": []
+    }
+  ]
+}

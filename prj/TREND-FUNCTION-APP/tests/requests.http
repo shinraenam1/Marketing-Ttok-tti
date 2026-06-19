@@ -1,0 +1,88 @@
+### Full Report
+POST http://localhost:7071/api/trends/full-report
+Content-Type: application/json
+
+{
+  "schema_version": "v1",
+  "input_keyword": "고유카 카드할인",
+  "lookback_days": 14,
+  "country": "KR",
+  "language": "ko",
+  "max_results": 10,
+  "include_youtube": true,
+  "safety_policy": {
+    "P0_완전금지": "block",
+    "P1_강한비속어": "block",
+    "P2_브랜드리스크": "review",
+    "P3_주의키워드": "ignore"
+  }
+}
+
+### Expected response highlights
+# blocked_terms: []
+# risk_flags: ["P2_브랜드리스크"]
+# safe_copy_suggestion: "..."
+
+### Competitor Keyword
+POST http://localhost:7071/api/trends/competitor-keyword
+Content-Type: application/json
+
+{
+  "input_keyword": "고유카 카드할인",
+  "max_results": 10,
+  "include_youtube": true,
+  "country": "KR",
+  "safety_policy": {
+    "P0_완전금지": "block",
+    "P1_강한비속어": "block",
+    "P2_브랜드리스크": "review",
+    "P3_주의키워드": "review"
+  }
+}
+
+### Expected response highlights
+# related_contents[].blocked_terms
+# related_contents[].risk_flags
+# related_contents[].risk_score
+
+### Meme Trends
+POST http://localhost:7071/api/trends/meme
+Content-Type: application/json
+
+{
+  "lookback_days": 14,
+  "max_results": 15
+}
+
+### Site Slang Risk + YouTube Rising Summary
+POST http://localhost:7071/api/trends/risk-rising-summary
+Content-Type: application/json
+
+{
+  "country": "KR",
+  "max_results": 10,
+  "safety_policy": {
+    "P0_완전금지": "block",
+    "P1_강한비속어": "block",
+    "P2_브랜드리스크": "review",
+    "P3_주의키워드": "review"
+  }
+}
+
+### Keyword Summary (compact)
+POST http://localhost:7071/api/trends/keyword-summary
+Content-Type: application/json
+
+{
+  "keywords": ["고유카 카드할인", "거제야호", "청구할인"],
+  "country": "KR",
+  "include_youtube": true,
+  "max_keywords": 3,
+  "max_contents_per_keyword": 3,
+  "safety_policy": {
+    "P0_완전금지": "block",
+    "P1_강한비속어": "block",
+    "P2_브랜드리스크": "review",
+    "P3_주의키워드": "review"
+  }
+}

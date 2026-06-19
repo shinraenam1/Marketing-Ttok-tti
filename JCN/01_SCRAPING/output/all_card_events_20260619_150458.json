@@ -1,0 +1,3500 @@
+[
+  {
+    "card_company": "KB국민카드",
+    "count": 96,
+    "scraped_at": "2026-06-19T15:06:34.781285",
+    "events": [
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001290",
+        "title": "KB와 함께하는SUMMER PLAY",
+        "subtitle": "",
+        "date_range": "2026.06.18~2026.07.16",
+        "start_date": "2026.06.18",
+        "end_date": "2026.07.16",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250312_Lego_brown.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001290",
+        "scraped_at": "2026-06-19T06:05:15.523Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001279",
+        "title": "시원하게 살 준비!여름가전 카드혜택 모음",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인",
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260610-summergoods-blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001279",
+        "scraped_at": "2026-06-19T06:05:15.523Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001276",
+        "title": "트립닷컴 월드컵팩최대 20% 할인",
+        "subtitle": "",
+        "date_range": "2026.06.22~2026.08.31",
+        "start_date": "2026.06.22",
+        "end_date": "2026.08.31",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/240106_Trip_orange.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001276",
+        "scraped_at": "2026-06-19T06:05:15.523Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001258",
+        "title": "준비! Again2002해외이용하고 응원키트받기",
+        "subtitle": "",
+        "date_range": "2026.06.12~2026.06.26",
+        "start_date": "2026.06.12",
+        "end_date": "2026.06.26",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260423-korea-red.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001258",
+        "scraped_at": "2026-06-19T06:05:15.523Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001253",
+        "title": "스타샵 이용하고인천 펜타포트 즐기자!",
+        "subtitle": "",
+        "date_range": "2026.06.15~2026.07.10",
+        "start_date": "2026.06.15",
+        "end_date": "2026.07.10",
+        "categories": [
+          "경품"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260612-StarshopPentaport-brown.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001253",
+        "scraped_at": "2026-06-19T06:05:15.523Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001248",
+        "title": "2026 펜타포트 티켓,체크하고 GET!",
+        "subtitle": "",
+        "date_range": "2026.06.15~2026.07.10",
+        "start_date": "2026.06.15",
+        "end_date": "2026.07.10",
+        "categories": [
+          "경품",
+          "체크"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260611-pentaport-red.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001248",
+        "scraped_at": "2026-06-19T06:05:15.523Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001244",
+        "title": "해외결제는 1400원으로고정환율 적용",
+        "subtitle": "",
+        "date_range": "2026.06.15~2026.06.30",
+        "start_date": "2026.06.15",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260429-Currency-olive.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001244",
+        "scraped_at": "2026-06-19T06:05:15.523Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001234",
+        "title": "KB국민카드와 함께펜타포트 페스티벌 GO!",
+        "subtitle": "",
+        "date_range": "2026.06.15~2026.07.05",
+        "start_date": "2026.06.15",
+        "end_date": "2026.07.05",
+        "categories": [
+          "경품"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260612-pentaport-red.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001234",
+        "scraped_at": "2026-06-19T06:05:15.523Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001232",
+        "title": "와우카드 할부 이용하면펜타포트락페스티벌 티켓이",
+        "subtitle": "",
+        "date_range": "2026.06.10~2026.07.05",
+        "start_date": "2026.06.10",
+        "end_date": "2026.07.05",
+        "categories": [
+          "경품"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260528_coupang_red.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001232",
+        "scraped_at": "2026-06-19T06:05:15.523Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001209",
+        "title": "편의점? 커피? 마트?스탬프 찍고 포인트리!",
+        "subtitle": "",
+        "date_range": "2026.06.05~2026.07.17",
+        "start_date": "2026.06.05",
+        "end_date": "2026.07.17",
+        "categories": [
+          "할인",
+          "포인트리"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260408-stamp-brown.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001209",
+        "scraped_at": "2026-06-19T06:05:15.523Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001201",
+        "title": "호텔스닷컴 최대 40%할인+추가 10% 할인!",
+        "subtitle": "",
+        "date_range": "2026.06.04~2026.07.13",
+        "start_date": "2026.06.04",
+        "end_date": "2026.07.13",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250312_hotels.com_purple.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001201",
+        "scraped_at": "2026-06-19T06:05:15.523Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001200",
+        "title": "신차 할부금융 다이렉트최대 60개월로 빠르게!",
+        "subtitle": "",
+        "date_range": "2026.06.08~2026.06.30",
+        "start_date": "2026.06.08",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250319_newcarLoarn_mint.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001200",
+        "scraped_at": "2026-06-19T06:05:15.523Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001191",
+        "title": "다이렉트 자동차보험주유권+5개월 무이자할부",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "경품"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250808_gas-ticket_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001191",
+        "scraped_at": "2026-06-19T06:05:18.049Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001183",
+        "title": "웹투어에서 국내선체크 최대 10% 캐시백",
+        "subtitle": "",
+        "date_range": "2026.06.05~2026.06.30",
+        "start_date": "2026.06.05",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백",
+          "체크"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250326_nori2_pink.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001183",
+        "scraped_at": "2026-06-19T06:05:18.049Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001182",
+        "title": "와이페이모어에서 국내선체크 최대10% 캐시백",
+        "subtitle": "",
+        "date_range": "2026.06.02~2026.06.30",
+        "start_date": "2026.06.02",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백",
+          "체크"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/251219_whypaymore_red.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001182",
+        "scraped_at": "2026-06-19T06:05:18.049Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001178",
+        "title": "6월의 햇살 가득한 혜택햇살론카드로 받아보세요",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260413-cashback-brown.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001178",
+        "scraped_at": "2026-06-19T06:05:18.049Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001174",
+        "title": "신차 살 땐 최대 60개월슬림 할부로 가볍게!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/241029_newcar_pupple.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001174",
+        "scraped_at": "2026-06-19T06:05:18.049Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001173",
+        "title": "여름휴가 준비 한번에클리어!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백",
+          "체크"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250612_hoter_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001173",
+        "scraped_at": "2026-06-19T06:05:18.049Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001172",
+        "title": "고유가시대 주유비를국민카드가 지원합니다.",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260407_KBoil_brown.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001172",
+        "scraped_at": "2026-06-19T06:05:18.049Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001171",
+        "title": "SK에너지 러브유 카드연회비 100% 캐시백!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260407_KBoil_orange.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001171",
+        "scraped_at": "2026-06-19T06:05:18.049Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001170",
+        "title": "라쿠텐트래블과 여름을!최대 20% 즉시할인",
+        "subtitle": "",
+        "date_range": "2026.06.04~2026.06.30",
+        "start_date": "2026.06.04",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250214_rakuten_olive.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001170",
+        "scraped_at": "2026-06-19T06:05:18.049Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001169",
+        "title": "주유할수록 쌓인다!최대 1만원 주유비 지원",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260410-oil-brown.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001169",
+        "scraped_at": "2026-06-19T06:05:18.049Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001168",
+        "title": "롯데월드 종합이용권할인 이벤트",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250120_LotteWorld_red.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001168",
+        "scraped_at": "2026-06-19T06:05:18.049Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001153",
+        "title": "국세·지방세부분 무이자할부!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/251120_tax_purple.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001153",
+        "scraped_at": "2026-06-19T06:05:18.049Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001152",
+        "title": "생활편의업종무이자할부",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250106_life_green.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001152",
+        "scraped_at": "2026-06-19T06:05:20.567Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001146",
+        "title": "이번 달 학원비는KB가 쏩니다!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "경품",
+          "체크"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260528-savemoney-kaki.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001146",
+        "scraped_at": "2026-06-19T06:05:20.567Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001137",
+        "title": "기기값 걱정 끝!KT단말기 추가할인!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/251104_KT_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001137",
+        "scraped_at": "2026-06-19T06:05:20.567Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001136",
+        "title": "Visa카드 에어비앤비최대 4.5만원 혜택!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.08.31",
+        "start_date": "2026.06.01",
+        "end_date": "2026.08.31",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260522_AirBnB_orange.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001136",
+        "scraped_at": "2026-06-19T06:05:20.567Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001133",
+        "title": "많이 쓴 만큼 더 할인국내선 최대 8%!",
+        "subtitle": "",
+        "date_range": "2026.06.08~2026.06.30",
+        "start_date": "2026.06.08",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260526_whypaymore_orange.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001133",
+        "scraped_at": "2026-06-19T06:05:20.567Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001131",
+        "title": "KT스카이라이프카드추가할인!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260128_KT_red.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001131",
+        "scraped_at": "2026-06-19T06:05:20.567Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001130",
+        "title": "KB LiivMⅡ카드추가할인!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/241115_LiivM_II_orange.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001130",
+        "scraped_at": "2026-06-19T06:05:20.567Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001129",
+        "title": "LG헬로비전 Ⅱ카드자동납부요금 청구할인!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250318_LG_hello2_purple.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001129",
+        "scraped_at": "2026-06-19T06:05:20.567Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001127",
+        "title": "U+ 유모바일 Ⅱ카드자동납부요금 청구할인!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250512_U+_purple.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001127",
+        "scraped_at": "2026-06-19T06:05:20.567Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001126",
+        "title": "SK 7mobileⅡ카드자동납부요금 청구할인!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250512_SK_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001126",
+        "scraped_at": "2026-06-19T06:05:20.567Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001125",
+        "title": "ktM mobileⅡ카드자동납부요금 청구할인!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250512_KT_red.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001125",
+        "scraped_at": "2026-06-19T06:05:20.567Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001124",
+        "title": "코웨이Ⅱ카드 자동납부추가할인!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250131_coway_mint.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001124",
+        "scraped_at": "2026-06-19T06:05:20.567Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001123",
+        "title": "쿠쿠렌탈Ⅱ카드 자동납부추가할인!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인",
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250131_cuckoo_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001123",
+        "scraped_at": "2026-06-19T06:05:23.081Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001122",
+        "title": "여행부터 일상까지 챙겨요!트래블 체크로 갈아타기",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백",
+          "경품",
+          "체크"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260415-card-blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001122",
+        "scraped_at": "2026-06-19T06:05:23.081Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001117",
+        "title": "몰테일 중국 특별 요금+ 배송비 할인 5회!",
+        "subtitle": "",
+        "date_range": "2026.05.26~2026.08.31",
+        "start_date": "2026.05.26",
+        "end_date": "2026.08.31",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/251105_malltail_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001117",
+        "scraped_at": "2026-06-19T06:05:23.081Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001115",
+        "title": "체크카드 신규 발급하면3만원 캐시백!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인",
+          "캐시백",
+          "체크"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250131_toshimee_olive.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001115",
+        "scraped_at": "2026-06-19T06:05:23.081Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001114",
+        "title": "Amex 40% 할인프리미엄 다이닝 컬렉션",
+        "subtitle": "",
+        "date_range": "2026.05.26~2026.07.31",
+        "start_date": "2026.05.26",
+        "end_date": "2026.07.31",
+        "categories": [
+          "할인",
+          "VIP"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260522_amex_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001114",
+        "scraped_at": "2026-06-19T06:05:23.081Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001111",
+        "title": "SKT단말기값이 부담?T라이트 할부로 가볍게!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260414_SKTfee_brown.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001111",
+        "scraped_at": "2026-06-19T06:05:23.081Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001110",
+        "title": "기기값 부담 가볍게!LGU+단말기 추가할인!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260227_LGU_pink.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001110",
+        "scraped_at": "2026-06-19T06:05:23.081Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001107",
+        "title": "TMAP 최대 50%할인8만원 캐시백 혜택!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250131_tmap_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001107",
+        "scraped_at": "2026-06-19T06:05:23.081Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001106",
+        "title": "에버랜드 놀이기구 타고최대 14만원 캐시백!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250408_rides_orange.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001106",
+        "scraped_at": "2026-06-19T06:05:23.081Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001101",
+        "title": "KB할인팩 신청하면대한항공 8% 즉시할인",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260528_koreanair_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001101",
+        "scraped_at": "2026-06-19T06:05:23.081Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001097",
+        "title": "해외이용하면 최대100만원 혜택!",
+        "subtitle": "",
+        "date_range": "2026.05.27~2026.06.30",
+        "start_date": "2026.05.27",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260527-global100-olive.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001097",
+        "scraped_at": "2026-06-19T06:05:23.081Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001095",
+        "title": "온라인 신규 발급 고객연회비 100% 캐시백",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/251031_ONline_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001095",
+        "scraped_at": "2026-06-19T06:05:23.081Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001094",
+        "title": "T-economySKT 통신요금 할인꿀팁",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250627_T-economy_orange.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001094",
+        "scraped_at": "2026-06-19T06:05:25.609Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001093",
+        "title": "받자! 최!강!두!산!두산베어스 KB카드",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백",
+          "경품"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260303-bearsball-blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001093",
+        "scraped_at": "2026-06-19T06:05:25.609Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001092",
+        "title": "H.Point 카드10만P 특별 적립!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250424_hpoint_purple.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001092",
+        "scraped_at": "2026-06-19T06:05:25.609Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001090",
+        "title": "KT서빙로봇 도입하고40만원 캐시백+무이자",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260429-serving-red.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001090",
+        "scraped_at": "2026-06-19T06:05:25.609Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001085",
+        "title": "볼트업 EV카드 충전요금최대 50% 할인!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인",
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250908_EVcard_green.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001085",
+        "scraped_at": "2026-06-19T06:05:25.609Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001084",
+        "title": "보람상조 자동납부요금추가 청구할인!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250529_boram_brown.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001084",
+        "scraped_at": "2026-06-19T06:05:25.609Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001083",
+        "title": "삼성화재자동차보험 캐시백최대3만원 신규가입 혜택",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.08.31",
+        "start_date": "2026.06.01",
+        "end_date": "2026.08.31",
+        "categories": [
+          "경품"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/_251105_Samsung_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001083",
+        "scraped_at": "2026-06-19T06:05:25.609Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001071",
+        "title": "KB라이프 딱좋은요즘건강보험료자동납부 청구할인!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250820_healthylifedisscount_orange.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001071",
+        "scraped_at": "2026-06-19T06:05:25.609Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001070",
+        "title": "연회비 100% 캐시백KB라이프 딱좋은요즘건강",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250528_healthylife_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001070",
+        "scraped_at": "2026-06-19T06:05:25.609Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001065",
+        "title": "KB 마라톤카드 발급하고가민런 우선응모!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백",
+          "경품"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260317_marathon_mint.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001065",
+        "scraped_at": "2026-06-19T06:05:25.609Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001058",
+        "title": "밀크T카드 학습비 할인 월 최대 2만원 혜택!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250430_milkT_mint.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001058",
+        "scraped_at": "2026-06-19T06:05:25.609Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001057",
+        "title": "교원구몬카드 구몬 학습비 월 18,000원 할인!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250131_kumon_red.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001057",
+        "scraped_at": "2026-06-19T06:05:25.609Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001044",
+        "title": "서울시 교통비는 기후동행체크로 신규 시 3만원!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백",
+          "체크"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260414-transit-mint.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001044",
+        "scraped_at": "2026-06-19T06:05:28.166Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001042",
+        "title": "A/B 당신의 선택은?Youth Club 체크!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백",
+          "체크"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/251203_youthclub_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001042",
+        "scraped_at": "2026-06-19T06:05:28.166Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001038",
+        "title": "국제선 항공권 청구할인With 와이페이모어",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/241220_whypaymore_orange.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001038",
+        "scraped_at": "2026-06-19T06:05:28.166Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001036",
+        "title": "전통시장 온누리 체크3만원 캐시백!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백",
+          "경품",
+          "체크"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250630_onnuri_orange.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001036",
+        "scraped_at": "2026-06-19T06:05:28.166Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001034",
+        "title": "교통비 아껴주는 K-패스체크 신규 시 3만원!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백",
+          "체크"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260210_3check_olive.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001034",
+        "scraped_at": "2026-06-19T06:05:28.166Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001028",
+        "title": "KB Pay 첫 만남 기념커피 쿠폰 받기",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "경품"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260506-coffee-olive.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001028",
+        "scraped_at": "2026-06-19T06:05:28.166Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001011",
+        "title": "아산스파비스 워터파크/온천 특가 할인",
+        "subtitle": "",
+        "date_range": "2026.05.01~2026.06.30",
+        "start_date": "2026.05.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260508-spa-blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001011",
+        "scraped_at": "2026-06-19T06:05:28.166Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1001004",
+        "title": "내셔널지오그래픽 특별기획체험전! 20% 단독할인",
+        "subtitle": "",
+        "date_range": "2026.05.20~2026.10.11",
+        "start_date": "2026.05.20",
+        "end_date": "2026.10.11",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260508_NationlGeograph_mint_1.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1001004",
+        "scraped_at": "2026-06-19T06:05:28.166Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000981",
+        "title": "유니온페이 해외10% 즉시할인",
+        "subtitle": "",
+        "date_range": "2026.05.16~2026.08.31",
+        "start_date": "2026.05.16",
+        "end_date": "2026.08.31",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250828_Unionpay_purple.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000981",
+        "scraped_at": "2026-06-19T06:05:28.166Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000895",
+        "title": "어른이 5555명에게선물 대방출",
+        "subtitle": "",
+        "date_range": "2026.04.27~2026.06.21",
+        "start_date": "2026.04.27",
+        "end_date": "2026.06.21",
+        "categories": [
+          "경품"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260422_5555_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000895",
+        "scraped_at": "2026-06-19T06:05:28.166Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000894",
+        "title": "KB저축은행 팡팡 체크카드최대 3만원 캐시백!",
+        "subtitle": "",
+        "date_range": "2026.05.01~2026.06.30",
+        "start_date": "2026.05.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백",
+          "체크"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260420-cashback-brown.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000894",
+        "scraped_at": "2026-06-19T06:05:28.166Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000872",
+        "title": "봄 여행, 그린카드로타면 할인! 머물면 적립",
+        "subtitle": "",
+        "date_range": "2026.04.22~2026.06.30",
+        "start_date": "2026.04.22",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250910_greencard25_olive.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000872",
+        "scraped_at": "2026-06-19T06:05:28.166Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000856",
+        "title": "스타샵 가맹점에서5천 포인트리 추가 적립!",
+        "subtitle": "",
+        "date_range": "2026.05.01~2026.06.30",
+        "start_date": "2026.05.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "포인트리",
+          "경품"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/241025_starshop_orange.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000856",
+        "scraped_at": "2026-06-19T06:05:30.689Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000855",
+        "title": "KB Pay X 에버랜드가정의달 1+1 할인",
+        "subtitle": "",
+        "date_range": "2026.04.28~2026.06.30",
+        "start_date": "2026.04.28",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260225_everland_brown.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000855",
+        "scraped_at": "2026-06-19T06:05:30.689Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000766",
+        "title": "Apple 제품 구매 시최대 18개월 무이자할부",
+        "subtitle": "",
+        "date_range": "2026.04.20~2026.12.31",
+        "start_date": "2026.04.20",
+        "end_date": "2026.12.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250318_applestore_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000766",
+        "scraped_at": "2026-06-19T06:05:30.689Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000717",
+        "title": "전세계 프리퍼드 호텔4박 예약 시 1박 무료",
+        "subtitle": "",
+        "date_range": "2026.04.06~2026.12.31",
+        "start_date": "2026.04.06",
+        "end_date": "2026.12.31",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260403_hotel_brown.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000717",
+        "scraped_at": "2026-06-19T06:05:30.689Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000701",
+        "title": "Again! 해외이용하면 최대 100만 포인트리",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "포인트리"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260226_agian100_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000701",
+        "scraped_at": "2026-06-19T06:05:30.689Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000678",
+        "title": "아고다최대 10% 즉시할인",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/241223_agoda_pink.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000678",
+        "scraped_at": "2026-06-19T06:05:30.689Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000676",
+        "title": "쓰는 순간, 캐시백 ON!최대 5%!",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250523_cashback_purple.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000676",
+        "scraped_at": "2026-06-19T06:05:30.689Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000667",
+        "title": "유니온페이 중국 본토10% 즉시할인",
+        "subtitle": "",
+        "date_range": "2026.03.30~2026.06.30",
+        "start_date": "2026.03.30",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250131_unionpayChina_brown.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000667",
+        "scraped_at": "2026-06-19T06:05:30.689Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000655",
+        "title": "일본 공항 면세점최대 10% 페이백",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250519_japanDuttyfree_red.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000655",
+        "scraped_at": "2026-06-19T06:05:30.689Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000654",
+        "title": "일본 3대 편의점최대 50% 페이백",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/241108_japancu_red.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000654",
+        "scraped_at": "2026-06-19T06:05:30.689Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000647",
+        "title": "쿠팡 외 최대2.4%적립쿠팡, 쿠팡이츠 4%적립",
+        "subtitle": "",
+        "date_range": "2026.04.15~2026.10.15",
+        "start_date": "2026.04.15",
+        "end_date": "2026.10.15",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/260415-coupang cash-blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000647",
+        "scraped_at": "2026-06-19T06:05:30.689Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000644",
+        "title": "[스피드메이트]할인은 기본 혜택은 더함",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/251031_speedmate_purple.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000644",
+        "scraped_at": "2026-06-19T06:05:30.689Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000613",
+        "title": "일본여행 필수품 JCB 20% 캐시백",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250404_sushi_pink.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000613",
+        "scraped_at": "2026-06-19T06:05:33.216Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000607",
+        "title": "홍콩&마카오 쇼핑최대 10% 캐시백",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/251218_hk+macau_red.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000607",
+        "scraped_at": "2026-06-19T06:05:33.216Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000606",
+        "title": "해로즈, 라파예트 최대 10% 캐시백",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250919_europeoutlet_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000606",
+        "scraped_at": "2026-06-19T06:05:33.216Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000605",
+        "title": "일본 한큐&한신백화점 2천엔(JPY) 캐시백",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/251218_japan_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000605",
+        "scraped_at": "2026-06-19T06:05:33.216Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000604",
+        "title": "오사카 레고랜드 온라인 예약 5% 캐시백",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/251217_legoland_brown.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000604",
+        "scraped_at": "2026-06-19T06:05:33.216Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000603",
+        "title": "DiDi 5위안(CNY) 캐시백",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백",
+          "경품"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250724_didi_orange.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000603",
+        "scraped_at": "2026-06-19T06:05:33.216Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000602",
+        "title": "알리페이 5위안(CNY) 캐시백",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "경품"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250724_alipay_blue.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000602",
+        "scraped_at": "2026-06-19T06:05:33.216Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000601",
+        "title": "일본 백화점3천엔(JPY) 캐시백",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250723_department-store_pink.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000601",
+        "scraped_at": "2026-06-19T06:05:33.216Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000600",
+        "title": "빅카메라2천엔(JPY) 캐시백",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백",
+          "경품"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250724_big-camera_orange.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000600",
+        "scraped_at": "2026-06-19T06:05:33.216Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000599",
+        "title": "돈키호테 1천엔(JPY) 캐시백",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [
+          "캐시백",
+          "경품"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/241213_Donquijote_brown.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000599",
+        "scraped_at": "2026-06-19T06:05:33.216Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000597",
+        "title": "네이버+ 스토어 특별금리최대 60개월로 가볍게!",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/251015_Store_purple.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000597",
+        "scraped_at": "2026-06-19T06:05:33.216Z"
+      },
+      {
+        "card_company": "KB국민카드",
+        "event_id": "1000570",
+        "title": "아고다 유니온페이카드최대 15% 즉시할인",
+        "subtitle": "",
+        "date_range": "2026.03.16~2026.08.31",
+        "start_date": "2026.03.16",
+        "end_date": "2026.08.31",
+        "categories": [
+          "할인"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://img1.kbcard.com/ST/img/ubb/mgr/event/250220_agoda_orange.png",
+        "url": "https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0002?evtNo=1000570",
+        "scraped_at": "2026-06-19T06:05:33.216Z"
+      }
+    ]
+  },
+  {
+    "card_company": "페이북(BC카드)",
+    "count": 57,
+    "scraped_at": "2026-06-19T15:06:34.781285",
+    "events": [
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026060026",
+        "title": "객실 5% 할인테마파크 26% 할인",
+        "subtitle": "제주신화월드",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "여행/해외"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2026060026_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060026",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026060024",
+        "title": "입시전략가 샤론코치강연회 초청 이벤트",
+        "subtitle": "BNK부산은행",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "카드혜택"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2026060024_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060024",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026060012",
+        "title": "일본 여행은BC 아이가",
+        "subtitle": "이스타항공",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "여행/해외"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2026060012_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060012",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026060022",
+        "title": "무신사 무진장26 여름 블프",
+        "subtitle": "무신사 x BC카드",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "자동차/렌탈"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2026060022_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060022",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026060032",
+        "title": "기아챔피언스필드스카이박스를잡아라 2탄",
+        "subtitle": "광주은행BC카드",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "11"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2026040005_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060032",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026060010",
+        "title": "2•3개월 무이자6•10•12부분무이자",
+        "subtitle": "세금 업종 할부 시",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "정기결제"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2025090039_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060010",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026060009",
+        "title": "최대 5개월무이자",
+        "subtitle": "업종별 무이자할부",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "정기결제"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2025090040_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060009",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026050018",
+        "title": "제휴 호텔브런치2만원 구매 특가",
+        "subtitle": "전월 실적 30만원 이상시",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "여행/해외"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2026050018_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050018",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026060011",
+        "title": "녹색소비주간에그린카드로 혜택받기",
+        "subtitle": "그린카드 녹색소비주간",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "자동차/렌탈"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608092/녹색주간_thumb.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060011",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026060008",
+        "title": "주유 10% 할인받고5% 추가 혜택까지",
+        "subtitle": "BC바로 MACAO카드",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "11"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2026040004_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060008",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026060005",
+        "title": "쿠팡•다이소 등6월 마이태그 혜택",
+        "subtitle": "여름 준비",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "생활편의"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/mytag_new2.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026060005",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026050022",
+        "title": "5MAZINGCARD WEEKS",
+        "subtitle": "신세계 x BC바로카드",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "자동차/렌탈"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/event_img_list_thum_02.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050022",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026050020",
+        "title": "교통비 3만원 달성하면최대 1만원 캐시백",
+        "subtitle": "경남은행 K-패스 카드",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "정기결제"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2024110007.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050020",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026050017",
+        "title": "BC바로 MACAO카드연회비 100% 캐시백",
+        "subtitle": "BC 바로카드 이벤트",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "11"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2024090023_1.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050017",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026050016",
+        "title": "BC바로 에어마스터카드연회비 100% 캐시백",
+        "subtitle": "BC 바로카드 이벤트",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "11"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2026010040.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050016",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026050015",
+        "title": "BC바로 에어맥스카드연회비 100% 캐시백",
+        "subtitle": "BC 바로카드 이벤트",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "11"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2026010007_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050015",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026050014",
+        "title": "BC바로 ZONE카드연회비 100% 캐시백",
+        "subtitle": "BC 바로카드 이벤트",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "11"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2026010013_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050014",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026050013",
+        "title": "K-패스 카드연회비 100%청구할인",
+        "subtitle": "바로카드 연회비 이벤트",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "11"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2024080027.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050013",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026050010",
+        "title": "서울랜드 파크이용권최대 54% 할인",
+        "subtitle": "워터워즈 페스티벌 오픈기념",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "여행/해외"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/img_list_thum.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050010",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026050011",
+        "title": "대리운전 부를 땐무제한 11% 할인받기",
+        "subtitle": "페이북 x 안심대리",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "생활편의"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2026050011_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050011",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026050007",
+        "title": "고환율에도 걱정✖️최대 10만원 혜택",
+        "subtitle": "해외 온라인·직구·여행",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "여행/해외"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2026050007_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026050007",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026040041",
+        "title": "어디서든 0.5% 적립많이 쓰면 1% 적립",
+        "subtitle": "페이북 머니 결제 혜택",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "생활편의"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2026040041_main_banner.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026040041",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026040019",
+        "title": "경상도레저부터 호캉스까지",
+        "subtitle": "지금은 경상여행각",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "여행/해외"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/Trip.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026040019",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026010026",
+        "title": "해외호텔 결제하면5만원 즉시 할인",
+        "subtitle": "하나투어 이벤트",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "여행/해외"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2024110008.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026010026",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026040018",
+        "title": "더클래식 멤버십단독 10% 할인",
+        "subtitle": "더중앙플러스 x BC카드",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "카드혜택"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2026040018_main_new2.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026040018",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026040014",
+        "title": "유류할증료 부담 제로요금 인상없는 해외여행",
+        "subtitle": "하나투어 이벤트",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "여행/해외"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2024110008.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026040014",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026040002",
+        "title": "뮤지컬 〈그날들〉최대 25% 할인",
+        "subtitle": "BC카드 결제 시",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "카드혜택"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/main_2026040002.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026040002",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026040026",
+        "title": "자동차구매는 IBK카드다이렉트 오토캐시백",
+        "subtitle": "다이렉트 오토캐시백",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "12"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2026040026_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026040026",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026030051",
+        "title": "호텔 예약최대 10% 추가 할인",
+        "subtitle": "아고다",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "여행/해외"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2024060033_01.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030051",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026030050",
+        "title": "트립닷컴최대 6% 할인",
+        "subtitle": "할인 받고 떠나자",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "여행/해외"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/tripcom.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030050",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026030048",
+        "title": "최대 10% 추가할인",
+        "subtitle": "호텔스닷컴 호텔 예약",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "여행/해외"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/hotelscom.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030048",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026030045",
+        "title": "호텔 예약8% 추가 할인",
+        "subtitle": "익스피디아",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "여행/해외"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/expedia.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030045",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026030042",
+        "title": "중국 본토 오프라인10% 즉시 할인",
+        "subtitle": "BC유니온페이",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "여행/해외"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/unionpay.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030042",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026030041",
+        "title": "신규30만원BC카드결제페이북머니 최대 3만원",
+        "subtitle": "한화손보 캐롯 자동차보험",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "정기결제"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2026030041_main_new2.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030041",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026030039",
+        "title": "10•12개월부분무이자",
+        "subtitle": "부분 무이자할부 이용 시",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "정기결제"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2025090038_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030039",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026030038",
+        "title": "Light할부 이용 시최대 12개월 할부",
+        "subtitle": "2026년 2분기",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "정기결제"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2025090037_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030038",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026030036",
+        "title": "혜택대상 업종 할부 시6개월 부분 무이자",
+        "subtitle": "온라인•백화점•여행 등",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "정기결제"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2025090041_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030036",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026030034",
+        "title": "할부 결제 시최대 3개월 무이자",
+        "subtitle": "영중소 가맹점에서",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "정기결제"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2025090050_main.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030034",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026030007",
+        "title": "국내•해외 호텔최대 15% 할인",
+        "subtitle": "유니온페이 x 아고다",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "여행/해외"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2024060033_01.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030007",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2024120018",
+        "title": "해외여행 데이터 로밍최대 15% 할인",
+        "subtitle": "와이파이 도시락",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "여행/해외"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/wifidosirak.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2024120018",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2025030014",
+        "title": "KT 통신요금월 최대 2.7만원할인",
+        "subtitle": "KT SUPER DC 카드",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "11"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2025030014.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025030014",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2024050010",
+        "title": "KT 알뜰폰 통신요금24개월동안 추가 할인",
+        "subtitle": "KT 마이알뜰폰 카드",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "11"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/ktcard-my.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2024050010",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2023090043",
+        "title": "BC바로카드 통신비추가 할인 프로모션",
+        "subtitle": "kt DC PLUS",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "11"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/ktdcplus.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2023090043",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026020003",
+        "title": "일본 가맹점 쿠폰 할인",
+        "subtitle": "BC유니온페이 카드결제 시",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "여행/해외"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2026020003_img.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026020003",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2026030055",
+        "title": "어떤 카드로 결제해도보너스 머니박스",
+        "subtitle": "카드 이용내역",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "11"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/moneyBox_winter.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2026030055",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2025120012",
+        "title": "자동납부 신규등록최대 5천원 할인",
+        "subtitle": "사립유치원",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "쇼핑"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/RegularPayment.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120012",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2025120011",
+        "title": "KT 통신요금최대 5천원 결제일할인",
+        "subtitle": "통신요금 자동납부",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "쇼핑"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/event_list_thum_mobile_0504.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120011",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2025120010",
+        "title": "자동납부 신규등록최대 5천원 할인",
+        "subtitle": "4대보험",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "쇼핑"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/event_list_thum_protect_0504.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120010",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2025120009",
+        "title": "자동납부 신규등록최대 5천원 할인",
+        "subtitle": "학부모 부담금",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "쇼핑"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/event_list_thum_school.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120009",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2025120008",
+        "title": "자동납부 신규등록최대 5천원 할인",
+        "subtitle": "전기요금",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "쇼핑"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/event_list_thum_electronic.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120008",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2025120007",
+        "title": "자동납부 신규등록최대 5천원 할인",
+        "subtitle": "도시가스",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "쇼핑"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/event_list_thum_gas.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120007",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2025120006",
+        "title": "신규등록최대 5천원 할인",
+        "subtitle": "아파트관리비",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "쇼핑"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/event_list_thum_apart.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120006",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2025120005",
+        "title": "신규등록최대 3만5천원 할인",
+        "subtitle": "생활요금 자동납부",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "쇼핑"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/event_list_thum_house.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120005",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2025120003",
+        "title": "1만원 이상 결제하면최대 10만원 당첨",
+        "subtitle": "결제할수록 커지는 혜택",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "생활편의"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/moneybenefit.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025120003",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2025110033",
+        "title": "해외 온•오프라인 결제기본3%+추가3% 적립",
+        "subtitle": "26년 GOAT카드",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "11"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2024080023_02.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025110033",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2025060040",
+        "title": "골프여행할인 혜택 모음",
+        "subtitle": "그린재킷투어",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "문화/공연"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/Golf.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2025060040",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      },
+      {
+        "card_company": "페이북(BC카드)",
+        "event_id": "2024120020",
+        "title": "BC카드 VIP 전용특별 할인 공연•전시",
+        "subtitle": "VIP 문화•예술서비스",
+        "date_range": "",
+        "start_date": "",
+        "end_date": "",
+        "categories": [
+          "카드혜택"
+        ],
+        "like_count": 0,
+        "thumbnail": "https://cdn.paybooc.co.kr/cbf/bannerimage/PBM0608095/2024110012_01.png",
+        "url": "https://web.paybooc.co.kr/web/evnt/evnt-dts?pybcUnifEvntNo=2024120020",
+        "scraped_at": "2026-06-19T06:05:44.052Z"
+      }
+    ]
+  },
+  {
+    "card_company": "롯데카드",
+    "count": 60,
+    "scraped_at": "2026-06-19T15:06:34.781285",
+    "events": [
+      {
+        "card_company": "롯데카드",
+        "event_id": "11172",
+        "title": "삼성화재 내차 보험료 조회하면 네이버페이 포인트 7천원 지급",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260619135442_7342_삼성화재네이버페이_PC_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11172",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11171",
+        "title": "롯데카드 회원에게만 드리는 트레비클럽 신규 가입 혜택",
+        "subtitle": "",
+        "date_range": "2026.06.19~2026.07.31",
+        "start_date": "2026.06.19",
+        "end_date": "2026.07.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260619101810_7303_롯데호텔트레비클럽가입프로모션_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11171",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11162",
+        "title": "Hotels.com X 대한항공 트리플 마일리지 적립 프로모션",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260608085639_PC_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11162",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11160",
+        "title": "로카파트너스로 내 카드값 해결해 보세요",
+        "subtitle": "",
+        "date_range": "2026.02.02~2026.12.31",
+        "start_date": "2026.02.02",
+        "end_date": "2026.12.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260605092320_PC_BN_20260408102819_PC_BN_20260304110733_6700_로카파트너스_PC_310X200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11160",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11159",
+        "title": "서킷의 전율을 온몸으로, 직관 티켓과 항공권+숙박권 받아요",
+        "subtitle": "",
+        "date_range": "2026.06.15~2026.07.31",
+        "start_date": "2026.06.15",
+        "end_date": "2026.07.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260604160142_PC_BN_20260518165131_7036_아멕스F1경품이벤트_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11159",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11154",
+        "title": "간단하게 할인받고 최대 49만원 상당 혜택까지",
+        "subtitle": "",
+        "date_range": "2026.06.08~2026.06.30",
+        "start_date": "2026.06.08",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260602132007_7121_등록용.7121_로카라이킷2종48만원_PC_310200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11154",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11153",
+        "title": "TELLO T 라이트 할부 카드 월 최대 29,000원 캐시백 혜택",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260601135124_7223_TELLOT라이트할부카드_310X200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11153",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11152",
+        "title": "삼성화재 다이렉트 자동차보험 신규 가입 시 최대 3만원 캐시백",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260601134045_7207_삼성화재자동차보험50만원_pc_310X210.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11152",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11151",
+        "title": "롯데카드 TELLO SE로 통신요금 월 최대 29,000원 결제일 할인",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260601133515_PC_텔로seskt통신요금_310X200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11151",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11148",
+        "title": "최대 5% 적립에 최대 55.4만원 상당 혜택까지",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260529160254_7089_6월롯데멤버스카드55.4만원_pc_310200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11148",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11147",
+        "title": "K-패스엔로카, 교통·생활비 할인에 최대 20만원 캐시백까지!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260529154345_패스엔로카12만원_PC_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11147",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11146",
+        "title": "여기저기 혜택받고 최대 62만원 상당 혜택까지",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260529142823_7118_시티3종_pc_300X210.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11146",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11145",
+        "title": "트래블월렛 하이브리드 롯데카드 20만원 캐시백",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260529103603_7141_트래블월렛하이브리드롯데카드이벤트_PC_310x200_등록용.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11145",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11140",
+        "title": "총 1,431명 당첨 행운! 단기카드 대출 최대 100만원 캐시 Dream",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260528154257_6996_5월단기카드대출_PC_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11140",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11139",
+        "title": "트래블월렛 하이브리드 롯데카드 캐시백+내년 연회비 면제까지",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.07.31",
+        "start_date": "2026.06.01",
+        "end_date": "2026.07.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260528151506_PC_월MPO_트래블월렛_PC_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11139",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11138",
+        "title": "LOCA MONEY 카드 캐시백+내년 연회비 면제까지",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.07.31",
+        "start_date": "2026.06.01",
+        "end_date": "2026.07.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260528151138_PC_MPO프로모션추가_LOCAMONEY_PC_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11138",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11137",
+        "title": "LOCA LIKIT 1.2 카드 캐시백+내년 연회비 면제까지",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.07.31",
+        "start_date": "2026.06.01",
+        "end_date": "2026.07.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260528150751_PC_MPO프로모션추가_LOCALIKIT1_2_PC_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11137",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11136",
+        "title": "롯데멤버스 카드 한번 써보세요 캐시백 + 내년 연회비 면제",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.07.31",
+        "start_date": "2026.06.01",
+        "end_date": "2026.07.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260528150416_PC_롯데멤버스카드_MPO_PC_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11136",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11135",
+        "title": "LOCA 나누기 한번 써보세요 캐시백 + 내년 연회비 면제",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.07.31",
+        "start_date": "2026.06.01",
+        "end_date": "2026.07.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260528150101_PC_7925_MPO_나누기_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11135",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11134",
+        "title": "디지로카 Las Vegas 한번 써보세요 캐시백 + 내년 연회비 면제",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.07.31",
+        "start_date": "2026.06.01",
+        "end_date": "2026.07.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260528145634_PC_BN_MPO신규상품2종_디지로카라스베가스_310X200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11134",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11116",
+        "title": "디지로카 London 한번 써보세요 캐시백 + 내년 연회비 면제",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.07.31",
+        "start_date": "2026.06.01",
+        "end_date": "2026.07.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260528142117_PC_BN_20260519174251_PC_BN_20250228153247_7924_MPO_LONDON_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11116",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11115",
+        "title": "디지로카 Paris 한번 써보세요 캐시백 + 내년 연회비 면제",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.07.31",
+        "start_date": "2026.06.01",
+        "end_date": "2026.07.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260528141811_PC_BN_20260519173517_PC_BN_20250228153119_7923_MPO_PARIS_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11115",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11111",
+        "title": "매월 최대 36,500원 할인 받고 최대 57만원 상당 혜택까지",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260527175441_7087_6월로카365_최대57만_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11111",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11107",
+        "title": "힐튼 아너스 아멕스 쓰고 최대 160만원 상당 혜택 받으세요",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260526170058_7157_힐튼아너스아멕스카드프로모션_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11107",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11106",
+        "title": "유플러스 통신요금 월 최대 27,000원 할인 혜택",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260526161303_7040_LGU+요금할인_PC_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11106",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11105",
+        "title": "KT DC PLUS 롯데카드로 KT통신요금 월 최대 29,000원 결제일 할인",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260526161021_7039_통신카드KT이벤트_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11105",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11101",
+        "title": "토스 플레이스 카드로 10만원 이상 이용하면 10만원 캐시백",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260526151939_7169_TossPlace카드이벤트_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11101",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11086",
+        "title": "SKT KT LGU+ 알뜰폰 요금 월 최대 3만원, 최대 72만원 할인혜택!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260514152601_7085_토스모바일카드프로모션_PC_320×200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11086",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11084",
+        "title": "롯데카드와 첫 만남의 혜택 연회비 캐시백 100% 지급!",
+        "subtitle": "",
+        "date_range": "2026.05.28~2026.12.31",
+        "start_date": "2026.05.28",
+        "end_date": "2026.12.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260514145245_7052_연회비캐시백_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11084",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11079",
+        "title": "LG전자 온라인몰(LGE.COM) 최대 50만원 캐시백",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260512175740_7051_LGE_COM프로모션_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11079",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11061",
+        "title": "트래블월렛 하이브리드 롯데카드 캐시백+내년 연회비 면제까지",
+        "subtitle": "",
+        "date_range": "2026.05.01~2026.06.30",
+        "start_date": "2026.05.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260429140406_6881_5월MPO_트래블월렛_PC_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11061",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "11031",
+        "title": "롯데카드 주유 전용 카드 이용하면 캐시백 + 연회비 면제까지!",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260410094600_6854_중동사태주유프로모션_PC_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=11031",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "8466",
+        "title": "하나투어와 해외여행 떠나면 5% 결제일 할인 또는 24개월 무이자",
+        "subtitle": "",
+        "date_range": "2026.04.29~2026.12.31",
+        "start_date": "2026.04.29",
+        "end_date": "2026.12.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260313173711_6717_트래블하나투어캐시백_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=8466",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "8463",
+        "title": "LOCA MONEY 카드 캐시백 + 내년 연회비 면제까지",
+        "subtitle": "",
+        "date_range": "2026.05.01~2026.06.30",
+        "start_date": "2026.05.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260312105539_6644_3월MPO프로모션추가_LOCAMONEY_PC_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=8463",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "8462",
+        "title": "LOCA LIKIT 1.2 카드 캐시백 + 내년 연회비 면제까지",
+        "subtitle": "",
+        "date_range": "2026.05.01~2026.06.30",
+        "start_date": "2026.05.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260312105211_6644_3월MPO프로모션추가_LOCALIKIT1.2_PC_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=8462",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "8394",
+        "title": "삼성화재 · DB손해보험등 무이자/부분 무이자 할부 혜택",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260106171917_6440_손해보험업종무이자할부_PC_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=8394",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "8393",
+        "title": "여행사 · 항공사 업종 무이자/부분 무이자 할부 혜택",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260106165056_6439_여행사,항공사업종무이자할부_PC_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=8393",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "8392",
+        "title": "생활 플러스 업종 2~5개월 무이자 할부",
+        "subtitle": "",
+        "date_range": "2026.04.01~2026.06.30",
+        "start_date": "2026.04.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20251230164240_6058_생활플러스업종_10~12_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=8392",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "8375",
+        "title": "롯데ON 5% 할인 혜택",
+        "subtitle": "",
+        "date_range": "2026.01.01~2026.12.31",
+        "start_date": "2026.01.01",
+        "end_date": "2026.12.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20251208103755_6294_롯데ON_할인혜택_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=8375",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "8364",
+        "title": "마스터카드 보너스 리베이트 프로그램",
+        "subtitle": "",
+        "date_range": "2025.10.01~2026.09.30",
+        "start_date": "2025.10.01",
+        "end_date": "2026.09.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20251111095256_6141_마스터보너스리베이트_PC_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=8364",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "8356",
+        "title": "힐튼 아너스 아멕스 카드 주말 숙박권 & 등급 업그레이드",
+        "subtitle": "",
+        "date_range": "2025.09.01~2026.12.31",
+        "start_date": "2025.09.01",
+        "end_date": "2026.12.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20251028151508_5855_힐튼아너스아멕스_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=8356",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "8334",
+        "title": "아시안푸드 전문점 생어거스틴 10% 결제일 할인받아요",
+        "subtitle": "",
+        "date_range": "2026.05.01~2026.10.31",
+        "start_date": "2026.05.01",
+        "end_date": "2026.10.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20250925103911_5947_생어거스틴할인혜택_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=8334",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "8188",
+        "title": "롯데멤버스 카드 한번 써보세요 캐시백 + 내년 연회비 면제",
+        "subtitle": "",
+        "date_range": "2026.05.01~2026.06.30",
+        "start_date": "2026.05.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20250407145212_5054_롯데멤버스카드_MPO_PC_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=8188",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "8160",
+        "title": "디지로카 Las Vegas 한번 써보세요 캐시백 + 내년 연회비 면제",
+        "subtitle": "",
+        "date_range": "2026.05.01~2026.06.30",
+        "start_date": "2026.05.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260430162927_6910_mpo라스베가스_310200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=8160",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "8011",
+        "title": "Trip to 로카 해외 결제하면 한도 없는 최대 4.5% 할인",
+        "subtitle": "",
+        "date_range": "2026.01.01~2026.12.31",
+        "start_date": "2026.01.01",
+        "end_date": "2026.12.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260102095127_6225_Tripto로카해외결제_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=8011",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "7935",
+        "title": "LOCA 나누기 한번 써보세요 캐시백 + 내년 연회비 면제",
+        "subtitle": "",
+        "date_range": "2026.05.01~2026.06.30",
+        "start_date": "2026.05.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20250305182217_7925_MPO_나누기_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=7935",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "7934",
+        "title": "디지로카 London 한번 써보세요 캐시백 + 내년 연회비 면제",
+        "subtitle": "",
+        "date_range": "2026.05.01~2026.06.30",
+        "start_date": "2026.05.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20250305182043_7924_MPO_LONDON_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=7934",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "7933",
+        "title": "디지로카 Paris 한번 써보세요 캐시백 + 내년 연회비 면제",
+        "subtitle": "",
+        "date_range": "2026.05.01~2026.06.30",
+        "start_date": "2026.05.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20250305181747_7923_MPO_PARIS_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=7933",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "7820",
+        "title": "한샘 X LOCA 플랜+카드 15만원 캐시백",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260227102141_PC_6673_한샘XLOCA플랜카드_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=7820",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "7642",
+        "title": "롯데백화점 5% 할인 e-쿠폰 혜택",
+        "subtitle": "",
+        "date_range": "2025.10.01~2026.09.30",
+        "start_date": "2025.10.01",
+        "end_date": "2026.09.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20221228180044_464_롯데백화점할인쿠폰혜택_pc_썸네일_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=7642",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "7638",
+        "title": "롯데, 신라아이파크 면세점 5~15% 할인 혜택",
+        "subtitle": "",
+        "date_range": "2026.01.01~2026.06.30",
+        "start_date": "2026.01.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20241231155731_4621_롯데,신라아이파크면세점_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=7638",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "7637",
+        "title": "미스터피자 15% / 40% 할인 혜택",
+        "subtitle": "",
+        "date_range": "2026.01.01~2026.06.30",
+        "start_date": "2026.01.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260108141843_7634_6427_미스터피자_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=7637",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "7635",
+        "title": "박준 뷰티랩, 박승철 헤어스투디오 할인 혜택",
+        "subtitle": "",
+        "date_range": "2026.01.01~2026.06.30",
+        "start_date": "2026.01.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20241231161735_4622_박준,박승철할인_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=7635",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "7633",
+        "title": "놀이공원 이용권 40~50% 할인 혜택",
+        "subtitle": "",
+        "date_range": "2026.01.01~2026.06.30",
+        "start_date": "2026.01.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20241231155732_7633_4611_놀이공원_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=7633",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "7533",
+        "title": "100만원 이상 결제, LOCA 나누기로 부담을 덜어요",
+        "subtitle": "",
+        "date_range": "2025.09.01~2026.08.31",
+        "start_date": "2025.09.01",
+        "end_date": "2026.08.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20250901091926_5776_로카나누기10개월프로모션_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=7533",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "7423",
+        "title": "세상을 바꾸는 가치 있는 생각 띵크어스",
+        "subtitle": "",
+        "date_range": "2025.08.04~9999.12.31",
+        "start_date": "2025.08.04",
+        "end_date": "9999.12.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20220523181433_띵크어스_피씨이미지리스트썸네일_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=7423",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "7295",
+        "title": "전월실적 부담 DOWN! 백점짜리 LOCA 100 프로모션",
+        "subtitle": "",
+        "date_range": "2026.01.01~2026.12.31",
+        "start_date": "2026.01.01",
+        "end_date": "2026.12.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20241231163440_4614_LOCA100_금융실적포함_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=7295",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "7264",
+        "title": "서울랜드 봄축제 K 도파민 페스티벌 파크이용권 특별 할인",
+        "subtitle": "",
+        "date_range": "2026.05.01~2026.06.30",
+        "start_date": "2026.05.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20260116131645_6471_서울랜드겨울방학맞이프로모션_pc_310X210.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=7264",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "6553",
+        "title": "LOCA MONEY 카드, 지난달 실적 기준을 낮춰 부담을 줄여드려요!",
+        "subtitle": "",
+        "date_range": "2026.01.01~2026.06.30",
+        "start_date": "2026.01.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20250103142433_등록용_4678_로카머니카드_PC썸네일.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=6553",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      },
+      {
+        "card_company": "롯데카드",
+        "event_id": "6254",
+        "title": "슬기로운 카드 생활, LOCA가 맞춰 드릴게요",
+        "subtitle": "",
+        "date_range": "2026.01.01~2026.12.31",
+        "start_date": "2026.01.01",
+        "end_date": "2026.12.31",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://image.lottecard.co.kr/UploadFiles/event/PC_BN_20241231163329_4616_LOCA_실적하향_프로모션_pc_310x200.png",
+        "url": "https://www.lottecard.co.kr/app/LPBNFDB_V100.lc?evntNo=6254",
+        "scraped_at": "2026-06-19T06:06:16.722Z"
+      }
+    ]
+  },
+  {
+    "card_company": "삼성카드",
+    "count": 12,
+    "scraped_at": "2026-06-19T15:06:34.781285",
+    "events": [
+      {
+        "card_company": "삼성카드",
+        "event_id": "3748014",
+        "title": "캐비 미리 준비하면 최대 59% 할인",
+        "subtitle": "",
+        "date_range": "2026.06.19~2026.08.30",
+        "start_date": "2026.06.19",
+        "end_date": "2026.08.30",
+        "categories": [],
+        "like_count": 1,
+        "thumbnail": "https://static11.samsungcard.com/wcms/event/general_v2/__icsFiles/afieldfile/2026/06/19/P_thumb_286x275_2.png",
+        "url": "https://www.samsungcard.com/personal/event/ing/UHPPBE0202M0.jsp?evtId=3748014",
+        "scraped_at": "2026-06-19T06:06:29.654Z"
+      },
+      {
+        "card_company": "삼성카드",
+        "event_id": "3745274",
+        "title": "웨스틴 조선 서울 할인 프로모션",
+        "subtitle": "",
+        "date_range": "2026.06.16~2026.08.31",
+        "start_date": "2026.06.16",
+        "end_date": "2026.08.31",
+        "categories": [],
+        "like_count": 2,
+        "thumbnail": "https://static11.samsungcard.com/wcms/event/general_v2/__icsFiles/afieldfile/2026/06/04/P_thumb_286x275_2.png",
+        "url": "https://www.samsungcard.com/personal/event/ing/UHPPBE0202M0.jsp?evtId=3745274",
+        "scraped_at": "2026-06-19T06:06:29.654Z"
+      },
+      {
+        "card_company": "삼성카드",
+        "event_id": "3747643",
+        "title": "중복할인을 곁들인 진에어 최대 1.5만원 할인",
+        "subtitle": "",
+        "date_range": "2026.06.15~2026.06.30",
+        "start_date": "2026.06.15",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://static11.samsungcard.com/wcms/event/general_v2/__icsFiles/afieldfile/2026/06/12/P_thumb_286x275_3.png",
+        "url": "https://www.samsungcard.com/personal/event/ing/UHPPBE0202M0.jsp?evtId=3747643",
+        "scraped_at": "2026-06-19T06:06:29.654Z"
+      },
+      {
+        "card_company": "삼성카드",
+        "event_id": "3746683",
+        "title": "롯데면세점 최대 16% 즉시할인",
+        "subtitle": "",
+        "date_range": "2026.06.15~2026.06.30",
+        "start_date": "2026.06.15",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://static11.samsungcard.com/wcms/event/general_v2/__icsFiles/afieldfile/2026/05/28/P_thumb_286x275_13.png",
+        "url": "https://www.samsungcard.com/personal/event/ing/UHPPBE0202M0.jsp?evtId=3746683",
+        "scraped_at": "2026-06-19T06:06:29.654Z"
+      },
+      {
+        "card_company": "삼성카드",
+        "event_id": "3746195",
+        "title": "최대 28만원 혜택 하나투어 여행 찬스",
+        "subtitle": "",
+        "date_range": "2026.06.15~2026.06.30",
+        "start_date": "2026.06.15",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://static11.samsungcard.com/wcms/event/general_v2/__icsFiles/afieldfile/2026/05/27/P_thumb_286x275_5.png",
+        "url": "https://www.samsungcard.com/personal/event/ing/UHPPBE0202M0.jsp?evtId=3746195",
+        "scraped_at": "2026-06-19T06:06:29.654Z"
+      },
+      {
+        "card_company": "삼성카드",
+        "event_id": "3746653",
+        "title": "롯데월드를 빨리 만나는 법 삼성카드 전용 게이트",
+        "subtitle": "",
+        "date_range": "2026.06.10~2026.07.05",
+        "start_date": "2026.06.10",
+        "end_date": "2026.07.05",
+        "categories": [],
+        "like_count": 10,
+        "thumbnail": "https://static11.samsungcard.com/wcms/event/general_v2/__icsFiles/afieldfile/2026/06/10/P_thumb_286x275.png",
+        "url": "https://www.samsungcard.com/personal/event/ing/UHPPBE0202M0.jsp?evtId=3746653",
+        "scraped_at": "2026-06-19T06:06:29.654Z"
+      },
+      {
+        "card_company": "삼성카드",
+        "event_id": "3746677",
+        "title": "면세점에서 삼성카드 쓰면 최대 6만원 할인",
+        "subtitle": "",
+        "date_range": "2026.06.05~2026.06.19",
+        "start_date": "2026.06.05",
+        "end_date": "2026.06.19",
+        "categories": [],
+        "like_count": 1,
+        "thumbnail": "https://static11.samsungcard.com/wcms/event/general_v2/__icsFiles/afieldfile/2026/05/29/P_thumb_286x275_1.png",
+        "url": "https://www.samsungcard.com/personal/event/ing/UHPPBE0202M0.jsp?evtId=3746677",
+        "scraped_at": "2026-06-19T06:06:29.654Z"
+      },
+      {
+        "card_company": "삼성카드",
+        "event_id": "3744960",
+        "title": "호텔스닷컴 최대 40%할인에 추가 7% 할인쿠폰까지",
+        "subtitle": "",
+        "date_range": "2026.06.04~2026.07.13",
+        "start_date": "2026.06.04",
+        "end_date": "2026.07.13",
+        "categories": [],
+        "like_count": 2,
+        "thumbnail": "https://static11.samsungcard.com/wcms/event/general_v2/__icsFiles/afieldfile/2026/05/27/P_thumb_286x275_23.png",
+        "url": "https://www.samsungcard.com/personal/event/ing/UHPPBE0202M0.jsp?evtId=3744960",
+        "scraped_at": "2026-06-19T06:06:29.654Z"
+      },
+      {
+        "card_company": "삼성카드",
+        "event_id": "3736924",
+        "title": "자동차보험, 차량별로 상품권 혜택 제공",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.09.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.09.30",
+        "categories": [],
+        "like_count": 9,
+        "thumbnail": "https://static11.samsungcard.com/wcms/event/general_v2/__icsFiles/afieldfile/2026/03/06/P_thumb_286x275_5.png",
+        "url": "https://www.samsungcard.com/personal/event/ing/UHPPBE0202M0.jsp?evtId=3736924",
+        "scraped_at": "2026-06-19T06:06:29.654Z"
+      },
+      {
+        "card_company": "삼성카드",
+        "event_id": "3747275",
+        "title": "혼다 자동차, 다이렉트 오토 혜택으로 만나 보세요.",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://static11.samsungcard.com/wcms/event/general_v2/__icsFiles/afieldfile/2026/06/04/P_thumb_286x275_4.png",
+        "url": "https://www.samsungcard.com/personal/event/ing/UHPPBE0202M0.jsp?evtId=3747275",
+        "scraped_at": "2026-06-19T06:06:29.654Z"
+      },
+      {
+        "card_company": "삼성카드",
+        "event_id": "3747224",
+        "title": "웰스 삼성카드로 월 6,000원 추가 할인",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://static11.samsungcard.com/wcms/event/general_v2/__icsFiles/afieldfile/2026/06/01/P_thumb_286x275_1.png",
+        "url": "https://www.samsungcard.com/personal/event/ing/UHPPBE0202M0.jsp?evtId=3747224",
+        "scraped_at": "2026-06-19T06:06:29.654Z"
+      },
+      {
+        "card_company": "삼성카드",
+        "event_id": "3747176",
+        "title": "Audi 구매는 삼성카드 다이렉트 오토로",
+        "subtitle": "",
+        "date_range": "2026.06.01~2026.06.30",
+        "start_date": "2026.06.01",
+        "end_date": "2026.06.30",
+        "categories": [],
+        "like_count": 0,
+        "thumbnail": "https://static11.samsungcard.com/wcms/event/general_v2/__icsFiles/afieldfile/2026/06/04/P_thumb_286x275.png",
+        "url": "https://www.samsungcard.com/personal/event/ing/UHPPBE0202M0.jsp?evtId=3747176",
+        "scraped_at": "2026-06-19T06:06:29.654Z"
+      }
+    ]
+  }
+]
