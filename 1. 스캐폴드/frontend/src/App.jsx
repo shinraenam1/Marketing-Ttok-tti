@@ -32,6 +32,18 @@ function App() {
     return `${base}/${route}?code=${FUNCTION_KEY}`
   }
 
+  const callFunction = async (route, payload = {}) => {
+    const url = buildFunctionUrl(route)
+    try {
+      return await axios.post(url, payload)
+    } catch (err) {
+      if (err?.response?.status === 405) {
+        return axios.get(url)
+      }
+      throw err
+    }
+  }
+
   const toOneLineSummary = (value) => {
     if (!value || typeof value !== 'string') {
       return ''
@@ -88,8 +100,8 @@ function App() {
       try {
         setLoading(true)
         const [etcResponse, youtubeResponse] = await Promise.all([
-          axios.post(buildFunctionUrl('etc_event_scraping'), {}),
-          axios.post(buildFunctionUrl('youtube_trend_scraping'), {})
+          callFunction('etc_event_scraping'),
+          callFunction('youtube_trend_scraping')
         ])
 
         const etcData = etcResponse.data || {}
@@ -101,7 +113,7 @@ function App() {
 
         // analyze_result 호출 - OpenAI 분석
         try {
-          const analysisResponse = await axios.post(buildFunctionUrl('analyze_result'), {
+          const analysisResponse = await callFunction('analyze_result', {
             card_events: etcData,
             youtube_trends: ytData
           })
