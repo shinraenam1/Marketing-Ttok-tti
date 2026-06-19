@@ -12,6 +12,28 @@ function App() {
     'in', 'one', 'view', 'for', 'and', 'with', 'from', 'to', 'of', 'a', 'an', 'vs'
   ])
 
+  const CATEGORY_RULES = [
+    ['여행', ['여행', '해외', '항공', '항공권', '호텔', '숙박', '리조트', '펜션', '투어', '크루즈', '면세', '에어비앤비', '레고랜드', '에버랜드', '롯데월드', '놀이공원', '테마파크']],
+    ['외식', ['외식', '식당', '레스토랑', '카페', '커피', '치킨', '피자', '배달', '버거', '스타벅스', '맥도날드', '푸드', '맛집', '다이닝', '스테이크']],
+    ['교통', ['주유', '주유소', '자동차', '렌탈', '렌트', '택시', '고속도로', '주차', '전기차', '충전', '버스', '지하철']],
+    ['문화레저', ['문화', '공연', '영화', '도서', '음악', '전시', '스포츠', '레저', '골프', '야구', '콘서트', '미술관', '박물관']],
+    ['헬스뷰티', ['헬스', '뷰티', '화장품', '피부', '미용', '헬스장', '피트니스', '요가', '필라테스', '올리브영']],
+    ['디지털통신', ['디지털', '통신', '휴대폰', '전자', '게임', 'ott', '스트리밍', '인터넷', '넷플릭스', '구독', '앱', 'sk', 'kt']],
+    ['금융할부', ['무이자', '할부', '보험', '대출', '연회비', '마일리지', '리워드', '포인트', '적립']],
+    ['쇼핑', ['백화점', '마트', '온라인쇼핑', '이마트', '롯데마트', '홈플러스', '마켓', '쿠팡', '11번가']],
+    ['생활편의', ['편의점', '교육', '학원', '세탁', '구청', 'cu', 'gs25', '세븐일레븐', '미니스톱']],
+  ]
+
+  const categorizeEvent = (title, subtitle, benefitSummary) => {
+    const text = `${title} ${subtitle} ${benefitSummary}`.toLowerCase()
+    for (const [category, keywords] of CATEGORY_RULES) {
+      if (keywords.some(kw => text.includes(kw.toLowerCase()))) {
+        return category
+      }
+    }
+    return '기타'
+  }
+
   const [reportId, setReportId] = useState(null)
   const [analysisSummary, setAnalysisSummary] = useState('')
   const [memeExplanation, setMemeExplanation] = useState('')
@@ -114,13 +136,21 @@ function App() {
       }
     })
 
-    let derivedByCategory = Object.entries(tokenCounts)
+    // 카테고리 규칙 기반 분류
+    const categoryCount = {}
+    events.forEach(event => {
+      const cat = categorizeEvent(event.title, event.source, '')
+      categoryCount[cat] = (categoryCount[cat] || 0) + 1
+    })
+
+    let derivedByCategory = Object.entries(categoryCount)
       .map(([category, count]) => ({ category, count }))
       .sort((a, b) => b.count - a.count)
       .slice(0, 10)
 
-    if (derivedByCategory.length === 0) {
-      derivedByCategory = Object.entries(sourceCounts)
+    // 폴백: 토큰 기반 분류
+    if (derivedByCategory.length === 0 || derivedByCategory[0].count === 0) {
+      derivedByCategory = Object.entries(tokenCounts)
         .map(([category, count]) => ({ category, count }))
         .sort((a, b) => b.count - a.count)
         .slice(0, 10)

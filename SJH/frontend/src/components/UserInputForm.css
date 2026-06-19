@@ -1,37 +1,39 @@
 .user-form {
   display: grid;
   gap: 1rem;
-  padding: 1rem;
+  padding: 1.1rem;
 }
 
 .user-form label {
   display: grid;
   gap: 0.4rem;
-  color: #d7deef;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .user-form textarea {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 6px;
-  color: #e2e8f0;
-  padding: 0.5rem 0.75rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--line-subtle);
+  border-radius: 10px;
+  color: var(--text-primary);
+  padding: 0.6rem 0.75rem;
   font-size: 0.9rem;
   resize: vertical;
 }
 
 .selected-keywords-summary {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 8px;
-  padding: 0.75rem 1rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--line-subtle);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
   margin-bottom: 0.5rem;
 }
 
 .selected-keywords-summary h4 {
   margin: 0 0 0.6rem;
-  font-size: 0.85rem;
-  color: rgba(200,200,220,0.8);
+  font-size: 0.82rem;
+  color: var(--text-muted);
   font-weight: 600;
 }
 
@@ -47,48 +49,60 @@
 .selected-label {
   flex-shrink: 0;
   font-weight: 700;
-  padding: 0.1rem 0.4rem;
-  border-radius: 4px;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
   font-size: 0.75rem;
 }
 
 .meme-label {
-  background: rgba(245,158,11,0.2);
-  color: #f59e0b;
-  border: 1px solid rgba(245,158,11,0.4);
+  background: rgba(191, 126, 20, 0.12);
+  color: #8a5b10;
+  border: 1px solid rgba(191, 126, 20, 0.28);
 }
 
 .card-label {
-  background: rgba(0,212,255,0.15);
-  color: #00d4ff;
-  border: 1px solid rgba(0,212,255,0.3);
+  background: rgba(15, 95, 191, 0.12);
+  color: var(--accent-strong);
+  border: 1px solid rgba(15, 95, 191, 0.26);
 }
 
 .selected-value {
-  color: #e2e8f0;
+  color: var(--text-primary);
 }
 
 .selected-empty {
-  color: rgba(180,180,200,0.5);
+  color: var(--text-muted);
   font-style: italic;
-}
-  font-size: 0.9rem;
 }
 
 .user-form select {
-  border: 1px solid #2f3b53;
-  border-radius: 8px;
-  background: #141a27;
-  color: #e6edff;
+  border: 1px solid var(--line-subtle);
+  border-radius: 10px;
+  background: var(--surface-alt);
+  color: var(--text-primary);
   padding: 0.65rem 0.7rem;
+  font-size: 0.9rem;
+}
+
+.user-form textarea:focus,
+.user-form select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(15, 95, 191, 0.15);
 }
 
 .user-form button {
   border: 0;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 0.8rem 1rem;
-  background: linear-gradient(135deg, #26a0ff, #4361ee);
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
   color: #fff;
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: 0.01em;
   cursor: pointer;
+}
+
+.user-form button:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
 }

@@ -46,7 +46,7 @@ class CreativeAssetGenerator:
         self.video_api_key = os.getenv("AZURE_OPENAI_API_KEY", "").strip() or self.openai_api_key
         self.video_model = os.getenv("AZURE_SORA_DEPLOYMENT", "sora-2").strip() or "sora-2"
         self.video_size = os.getenv("VIDEO_SIZE", "1280x720").strip() or "1280x720"
-        self.video_seconds = os.getenv("VIDEO_SECONDS", "4").strip() or "4"
+        self.video_seconds = os.getenv("VIDEO_SECONDS", "8").strip() or "8"
         self.video_timeout = int(os.getenv("VIDEO_TIMEOUT_SECONDS", "180"))
         self.video_poll_interval = int(os.getenv("VIDEO_POLL_INTERVAL_SECONDS", "3"))
 
@@ -55,6 +55,8 @@ class CreativeAssetGenerator:
         if not prompt:
             raise ValueError("prompt is required")
 
+        video_prompt = self._build_video_prompt(prompt)
+
         include_image = bool(payload.get("include_image", True))
         include_video = bool(payload.get("include_video", True))
 
@@ -62,6 +64,7 @@ class CreativeAssetGenerator:
             "schema_version": "v1",
             "generated_at": datetime.now(timezone.utc).isoformat(),
             "prompt": prompt,
+            "video_prompt": video_prompt,
             "image": None,
             "video": None,
             "errors": [],
@@ -75,11 +78,21 @@ class CreativeAssetGenerator:
 
         if include_video:
             try:
-                result["video"] = self._generate_video(prompt)
+                result["video"] = self._generate_video(video_prompt)
             except Exception as exc:
                 result["errors"].append(f"video_error:{type(exc).__name__}:{exc}")
 
         return result
+
+    def _build_video_prompt(self, prompt: str) -> str:
+        """Keep the same campaign concept but enforce video-specific output instructions."""
+        video_instructions = (
+            "\n\n[VIDEO MODE]\n"
+            "위 콘셉트와 메시지는 그대로 유지하고, 반드시 영상 광고용으로 제작하세요. "
+            "5~8초 분량, 장면 전환이 있는 시네마틱 모션, 카메라 무빙, 텍스트 오버레이, "
+            "브랜드 컬러 일관성, 마지막 1초 CTA 장면을 포함하세요."
+        )
+        return f"{prompt}{video_instructions}"
 
     def _is_azure_deployments_openai(self, base_url: str) -> bool:
         base = base_url.lower()
