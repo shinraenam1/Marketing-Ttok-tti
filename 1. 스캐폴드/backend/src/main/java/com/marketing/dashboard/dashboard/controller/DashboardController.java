@@ -3,9 +3,7 @@ package com.marketing.dashboard.dashboard.controller;
 import com.marketing.dashboard.dashboard.dto.DashboardSummaryResponse;
 import com.marketing.dashboard.dashboard.service.DashboardService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
@@ -27,5 +25,16 @@ public class DashboardController {
     @GetMapping("/dashboard/summary")
     public ResponseEntity<DashboardSummaryResponse> summary() {
         return ResponseEntity.ok(dashboardService.getSummary());
+    }
+
+    @PostMapping("/logic-app/analyze")
+    public ResponseEntity<Map<String, Object>> analyzeWithLogicApp(
+            @RequestBody Map<String, Object> analysisData) {
+        return ResponseEntity.ok(dashboardService.callLogicAppAnalysis(analysisData));
+    }
+
+    @PostMapping("/logic-app/trigger")
+    public ResponseEntity<Map<String, String>> triggerLogicApp() {
+        return ResponseEntity.ok(dashboardService.triggerLogicApp());
     }
 }
